@@ -4,7 +4,7 @@ This project is a modular 2D MMORPG engine inspired by GoonZu, featuring a class
 
 ## Folders
 - `Assets/GameEngine/` — Core engine scripts and systems
-- `Assets/GoonzuUI/` — Modular MMO UI system
+- `Assets/uUI/` — Modular MMO UI system
 - `Docs/` — Game design and planning documents
 - `UML/` — UML diagrams (Mermaid format)
 
