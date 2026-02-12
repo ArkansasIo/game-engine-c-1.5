@@ -5,6 +5,52 @@ namespace GameEngineApp
     class MainEntry
     {
         static void Main(string[] args)
+                                                                    // Demo: More Professions
+                                                                    var miner = new GoonzuGame.Professions.ProfessionDef(
+                                                                        "Miner",
+                                                                        "Extracts ores and minerals",
+                                                                        new System.Collections.Generic.List<string> { "Mine", "Excavate", "Survey" },
+                                                                        "Mining");
+                                                                    miner.Display();
+
+                                                                    var fisherman = new GoonzuGame.Professions.ProfessionDef(
+                                                                        "Fisherman",
+                                                                        "Catches fish and aquatic creatures",
+                                                                        new System.Collections.Generic.List<string> { "Fish", "Net", "Bait" },
+                                                                        "Fishing");
+                                                                    fisherman.Display();
+
+                                                                    var tailor = new GoonzuGame.Professions.ProfessionDef(
+                                                                        "Tailor",
+                                                                        "Creates clothing and textiles",
+                                                                        new System.Collections.Generic.List<string> { "Sew", "Weave", "Embroider" },
+                                                                        "Tailoring");
+                                                                    tailor.Display();
+
+                                                                    var merchant = new GoonzuGame.Professions.ProfessionDef(
+                                                                        "Merchant",
+                                                                        "Trades goods and manages shops",
+                                                                        new System.Collections.Generic.List<string> { "Trade", "Negotiate", "Appraise" },
+                                                                        "Commerce");
+                                                                    merchant.Display();
+                                                        // Demo: Professions
+                                                        var blacksmith = new GoonzuGame.Professions.ProfessionDef(
+                                                            "Blacksmith",
+                                                            "Forges weapons and armor",
+                                                            new System.Collections.Generic.List<string> { "Forge", "Repair", "Upgrade" },
+                                                            "Smithing");
+                                                        blacksmith.Display();
+                                                        Console.WriteLine($"Skill check (Forge): {blacksmith.SkillCheck("Forge")}");
+                                                        Console.WriteLine($"Has proficiency (Smithing): {blacksmith.HasProficiency("Smithing")}");
+
+                                                        var alchemist = new GoonzuGame.Professions.ProfessionDef(
+                                                            "Alchemist",
+                                                            "Brews potions and elixirs",
+                                                            new System.Collections.Generic.List<string> { "Brew", "Mix", "Identify" },
+                                                            "Alchemy");
+                                                        alchemist.Display();
+                                                        Console.WriteLine($"Skill check (Mix): {alchemist.SkillCheck("Mix")}");
+                                                        Console.WriteLine($"Has proficiency (Smithing): {alchemist.HasProficiency("Smithing")}");
                                             // Demo: Inventory and Equipment mechanics
                                             var inventory = new GoonzuGame.GUI.InventoryWindow();
                                             inventory.AddItem(item);
