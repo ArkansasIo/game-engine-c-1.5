@@ -1,42 +1,22 @@
-using System;
 
-namespace GoonzuGame.GUI
-{
-    using GoonzuGame.Skills;
-    using System.Collections.Generic;
-
-    public class SkillsWindow : UIWindow
-    {
-        public List<Skill> Skills { get; set; }
-        public SkillsWindow()
-        {
-            Skills = new List<Skill>();
+// Legacy code commented out above
+using UnityEngine;
+namespace GoonzuUI.Windows {
+    public class SkillsWindow : UIWindow {
+        public override void Show() {
+            base.Show();
+            Debug.Log("SkillsWindow shown.");
         }
-        public override void Show()
-        {
-            Console.WriteLine("Showing SkillsWindow");
-            DisplaySkills();
+        public override void Hide() {
+            base.Hide();
+            Debug.Log("SkillsWindow hidden.");
         }
-        public void DisplaySkills()
-        {
-            Console.WriteLine("Skills:");
-            foreach (var skill in Skills)
-                Console.WriteLine($"- {skill.Name} (Level {skill.Level})");
+        public override void UpdateWindow() {
+            Debug.Log("SkillsWindow updated.");
         }
-        public void AddSkill(Skill skill)
-        {
-            Skills.Add(skill);
-            Console.WriteLine($"Added skill: {skill.Name}");
-        }
-        public void RemoveSkill(Skill skill)
-        {
-            Skills.Remove(skill);
-            Console.WriteLine($"Removed skill: {skill.Name}");
-        }
+        // Add Unity UI logic for displaying skills here
     }
 }
-using UnityEngine;
-using GoonzuUI.Windows;
 
 namespace GoonzuUI.Windows
 {

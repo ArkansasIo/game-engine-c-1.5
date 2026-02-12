@@ -1,0 +1,2 @@
+# Placeholder for iron sword item asset
+# Replace with .uasset or Unity prefab reference
