@@ -1,0 +1,15 @@
+/workspaces/game-engine-c-1.5/src/GameEngineApp/bin/Debug/net10.0/GameEngineApp
+/workspaces/game-engine-c-1.5/src/GameEngineApp/bin/Debug/net10.0/GameEngineApp.deps.json
+/workspaces/game-engine-c-1.5/src/GameEngineApp/bin/Debug/net10.0/GameEngineApp.runtimeconfig.json
+/workspaces/game-engine-c-1.5/src/GameEngineApp/bin/Debug/net10.0/GameEngineApp.dll
+/workspaces/game-engine-c-1.5/src/GameEngineApp/bin/Debug/net10.0/GameEngineApp.pdb
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.AssemblyInfoInputs.cache
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.AssemblyInfo.cs
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.csproj.CoreCompileInputs.cache
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.sourcelink.json
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.dll
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/refint/GameEngineApp.dll
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.pdb
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.genruntimeconfig.cache
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/ref/GameEngineApp.dll
