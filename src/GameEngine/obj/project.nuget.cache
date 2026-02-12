@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IGoMIqDZrCY=",
+  "dgSpecHash": "jMi5+F5VOxs=",
   "success": true,
-  "projectFilePath": "D:\\game engine test 1.5\\src\\GameEngine\\GameEngine.csproj",
+  "projectFilePath": "/workspaces/game-engine-c-1.5/src/GameEngine/GameEngine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

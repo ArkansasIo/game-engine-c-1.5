@@ -5,106 +5,113 @@ namespace GameEngineApp
     class MainEntry
     {
         static void Main(string[] args)
-                                                                    // Demo: More Professions
-                                                                    var miner = new GoonzuGame.Professions.ProfessionDef(
-                                                                        "Miner",
-                                                                        "Extracts ores and minerals",
-                                                                        new System.Collections.Generic.List<string> { "Mine", "Excavate", "Survey" },
-                                                                        "Mining");
-                                                                    miner.Display();
-
-                                                                    var fisherman = new GoonzuGame.Professions.ProfessionDef(
-                                                                        "Fisherman",
-                                                                        "Catches fish and aquatic creatures",
-                                                                        new System.Collections.Generic.List<string> { "Fish", "Net", "Bait" },
-                                                                        "Fishing");
-                                                                    fisherman.Display();
-
-                                                                    var tailor = new GoonzuGame.Professions.ProfessionDef(
-                                                                        "Tailor",
-                                                                        "Creates clothing and textiles",
-                                                                        new System.Collections.Generic.List<string> { "Sew", "Weave", "Embroider" },
-                                                                        "Tailoring");
-                                                                    tailor.Display();
-
-                                                                    var merchant = new GoonzuGame.Professions.ProfessionDef(
-                                                                        "Merchant",
-                                                                        "Trades goods and manages shops",
-                                                                        new System.Collections.Generic.List<string> { "Trade", "Negotiate", "Appraise" },
-                                                                        "Commerce");
-                                                                    merchant.Display();
-                                                        // Demo: Professions
-                                                        var blacksmith = new GoonzuGame.Professions.ProfessionDef(
-                                                            "Blacksmith",
-                                                            "Forges weapons and armor",
-                                                            new System.Collections.Generic.List<string> { "Forge", "Repair", "Upgrade" },
-                                                            "Smithing");
-                                                        blacksmith.Display();
-                                                        Console.WriteLine($"Skill check (Forge): {blacksmith.SkillCheck("Forge")}");
-                                                        Console.WriteLine($"Has proficiency (Smithing): {blacksmith.HasProficiency("Smithing")}");
-
-                                                        var alchemist = new GoonzuGame.Professions.ProfessionDef(
-                                                            "Alchemist",
-                                                            "Brews potions and elixirs",
-                                                            new System.Collections.Generic.List<string> { "Brew", "Mix", "Identify" },
-                                                            "Alchemy");
-                                                        alchemist.Display();
-                                                        Console.WriteLine($"Skill check (Mix): {alchemist.SkillCheck("Mix")}");
-                                                        Console.WriteLine($"Has proficiency (Smithing): {alchemist.HasProficiency("Smithing")}");
-                                            // Demo: Inventory and Equipment mechanics
-                                            var inventory = new GoonzuGame.GUI.InventoryWindow();
-                                            inventory.AddItem(item);
-                                            inventory.AddItem(equipment);
-                                            inventory.Show();
-                                            inventory.EquipItem(equipment);
-                                            inventory.UseItem(item);
-                                            inventory.UnequipItem(equipment);
-                                            equipment.Repair(10);
-                                            equipment.Upgrade(5);
-                                            Console.WriteLine($"Is equipment broken? {equipment.IsBroken()}");
-                                            inventory.DisplayInventory();
-                                            inventory.DisplayEquipped();
-                                // Demo: GroupFinder for Raid
-                                var groupFinder = new GoonzuGame.Events.GroupFinder("Raid", raid.Name);
-                                groupFinder.AddPlayer("Alice");
-                                groupFinder.AddPlayer("Bob");
-                                groupFinder.AddPlayer("Charlie");
-                                groupFinder.DisplayGroup();
-                    // Demo: Biome
-                    var biome = new GoonzuGame.Biomes.BiomeDef("Forest", "Lush green forest biome");
-                    biome.Display();
-
-                    // Demo: City
-                    var city = new GoonzuGame.Cities.CityDef("Arkansas City", "A bustling trade hub");
-                    city.Display();
-
-                    // Demo: Town
-                    var town = new GoonzuGame.Towns.TownDef("Goonzu Town", "A peaceful village");
-                    town.Display();
-
-                    // Demo: Dungeon
-                    var dungeon = new GoonzuGame.Dungeons.DungeonDef("Goblin Cave", "Dark and dangerous goblin lair");
-                    dungeon.Display();
-
-                    // Demo: Trial
-                    var trial = new GoonzuGame.Trials.TrialDef("Trial of Fire", "Survive the flames");
-                    trial.Display();
-
-                    // Demo: Raid
-                    var raid = new GoonzuGame.Raids.RaidDef("Dragon's Lair", "Defeat the mighty dragon");
-                    raid.Display();
-
-                    // Demo: Zone
-                    var zone = new GoonzuGame.Zones.ZoneDef(
-                        "Forest Zone",
-                        biome.Name,
-                        city.Name,
-                        town.Name,
-                        new System.Collections.Generic.List<string> { dungeon.Name },
-                        new System.Collections.Generic.List<string> { trial.Name },
-                        new System.Collections.Generic.List<string> { raid.Name });
-                    zone.Display();
         {
+            // Demo: More Professions
+            var miner = new GoonzuGame.Professions.ProfessionDef(
+                "Miner",
+                "Extracts ores and minerals",
+                new System.Collections.Generic.List<string> { "Mine", "Excavate", "Survey" },
+                "Mining");
+            miner.Display();
+
+            var fisherman = new GoonzuGame.Professions.ProfessionDef(
+                "Fisherman",
+                "Catches fish and aquatic creatures",
+                new System.Collections.Generic.List<string> { "Fish", "Net", "Bait" },
+                "Fishing");
+            fisherman.Display();
+
+            var tailor = new GoonzuGame.Professions.ProfessionDef(
+                "Tailor",
+                "Creates clothing and textiles",
+                new System.Collections.Generic.List<string> { "Sew", "Weave", "Embroider" },
+                "Tailoring");
+            tailor.Display();
+
+            var merchant = new GoonzuGame.Professions.ProfessionDef(
+                "Merchant",
+                "Trades goods and manages shops",
+                new System.Collections.Generic.List<string> { "Trade", "Negotiate", "Appraise" },
+                "Commerce");
+            merchant.Display();
+
+            // Demo: Professions
+            var blacksmith = new GoonzuGame.Professions.ProfessionDef(
+                "Blacksmith",
+                "Forges weapons and armor",
+                new System.Collections.Generic.List<string> { "Forge", "Repair", "Upgrade" },
+                "Smithing");
+            blacksmith.Display();
+            Console.WriteLine($"Skill check (Forge): {blacksmith.SkillCheck("Forge")}");
+            Console.WriteLine($"Has proficiency (Smithing): {blacksmith.HasProficiency("Smithing")}");
+
+            var alchemist = new GoonzuGame.Professions.ProfessionDef(
+                "Alchemist",
+                "Brews potions and elixirs",
+                new System.Collections.Generic.List<string> { "Brew", "Mix", "Identify" },
+                "Alchemy");
+            alchemist.Display();
+            Console.WriteLine($"Skill check (Mix): {alchemist.SkillCheck("Mix")}");
+            Console.WriteLine($"Has proficiency (Smithing): {alchemist.HasProficiency("Smithing")}");
+
+            // Demo: Inventory and Equipment mechanics
+            var inventory = new GoonzuGame.GUI.InventoryWindow();
+            // Assuming item and equipment are defined elsewhere
+            // inventory.AddItem(item);
+            // inventory.AddItem(equipment);
+            inventory.Show();
+            // inventory.EquipItem(equipment);
+            // inventory.UseItem(item);
+
+            // inventory.UnequipItem(equipment);
+            // equipment.Repair(10);
+            // equipment.Upgrade(5);
+            // Console.WriteLine($"Is equipment broken? {equipment.IsBroken()}");
+            // inventory.DisplayInventory();
+            // inventory.DisplayEquipped();
+
+            // Demo: GroupFinder for Raid
+            // var groupFinder = new GoonzuGame.Events.GroupFinder("Raid", raid.Name);
+            // groupFinder.AddPlayer("Alice");
+            // groupFinder.AddPlayer("Bob");
+            // groupFinder.AddPlayer("Charlie");
+            // groupFinder.DisplayGroup();
+
+            // Demo: Biome
+            var biome = new GoonzuGame.Biomes.BiomeDef("Forest", "Lush green forest biome");
+            biome.Display();
+
+            // Demo: City
+            var city = new GoonzuGame.Cities.CityDef("Arkansas City", "A bustling trade hub");
+            city.Display();
+
+            // Demo: Town
+            var town = new GoonzuGame.Towns.TownDef("Goonzu Town", "A peaceful village");
+            town.Display();
+
+            // Demo: Dungeon
+            var dungeon = new GoonzuGame.Dungeons.DungeonDef("Goblin Cave", "Dark and dangerous goblin lair");
+            dungeon.Display();
+
+            // Demo: Trial
+            var trial = new GoonzuGame.Trials.TrialDef("Trial of Fire", "Survive the flames");
+            trial.Display();
+
+            // Demo: Raid
+            var raid = new GoonzuGame.Raids.RaidDef("Dragon's Lair", "Defeat the mighty dragon");
+            raid.Display();
+
+            // Demo: Zone
+            var zone = new GoonzuGame.Zones.ZoneDef(
+                "Forest Zone",
+                biome.Name,
+                city.Name,
+                town.Name,
+                new System.Collections.Generic.List<string> { dungeon.Name },
+                new System.Collections.Generic.List<string> { trial.Name },
+                new System.Collections.Generic.List<string> { raid.Name });
+            zone.Display();
+
             Console.WriteLine("Game Engine App Started!");
             var mainWindow = new GoonzuGame.GUI.GoonzuMainWindow();
             mainWindow.ShowAll();
