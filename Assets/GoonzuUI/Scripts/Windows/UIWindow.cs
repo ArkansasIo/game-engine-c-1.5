@@ -1,3 +1,15 @@
+using System;
+
+namespace GoonzuGame.GUI
+{
+    public class UIWindow
+    {
+        public virtual void Show()
+        {
+            Console.WriteLine($"Showing {this.GetType().Name}");
+        }
+    }
+}
 using UnityEngine;
 
 namespace GoonzuUI.Windows

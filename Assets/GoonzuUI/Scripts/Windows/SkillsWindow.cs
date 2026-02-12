@@ -1,3 +1,15 @@
+using System;
+
+namespace GoonzuGame.GUI
+{
+    public class SkillsWindow : UIWindow
+    {
+        public override void Show()
+        {
+            Console.WriteLine("Showing SkillsWindow");
+        }
+    }
+}
 using UnityEngine;
 using GoonzuUI.Windows;
 

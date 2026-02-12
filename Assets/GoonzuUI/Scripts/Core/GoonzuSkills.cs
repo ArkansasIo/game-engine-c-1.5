@@ -1,8 +1,9 @@
+using GoonzuGame.GUI;
 using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuSkills : SkillsWindow
+    public class GoonzuSkills : GoonzuGame.GUI.SkillsWindow
     {
         public void ShowSkills()
         {

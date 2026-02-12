@@ -1,8 +1,9 @@
+using GoonzuGame.GUI;
 using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuOptions : OptionsWindow
+    public class GoonzuOptions : GoonzuGame.GUI.OptionsWindow
     {
         public void ShowOptions()
         {

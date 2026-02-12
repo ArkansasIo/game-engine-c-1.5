@@ -7,4 +7,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Windows/GoonzuMainWindow.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/HUD/GoonzuHUD.cs" />
+    <Compile Include="../../Assets/GameEngine/World/GoonzuWorld.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Inventory/GoonzuInventory.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Chat/GoonzuChat.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuCharacter.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuParty.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuMarket.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuCrafting.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuSkills.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuQuests.cs" />
+    <Compile Include="../../Assets/GoonzuUI/Scripts/Core/GoonzuOptions.cs" />
+  </ItemGroup>
+
 </Project>

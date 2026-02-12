@@ -1,3 +1,15 @@
+using System;
+
+namespace GoonzuGame.GUI
+{
+    public class CharacterWindow : UIWindow
+    {
+        public override void Show()
+        {
+            Console.WriteLine("Showing CharacterWindow");
+        }
+    }
+}
 using UnityEngine;
 using GoonzuUI.Windows;
 

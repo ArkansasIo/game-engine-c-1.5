@@ -1,3 +1,15 @@
+using System;
+
+namespace GoonzuGame.GUI
+{
+    public class QuestsWindow : UIWindow
+    {
+        public override void Show()
+        {
+            Console.WriteLine("Showing QuestsWindow");
+        }
+    }
+}
 using UnityEngine;
 using GoonzuUI.Windows;
 

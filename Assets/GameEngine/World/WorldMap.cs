@@ -45,3 +45,14 @@ namespace GameEngine.World
         public void RemoveZone(string zoneName) { /* ... */ }
     }
 }
+}
+namespace GoonzuGame.World
+{
+    public class WorldMap
+    {
+        public void Render()
+        {
+            Console.WriteLine("Rendering WorldMap");
+        }
+    }
+}

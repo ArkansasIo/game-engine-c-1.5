@@ -1,3 +1,15 @@
+using System;
+
+namespace GoonzuGame.GUI
+{
+    public class CraftingWindow : UIWindow
+    {
+        public override void Show()
+        {
+            Console.WriteLine("Showing CraftingWindow");
+        }
+    }
+}
 using UnityEngine;
 using GoonzuUI.Windows;
 

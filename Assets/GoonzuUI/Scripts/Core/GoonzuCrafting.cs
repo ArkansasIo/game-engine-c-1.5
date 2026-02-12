@@ -1,8 +1,9 @@
+using GoonzuGame.GUI;
 using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuCrafting : CraftingWindow
+    public class GoonzuCrafting : GoonzuGame.GUI.CraftingWindow
     {
         public void ShowCrafting()
         {

@@ -1,8 +1,9 @@
+using GoonzuGame.GUI;
 using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuParty : PartyWindow
+    public class GoonzuParty : GoonzuGame.GUI.PartyWindow
     {
         public void ShowParty()
         {

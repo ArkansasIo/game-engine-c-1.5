@@ -1,3 +1,4 @@
+using GoonzuGame.GUI;
 using System;
 using System.Collections.Generic;
 
@@ -10,15 +11,15 @@ namespace GoonzuGame.GUI
         {
             ChildWindows = new List<UIWindow>();
             // Add all major windows
-            ChildWindows.Add(new MarketWindow());
-            ChildWindows.Add(new CraftingWindow());
-            ChildWindows.Add(new CharacterWindow());
-            ChildWindows.Add(new PartyWindow());
-            ChildWindows.Add(new SkillsWindow());
-            ChildWindows.Add(new QuestsWindow());
-            ChildWindows.Add(new OptionsWindow());
-            ChildWindows.Add(new InventoryWindow());
-            ChildWindows.Add(new ChatWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.MarketWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.CraftingWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.CharacterWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.PartyWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.SkillsWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.QuestsWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.OptionsWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.InventoryWindow());
+            ChildWindows.Add(new GoonzuGame.GUI.ChatWindow());
         }
         public void ShowAll()
         {
