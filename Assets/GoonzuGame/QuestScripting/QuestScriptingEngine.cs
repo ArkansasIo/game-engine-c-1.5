@@ -19,6 +19,9 @@ namespace GoonzuGame.QuestScripting
     }
 
     public class QuestScriptingEngine
+        public void TriggerEvent(string eventName) {
+            System.Console.WriteLine($"Event triggered: {eventName}");
+        }
     {
         public List<Quest> Quests { get; set; }
         public List<QuestEvent> Events { get; set; }

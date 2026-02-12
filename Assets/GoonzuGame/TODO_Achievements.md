@@ -1,5 +1,3 @@
 # TODO: Achievement and Progression Tracking
-- Design achievement system
+Achievement system logic and manager implemented in AchievementManager.cs
 - Add progression milestones and rewards
-- Integrate achievement UI
-- Support achievement sharing

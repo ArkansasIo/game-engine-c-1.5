@@ -5,6 +5,21 @@ using System.Collections.Generic;
 namespace GoonzuGame.GUI
 {
     public class GoonzuMainWindow : UIWindow
+        public void ShowAll()
+        {
+            Show();
+            System.Console.WriteLine("Main window shown.");
+        }
+        public void OpenInventory()
+        {
+            var inventory = new InventoryWindow();
+            inventory.Show();
+        }
+        public void OpenChat()
+        {
+            var chat = new ChatWindow();
+            chat.Show();
+        }
     {
         public List<UIWindow> ChildWindows { get; set; }
         public GoonzuMainWindow()

@@ -28,6 +28,12 @@ namespace GoonzuGame.Multiplayer
     }
 
     public class MultiplayerManager
+        public void CreateParty(string partyName) {
+            System.Console.WriteLine($"Party '{partyName}' created.");
+        }
+        public void JoinParty(string player, string partyName) {
+            System.Console.WriteLine($"{player} joined party '{partyName}'.");
+        }
     {
         public Lobby CurrentLobby { get; set; }
         public List<string> ChatLog { get; set; }

@@ -7,7 +7,12 @@ namespace GoonzuGame.GUI
     {
         public void ShowHUD()
         {
-            // Display player stats, minimap, chat, etc.
+                Show();
+                System.Console.WriteLine("HUD shown.");
         }
+            public void UpdateHUD()
+            {
+                System.Console.WriteLine("HUD updated.");
+            }
     }
 }

@@ -13,6 +13,12 @@ namespace GoonzuGame.Graphics
     }
 
     public class GraphicsManager
+        public void SetResolution(int width, int height) {
+            System.Console.WriteLine($"Resolution set to {width}x{height}");
+        }
+        public void ToggleFullscreen(bool fullscreen) {
+            System.Console.WriteLine($"Fullscreen: {fullscreen}");
+        }
     {
         public List<string> RenderedSprites { get; set; }
         public List<string> RenderedModels { get; set; }

@@ -21,12 +21,13 @@ namespace GoonzuGame.Localization
             Console.WriteLine($"Language set to: {language}");
         }
 
-        public string Translate(string key)
-        {
-            if (LanguageFiles.ContainsKey(CurrentLanguage) && LanguageFiles[CurrentLanguage].ContainsKey(key))
-                return LanguageFiles[CurrentLanguage][key];
-            return key;
-        }
+            private Dictionary<string, string> translations = new Dictionary<string, string>();
+            public void AddTranslation(string key, string value) {
+                translations[key] = value;
+            }
+            public new string Translate(string key) {
+                return translations.ContainsKey(key) ? translations[key] : base.Translate(key);
+            }
 
         public void LoadLanguageFiles()
         {

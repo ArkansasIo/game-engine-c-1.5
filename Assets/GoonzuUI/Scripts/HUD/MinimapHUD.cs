@@ -1,4 +1,20 @@
 using UnityEngine;
+namespace GoonzuUI.HUD {
+    public class MinimapHUD : MonoBehaviour {
+        public void ShowMinimap() {
+            gameObject.SetActive(true);
+            Debug.Log("Minimap shown.");
+        }
+        public void HideMinimap() {
+            gameObject.SetActive(false);
+            Debug.Log("Minimap hidden.");
+        }
+        public void UpdateMinimap() {
+            Debug.Log("Minimap updated.");
+        }
+    }
+}
+using UnityEngine;
 
 namespace GoonzuUI.HUD
 {

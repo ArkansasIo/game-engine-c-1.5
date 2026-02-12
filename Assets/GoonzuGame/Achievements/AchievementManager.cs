@@ -58,5 +58,20 @@ namespace GoonzuGame.Achievements
                 Console.WriteLine($"Sharing achievement: {achievementName}");
             }
         }
+            public void AddAchievement(string achievementName)
+            {
+                Achievements.Add(new Achievement(achievementName));
+            }
+            public bool HasAchievement(string achievementName)
+            {
+                return Achievements.Exists(a => a.Name == achievementName);
+            }
+            public void DisplayAchievements()
+            {
+                foreach (var achievement in Achievements)
+                {
+                    Console.WriteLine($"Achievement: {achievement.Name}, Unlocked: {achievement.IsUnlocked}, Progress: {achievement.Progress}");
+                }
+            }
     }
 }

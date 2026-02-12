@@ -4,6 +4,19 @@ using GoonzuUI.Windows;
 namespace GoonzuUI.Inventory
 {
     public sealed class InventoryWindow : UIWindow
+            public void ShowInventory()
+            {
+                gameObject.SetActive(true);
+                Debug.Log("Inventory window shown.");
+            }
+
+            public void DisplayItems()
+            {
+                if (_model == null) return;
+                for (int i = 0; i < slotViews.Length && i < _model.SlotCount; i++)
+                    slotViews[i].Render(_model.Get(i));
+                Debug.Log("Displaying items in inventory.");
+            }
     {
         [SerializeField] private InventorySlotView[] slotViews;
 

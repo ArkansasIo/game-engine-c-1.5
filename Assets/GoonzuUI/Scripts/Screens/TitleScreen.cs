@@ -27,6 +27,7 @@ namespace GoonzuUI.Screens
             if (mainMenuPanel) mainMenuPanel.SetActive(true);
             if (optionsPanel) optionsPanel.SetActive(false);
             if (creditsPanel) creditsPanel.SetActive(false);
+            Debug.Log("Main menu shown.");
         }
 
         public void ShowOptions()
@@ -34,6 +35,7 @@ namespace GoonzuUI.Screens
             if (mainMenuPanel) mainMenuPanel.SetActive(false);
             if (optionsPanel) optionsPanel.SetActive(true);
             if (creditsPanel) creditsPanel.SetActive(false);
+            Debug.Log("Options menu shown.");
         }
 
         public void ShowCredits()
@@ -41,15 +43,18 @@ namespace GoonzuUI.Screens
             if (mainMenuPanel) mainMenuPanel.SetActive(false);
             if (optionsPanel) optionsPanel.SetActive(false);
             if (creditsPanel) creditsPanel.SetActive(true);
+            Debug.Log("Credits menu shown.");
         }
 
         private void OnStartClicked()
         {
-            // Load game scene or show loading screen
+            Debug.Log("Start button clicked. Loading game...");
+            // Example: UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
         }
 
         private void OnQuitClicked()
         {
+            Debug.Log("Quit button clicked. Exiting game.");
             Application.Quit();
         }
     }

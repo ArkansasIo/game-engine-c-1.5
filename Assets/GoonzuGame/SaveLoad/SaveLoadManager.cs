@@ -7,6 +7,12 @@ namespace GoonzuGame.SaveLoad
     using GoonzuGame.Characters;
 
     public class SaveLoadManager
+        public void AutoSave() {
+            System.Console.WriteLine("Auto-saving game...");
+        }
+        public void AutoLoad() {
+            System.Console.WriteLine("Auto-loading game...");
+        }
     {
         private string saveDirectory = "./Saves/";
         public SaveLoadManager()

@@ -11,11 +11,13 @@ namespace GoonzuUI.Screens
         public void SetProgress(float value)
         {
             if (progressBar) progressBar.value = value;
+            Debug.Log($"Loading progress: {value}");
         }
 
         public void SetLoadingText(string text)
         {
             if (loadingText) loadingText.text = text;
+            Debug.Log($"Loading text set: {text}");
         }
     }
 }

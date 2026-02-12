@@ -3,6 +3,12 @@ using System;
 namespace GoonzuGame.UI
 {
     public class UIManager
+        public void UpdateUI() {
+            System.Console.WriteLine("Updating UI...");
+        }
+        public void RefreshUI() {
+            System.Console.WriteLine("Refreshing UI...");
+        }
     {
         public List<string> OpenWindows { get; set; }
 

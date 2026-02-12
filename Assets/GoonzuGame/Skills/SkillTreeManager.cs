@@ -20,6 +20,12 @@ namespace GoonzuGame.Skills
     }
 
     public class SkillTreeManager
+        public void UpgradeSkill(string skill) {
+            System.Console.WriteLine($"Upgrading skill: {skill}");
+        }
+        public void ResetSkill(string skill) {
+            System.Console.WriteLine($"Resetting skill: {skill}");
+        }
     {
         public List<Skill> Skills { get; set; }
 

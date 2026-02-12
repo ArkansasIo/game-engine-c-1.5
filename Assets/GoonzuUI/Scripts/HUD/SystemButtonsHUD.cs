@@ -1,4 +1,20 @@
 using UnityEngine;
+namespace GoonzuUI.HUD {
+    public class SystemButtonsHUD : MonoBehaviour {
+        public void ShowButtons() {
+            gameObject.SetActive(true);
+            Debug.Log("System buttons shown.");
+        }
+        public void HideButtons() {
+            gameObject.SetActive(false);
+            Debug.Log("System buttons hidden.");
+        }
+        public void UpdateButtons() {
+            Debug.Log("System buttons updated.");
+        }
+    }
+}
+using UnityEngine;
 using UnityEngine.UI;
 using GoonzuUI.Core;
 

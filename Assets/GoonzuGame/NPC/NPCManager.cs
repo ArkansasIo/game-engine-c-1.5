@@ -84,5 +84,17 @@ namespace GoonzuGame.NPC
             var npc = NPCs.Find(n => n.Name == npcName);
             npc?.UpdateReputation(value);
         }
+            private List<string> npcs = new List<string>();
+            public void AddNPCName(string npc)
+            {
+                npcs.Add(npc);
+            }
+            public void DisplayNPCs()
+            {
+                foreach (var n in npcs)
+                {
+                    Console.WriteLine($"NPC: {n}");
+                }
+            }
     }
 }

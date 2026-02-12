@@ -18,6 +18,7 @@ namespace GoonzuUI.Screens
         public void SetProgress(float value)
         {
             if (loadingBar) loadingBar.value = value;
+            Debug.Log($"Loading progress: {value}");
         }
 
         public void ShowRandomTip()
@@ -26,6 +27,7 @@ namespace GoonzuUI.Screens
             {
                 int idx = Random.Range(0, tips.Length);
                 tipText.text = tips[idx];
+                Debug.Log($"Tip shown: {tips[idx]}");
             }
         }
     }

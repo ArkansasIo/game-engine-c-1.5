@@ -33,12 +33,15 @@ namespace GoonzuUI.Screens
         {
             string charName = nameInput ? nameInput.text : "";
             string charClass = classDropdown ? classDropdown.options[classDropdown.value].text : "";
+            Debug.Log($"Create clicked: Name={charName}, Class={charClass}");
             // TODO: Add logic to create and save new character
         }
 
         private void OnCancelClicked()
         {
             // TODO: Return to previous screen
+            Debug.Log("Cancel clicked. Returning to previous screen.");
+            // TODO: Add logic to return to previous screen
         }
     }
 }

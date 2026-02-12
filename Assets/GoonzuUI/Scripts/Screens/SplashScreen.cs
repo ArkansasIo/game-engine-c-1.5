@@ -10,11 +10,13 @@ namespace GoonzuUI.Screens
 
         private void Start()
         {
+            Debug.Log($"Splash screen shown for {displayTime} seconds.");
             Invoke(nameof(LoadNext), displayTime);
         }
 
         private void LoadNext()
         {
+            Debug.Log($"Loading next scene: {nextSceneName}");
             SceneManager.LoadScene(nextSceneName);
         }
     }

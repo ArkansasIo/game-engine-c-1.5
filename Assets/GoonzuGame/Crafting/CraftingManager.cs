@@ -51,5 +51,11 @@ namespace GoonzuGame.Crafting
             AuctionHouse.Add(item);
             Console.WriteLine($"Item '{item.Name}' added to auction house.");
         }
+            public void CraftNewItem(string item, List<string> materials) {
+                Console.WriteLine($"Crafting {item} with materials: {string.Join(",", materials)}");
+            }
+            public void TradeNewItem(string item, string recipient) {
+                Console.WriteLine($"Trading {item} to {recipient}");
+            }
     }
 }

@@ -1,4 +1,20 @@
 using UnityEngine;
+namespace GoonzuUI.HUD {
+    public class HotbarHUD : MonoBehaviour {
+        public void ShowHotbar() {
+            gameObject.SetActive(true);
+            Debug.Log("Hotbar shown.");
+        }
+        public void HideHotbar() {
+            gameObject.SetActive(false);
+            Debug.Log("Hotbar hidden.");
+        }
+        public void UpdateHotbar() {
+            Debug.Log("Hotbar updated.");
+        }
+    }
+}
+using UnityEngine;
 using UnityEngine.UI;
 using GoonzuUI.Core;
 
