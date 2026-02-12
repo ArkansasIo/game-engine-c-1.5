@@ -5,6 +5,19 @@ namespace GameEngineApp
     class MainEntry
     {
         static void Main(string[] args)
+                                            // Demo: Inventory and Equipment mechanics
+                                            var inventory = new GoonzuGame.GUI.InventoryWindow();
+                                            inventory.AddItem(item);
+                                            inventory.AddItem(equipment);
+                                            inventory.Show();
+                                            inventory.EquipItem(equipment);
+                                            inventory.UseItem(item);
+                                            inventory.UnequipItem(equipment);
+                                            equipment.Repair(10);
+                                            equipment.Upgrade(5);
+                                            Console.WriteLine($"Is equipment broken? {equipment.IsBroken()}");
+                                            inventory.DisplayInventory();
+                                            inventory.DisplayEquipped();
                                 // Demo: GroupFinder for Raid
                                 var groupFinder = new GoonzuGame.Events.GroupFinder("Raid", raid.Name);
                                 groupFinder.AddPlayer("Alice");

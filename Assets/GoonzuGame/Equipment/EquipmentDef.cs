@@ -37,6 +37,23 @@ namespace GoonzuGame.Equipment
             return Slot == slot;
         }
 
+        public void Repair(int amount)
+        {
+            Durability += amount;
+            Console.WriteLine($"Repaired {Name} by {amount}. Durability is now {Durability}.");
+        }
+
+        public void Upgrade(int amount)
+        {
+            Power += amount;
+            Console.WriteLine($"Upgraded {Name} by {amount}. Power is now {Power}.");
+        }
+
+        public bool IsBroken()
+        {
+            return Durability <= 0;
+        }
+
         public int CalculateValue()
         {
             return Power * Durability;
