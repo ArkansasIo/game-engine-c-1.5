@@ -5,6 +5,12 @@ namespace GameEngineApp
     class MainEntry
     {
         static void Main(string[] args)
+                                // Demo: GroupFinder for Raid
+                                var groupFinder = new GoonzuGame.Events.GroupFinder("Raid", raid.Name);
+                                groupFinder.AddPlayer("Alice");
+                                groupFinder.AddPlayer("Bob");
+                                groupFinder.AddPlayer("Charlie");
+                                groupFinder.DisplayGroup();
                     // Demo: Biome
                     var biome = new GoonzuGame.Biomes.BiomeDef("Forest", "Lush green forest biome");
                     biome.Display();
