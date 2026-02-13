@@ -1,9 +1,14 @@
 namespace GameEngine.Events
 {
-    public class EventsPlaceholder
+    public class EventManager
     {
-        public void HandleEvent(string eventType) {
-            System.Console.WriteLine($"Event handled: {eventType} (stub).");
+        public void TriggerEvent(string eventType, object eventData = null)
+        {
+            System.Console.WriteLine($"Event triggered: {eventType}");
+        }
+        public void RegisterListener(string eventType, System.Action<object> listener)
+        {
+            System.Console.WriteLine($"Listener registered for event: {eventType}");
         }
     }
 }
