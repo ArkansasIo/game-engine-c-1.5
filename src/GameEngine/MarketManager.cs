@@ -7,8 +7,8 @@ namespace GameEngine
     {
         private class MarketItem
         {
-            public string Seller;
-            public string Item;
+            public string Seller = string.Empty;
+            public string Item = string.Empty;
             public int Price;
         }
 

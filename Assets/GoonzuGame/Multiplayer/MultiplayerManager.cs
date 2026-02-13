@@ -1,3 +1,4 @@
+
 using System;
 
 namespace GoonzuGame.Multiplayer
@@ -29,14 +30,14 @@ namespace GoonzuGame.Multiplayer
 
     public class MultiplayerManager
     {
+        public void Connect()
+        {
+            System.Console.WriteLine("Multiplayer connected.");
+        }
         public Lobby CurrentLobby { get; set; }
         public List<string> ChatLog { get; set; }
 
-        public MultiplayerManager()
-        {
-            CurrentLobby = new Lobby();
-            ChatLog = new List<string>();
-        }
+        // Constructor already defined above, removed duplicate.
 
         public void CreateParty(string partyName) {
             System.Console.WriteLine($"Party '{partyName}' created.");

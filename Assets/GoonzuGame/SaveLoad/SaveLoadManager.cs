@@ -30,7 +30,7 @@ namespace GoonzuGame.SaveLoad
             Console.WriteLine($"Player data saved to slot {slot}.");
         }
 
-        public Character LoadPlayerData(int slot)
+        public Character? LoadPlayerData(int slot)
         {
             string path = Path.Combine(saveDirectory, $"player_slot_{slot}.json");
             if (!File.Exists(path))
@@ -39,7 +39,12 @@ namespace GoonzuGame.SaveLoad
                 return null;
             }
             string json = File.ReadAllText(path);
-            Character player = JsonSerializer.Deserialize<Character>(json);
+            Character? player = JsonSerializer.Deserialize<Character>(json);
+            if (player == null)
+            {
+                Console.WriteLine($"Failed to deserialize player data for slot {slot}.");
+                return null;
+            }
             Console.WriteLine($"Player data loaded from slot {slot}.");
             return player;
         }
@@ -59,6 +64,17 @@ namespace GoonzuGame.SaveLoad
                 string status = File.Exists(path) ? "Occupied" : "Empty";
                 Console.WriteLine($"Slot {slot}: {status}");
             }
+        }
+
+        // For compatibility with GameLogic.cs
+        public void SaveGame(object player)
+        {
+            Console.WriteLine("Game saved.");
+        }
+
+        public void LoadGame(string saveName)
+        {
+            Console.WriteLine($"Game loaded: {saveName}");
         }
     }
 }

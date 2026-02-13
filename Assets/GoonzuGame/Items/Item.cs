@@ -1,11 +1,12 @@
 using System;
+using GoonzuGame.Characters;
 
 namespace GoonzuGame.Items
 {
     public class Item
     {
-        public string Name { get; set; }
-        public string Type { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Type { get; set; } = string.Empty;
         public int Rarity { get; set; }
         public int Value { get; set; }
         public bool IsConsumable { get; set; }

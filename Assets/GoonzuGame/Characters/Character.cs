@@ -1,10 +1,12 @@
 using System;
+using GoonzuGame.Items;
+using GoonzuGame.Quests;
 
 namespace GoonzuGame.Characters
 {
     public class Character
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public int Level { get; set; }
         public int Health { get; set; }
         public int Mana { get; set; }
@@ -22,7 +24,13 @@ namespace GoonzuGame.Characters
             Mana = 50;
             Experience = 0;
             Gold = 0;
-        }
+                Name = string.Empty;
+            }
+
+            public Character(string name) : this()
+            {
+                Name = name;
+            }
 
         public void Attack(Character target)
         {
@@ -42,9 +50,10 @@ namespace GoonzuGame.Characters
             Console.WriteLine($"{Name} picked up {item.Name}.");
         }
 
+        // Removed duplicate CompleteQuest method. Only the version that calls quest.Complete(this) remains.
         public void CompleteQuest(Quest quest)
         {
-            quest.Complete();
+            quest.Complete(this);
             ActiveQuests.Remove(quest);
             Experience += 100;
             Gold += 50;

@@ -21,6 +21,7 @@ namespace GoonzuGame.Bosses
         public int Wisdom { get; set; }
         public int Charisma { get; set; }
 
+
         public BossDef(string name, int level, int health, int attack, int defense, List<string> abilities, string theme,
             int str, int dex, int con, int intel, int wis, int cha)
         {
@@ -44,12 +45,6 @@ namespace GoonzuGame.Bosses
         }
         public void Defeat() {
             System.Console.WriteLine($"Boss {Name} defeated!");
-        }
-            Dexterity = dex;
-            Constitution = con;
-            Intelligence = intel;
-            Wisdom = wis;
-            Charisma = cha;
         }
 
         // DnD 5e mechanics

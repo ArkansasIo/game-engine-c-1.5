@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Include="../../Assets/GoonzuGame/World/GoonzuWorld.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Characters/Character.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Quests/Quest.cs" />
+      <Compile Include="../../Assets/GoonzuGame/SaveLoad/SaveLoadManager.cs" />
+      <Compile Include="../../Assets/GoonzuGame/UI/UIManager.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Multiplayer/MultiplayerManager.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Network/NetworkManager.cs" />
+      <Compile Include="../../Assets/GameEngine/AI/AIManager.cs" />
+      <Compile Include="../../Assets/GameEngine/Dialogue/DialogueManager.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Items/Item.cs" />
+    </ItemGroup>
+
 </Project>

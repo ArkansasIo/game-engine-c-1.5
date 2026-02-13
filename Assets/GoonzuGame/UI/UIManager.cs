@@ -29,5 +29,10 @@ namespace GoonzuGame.UI
             OpenWindows.Remove(windowName);
             Console.WriteLine($"Hiding window: {windowName}");
         }
+
+        public void ShowMainMenu()
+        {
+            Console.WriteLine("Main menu displayed.");
+        }
     }
 }
