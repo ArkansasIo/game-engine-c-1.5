@@ -1,4 +1,4 @@
-namespace GameEngine.Monsters
+namespace GoonzuGame.Monsters
 {
     /// <summary>
     /// Types of monsters for classification, gameplay, and lore.

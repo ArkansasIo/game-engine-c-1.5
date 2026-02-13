@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using UnityEditor;
+using GoonzuGame.Core;
 
 namespace AIAssetTools
 {

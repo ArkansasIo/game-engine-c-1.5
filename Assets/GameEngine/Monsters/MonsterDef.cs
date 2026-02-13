@@ -1,4 +1,5 @@
-namespace GameEngine.Monsters
+using GoonzuGame.Monsters;
+namespace GoonzuGame.Monsters
 {
     /// <summary>
     /// Defines a monster, including its type, stats, and properties.

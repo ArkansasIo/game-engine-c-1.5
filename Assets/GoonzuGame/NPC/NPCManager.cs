@@ -3,7 +3,7 @@ using System;
 namespace GoonzuGame.NPC
 {
     using System.Collections.Generic;
-    using GoonzuGame.Characters;
+    using GoonzuGame.Core;
 
     public class NPC
     {

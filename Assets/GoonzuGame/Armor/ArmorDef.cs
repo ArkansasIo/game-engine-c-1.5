@@ -1,4 +1,5 @@
 using System;
+using GoonzuGame.Core;
 using GoonzuGame.Items;
 
 namespace GoonzuGame.Armor

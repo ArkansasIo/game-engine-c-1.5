@@ -20,6 +20,7 @@
     <Compile Include="../../Assets/GoonzuGame/Professions/ProfessionDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Professions/SkillDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Items/ItemDef.cs" />
+    <Compile Include="../../Assets/GoonzuGame/Items/Item.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/DatabaseManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/DatabaseSeeder.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/ExpandedDatabaseSeeder.cs" />
@@ -30,6 +31,7 @@
     <Compile Include="../../Assets/GoonzuGame/World/World.cs" />
     <Compile Include="../../Assets/GoonzuGame/Monsters/MonsterManager.cs" />
     <Compile Include="../../Assets/GameEngine/Monsters/MonsterDef.cs" />
+    <Compile Include="../../Assets/GameEngine/Monsters/MonsterType.cs" />
     <Compile Include="../../Assets/GoonzuGame/Classes/ClassDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Classes/StyleDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Classes/SubTypeDef.cs" />
@@ -88,6 +90,10 @@
     <Compile Include="../../Assets/GoonzuGame/Armor/ArmorDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Collectibles/CollectibleDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Towns/TownDef.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoonzuGame.Core\GoonzuGame.Core.csproj" />
   </ItemGroup>
       <!-- Removed duplicate entries for Item.cs, Quest.cs, SaveLoadManager.cs, UIManager.cs, MultiplayerManager.cs -->
 

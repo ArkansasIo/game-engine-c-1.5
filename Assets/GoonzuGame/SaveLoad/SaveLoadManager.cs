@@ -4,7 +4,7 @@ namespace GoonzuGame.SaveLoad
 {
     using System.IO;
     using System.Text.Json;
-    using GoonzuGame.Characters;
+    using GoonzuGame.Core;
 
     public class SaveLoadManager
     {

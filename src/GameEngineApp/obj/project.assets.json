@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "GoonzuGame.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/GoonzuGame.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoonzuGame.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GoonzuGame.Core/1.0.0": {
+      "type": "project",
+      "path": "../GoonzuGame.Core/GoonzuGame.Core.csproj",
+      "msbuildProject": "../GoonzuGame.Core/GoonzuGame.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "GoonzuGame.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/codespace/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/GoonzuGame.Core.csproj": {
+              "projectPath": "/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/GoonzuGame.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

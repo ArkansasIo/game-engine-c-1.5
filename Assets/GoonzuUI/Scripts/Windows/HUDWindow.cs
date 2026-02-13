@@ -1,5 +1,5 @@
 using System;
-using GoonzuGame.Characters;
+using GoonzuGame.Core;
 using GoonzuGame.World;
 
 namespace GoonzuGame.GUI

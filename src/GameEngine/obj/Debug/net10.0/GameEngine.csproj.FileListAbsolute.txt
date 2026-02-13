@@ -3,10 +3,3 @@
 /workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/GameEngine.AssemblyInfo.cs
 /workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/GameEngine.csproj.CoreCompileInputs.cache
 /workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/GameEngine.sourcelink.json
-/workspaces/game-engine-c-1.5/src/GameEngine/bin/Debug/net10.0/GameEngine.deps.json
-/workspaces/game-engine-c-1.5/src/GameEngine/bin/Debug/net10.0/GameEngine.dll
-/workspaces/game-engine-c-1.5/src/GameEngine/bin/Debug/net10.0/GameEngine.pdb
-/workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/GameEngine.dll
-/workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/refint/GameEngine.dll
-/workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/GameEngine.pdb
-/workspaces/game-engine-c-1.5/src/GameEngine/obj/Debug/net10.0/ref/GameEngine.dll

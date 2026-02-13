@@ -1,10 +1,11 @@
 using System;
+using GoonzuGame.Core;
 
 namespace GoonzuGame.Monsters
 {
     using System.Collections.Generic;
-    using GoonzuGame.Characters;
-    using GoonzuGame.Items;
+    // using GoonzuGame.Characters;
+    // using GoonzuGame.Items;
 
     public class Monster
     {
