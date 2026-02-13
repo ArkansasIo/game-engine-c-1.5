@@ -1,4 +1,4 @@
-using GoonzuGame.GUI;
+using GoonzuUI.Windows;
 namespace GoonzuGame.GUI
 {
     public class GoonzuChat : ChatWindow

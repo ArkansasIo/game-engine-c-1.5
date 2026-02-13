@@ -4,12 +4,6 @@ using System.Collections.Generic;
 namespace GoonzuGame.Bosses
 {
     public class BossDef
-        public void Spawn() {
-            System.Console.WriteLine($"Spawning boss: {Name}");
-        }
-        public void Defeat() {
-            System.Console.WriteLine($"Boss {Name} defeated!");
-        }
     {
         public string Name { get; set; }
         public int Level { get; set; }
@@ -38,6 +32,19 @@ namespace GoonzuGame.Bosses
             Abilities = abilities;
             Theme = theme;
             Strength = str;
+            Dexterity = dex;
+            Constitution = con;
+            Intelligence = intel;
+            Wisdom = wis;
+            Charisma = cha;
+        }
+
+        public void Spawn() {
+            System.Console.WriteLine($"Spawning boss: {Name}");
+        }
+        public void Defeat() {
+            System.Console.WriteLine($"Boss {Name} defeated!");
+        }
             Dexterity = dex;
             Constitution = con;
             Intelligence = intel;

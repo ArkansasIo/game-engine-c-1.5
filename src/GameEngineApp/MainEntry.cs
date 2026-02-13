@@ -55,9 +55,9 @@ namespace GameEngineApp
             Console.WriteLine($"Has proficiency (Smithing): {alchemist.HasProficiency("Smithing")}");
 
             // Demo: Inventory and Equipment mechanics
-            var inventory = new GoonzuGame.GUI.InventoryWindow();
-            // Assuming item and equipment are defined elsewhere
-            // inventory.AddItem(item);
+            // var inventory = new GoonzuGame.GUI.InventoryWindow();
+            // InventoryWindow is a Unity MonoBehaviour and not available in .NET build.
+            // To test inventory logic, use a pure C# inventory class or mock here if needed.
             // inventory.AddItem(equipment);
             inventory.Show();
             // inventory.EquipItem(equipment);

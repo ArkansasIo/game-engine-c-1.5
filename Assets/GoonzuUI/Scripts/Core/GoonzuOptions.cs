@@ -1,4 +1,4 @@
-using GoonzuGame.GUI;
+using GoonzuUI.Core;
 using System;
 
 namespace GoonzuGame.GUI

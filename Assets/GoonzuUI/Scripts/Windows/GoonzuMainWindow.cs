@@ -1,4 +1,4 @@
-using GoonzuGame.GUI;
+using GoonzuUI.Windows;
 using System;
 using System.Collections.Generic;
 

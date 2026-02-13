@@ -3,6 +3,14 @@ using System;
 namespace GoonzuGame.Audio
 {
     public class AudioManager
+    {
+        public List<string> PlayingSounds { get; set; }
+
+        public AudioManager()
+        {
+            PlayingSounds = new List<string>();
+        }
+
         public void PlayMusic(string track) {
             System.Console.WriteLine($"Playing music track: {track}");
         }
@@ -11,13 +19,6 @@ namespace GoonzuGame.Audio
         }
         public void SetVolume(int volume) {
             System.Console.WriteLine($"Setting volume to: {volume}");
-        }
-    {
-        public List<string> PlayingSounds { get; set; }
-
-        public AudioManager()
-        {
-            PlayingSounds = new List<string>();
         }
 
         public void PlaySound(string soundName)

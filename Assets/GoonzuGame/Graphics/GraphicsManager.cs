@@ -13,12 +13,6 @@ namespace GoonzuGame.Graphics
     }
 
     public class GraphicsManager
-        public void SetResolution(int width, int height) {
-            System.Console.WriteLine($"Resolution set to {width}x{height}");
-        }
-        public void ToggleFullscreen(bool fullscreen) {
-            System.Console.WriteLine($"Fullscreen: {fullscreen}");
-        }
     {
         public List<string> RenderedSprites { get; set; }
         public List<string> RenderedModels { get; set; }
@@ -29,6 +23,13 @@ namespace GoonzuGame.Graphics
             RenderedSprites = new List<string>();
             RenderedModels = new List<string>();
             Settings = new GraphicsSettings { ResolutionWidth = 1920, ResolutionHeight = 1080, Fullscreen = true, Quality = "High" };
+        }
+
+        public void SetResolution(int width, int height) {
+            System.Console.WriteLine($"Resolution set to {width}x{height}");
+        }
+        public void ToggleFullscreen(bool fullscreen) {
+            System.Console.WriteLine($"Fullscreen: {fullscreen}");
         }
 
         public void RenderSprite(string spriteName)

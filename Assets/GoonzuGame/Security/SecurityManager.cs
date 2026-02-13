@@ -5,12 +5,6 @@ namespace GoonzuGame.Security
     using System.Collections.Generic;
 
     public class SecurityManager
-        public void EncryptData(string data) {
-            System.Console.WriteLine($"Encrypting data: {data}");
-        }
-        public void DecryptData(string data) {
-            System.Console.WriteLine($"Decrypting data: {data}");
-        }
     {
         public List<string> AuthenticatedPlayers { get; set; }
         public List<string> CheatLogs { get; set; }
@@ -21,6 +15,13 @@ namespace GoonzuGame.Security
             AuthenticatedPlayers = new List<string>();
             CheatLogs = new List<string>();
             EncryptionEnabled = false;
+        }
+
+        public void EncryptData(string data) {
+            System.Console.WriteLine($"Encrypting data: {data}");
+        }
+        public void DecryptData(string data) {
+            System.Console.WriteLine($"Decrypting data: {data}");
         }
 
         public void AuthenticatePlayer(string playerName)
