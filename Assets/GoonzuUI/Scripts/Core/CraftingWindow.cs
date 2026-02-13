@@ -1,6 +1,6 @@
-using GoonzuGame.GUI;
-namespace GoonzuGame.GUI {
-    public class CraftingWindow : GoonzuGame.GUI.CraftingWindow {
+using GoonzuUI.Windows;
+namespace GoonzuUI.Core {
+    public class CraftingWindow : UIWindow {
         // Additional UI logic can be added here if needed
     }
 }

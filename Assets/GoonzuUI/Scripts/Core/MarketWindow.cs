@@ -1,6 +1,6 @@
-using GoonzuGame.GUI;
-namespace GoonzuGame.GUI {
-    public class MarketWindow : GoonzuGame.GUI.MarketWindow {
+using GoonzuUI.Windows;
+namespace GoonzuUI.Core {
+    public class MarketWindow : UIWindow {
         // Additional UI logic can be added here if needed
     }
 }

@@ -1,6 +1,6 @@
-using GoonzuGame.GUI;
-namespace GoonzuGame.GUI {
-    public class QuestsWindow : GoonzuGame.GUI.QuestsWindow {
+using GoonzuUI.Windows;
+namespace GoonzuUI.Core {
+    public class QuestsWindow : UIWindow {
         // Additional UI logic can be added here if needed
     }
 }

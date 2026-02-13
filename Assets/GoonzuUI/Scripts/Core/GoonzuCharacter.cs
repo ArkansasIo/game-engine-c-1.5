@@ -1,7 +1,5 @@
-using GoonzuGame.GUI;
-using System;
-
-namespace GoonzuGame.GUI
+using GoonzuUI.Core;
+namespace GoonzuUI.Core
 {
     public class GoonzuCharacter : CharacterWindow
     {
