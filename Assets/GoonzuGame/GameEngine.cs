@@ -10,7 +10,7 @@ namespace GoonzuGame
     public class GameEngine
     {
         public Character Player { get; set; }
-        public World GameWorld { get; set; }
+        public WorldManager GameWorld { get; set; }
         public NetworkManager Network { get; set; }
         public UIManager UI { get; set; }
         public AudioManager Audio { get; set; }
@@ -18,7 +18,7 @@ namespace GoonzuGame
         public GameEngine()
         {
             Player = new Character();
-            GameWorld = new World();
+            GameWorld = new WorldManager();
             Network = new NetworkManager();
             UI = new UIManager();
             Audio = new AudioManager();
