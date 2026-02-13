@@ -1,17 +1,5 @@
-    // Demo: Controller mapping
-    engine.SetControllerMapping("moveUp", 0);
-    engine.SetControllerMapping("moveDown", 1);
-    engine.SetControllerMapping("moveLeft", 2);
-    engine.SetControllerMapping("moveRight", 3);
-    engine.SetControllerMapping("interact", 4);
-    engine.SetControllerMapping("openMenu", 5);
-    auto controllerMapping = engine.GetControllerMapping();
-    std::cout << "ControllerMapping: Up(" << controllerMapping.moveUp << "), Down(" << controllerMapping.moveDown << "), Left(" << controllerMapping.moveLeft << "), Right(" << controllerMapping.moveRight << "), Interact(" << controllerMapping.interact << "), Menu(" << controllerMapping.openMenu << ")" << std::endl;
-    std::cout << "PS5: Cross(" << controllerMapping.ps5Cross << "), Circle(" << controllerMapping.ps5Circle << "), Square(" << controllerMapping.ps5Square << "), Triangle(" << controllerMapping.ps5Triangle << "), Options(" << controllerMapping.ps5Options << ")" << std::endl;
-    std::cout << "Xbox: A(" << controllerMapping.xboxA << "), B(" << controllerMapping.xboxB << "), X(" << controllerMapping.xboxX << "), Y(" << controllerMapping.xboxY << "), Menu(" << controllerMapping.xboxMenu << ")" << std::endl;
-// Main entry point for the C++ game engine
-#include "GameEngine.h"
 #include <iostream>
+#include "GameEngine.h"
 
 int main() {
     std::cout << "Game Engine Starting..." << std::endl;
@@ -50,6 +38,18 @@ int main() {
     engine.SetMouseControl("rightClickInteract", true);
     auto mouseControls = engine.GetMouseControls();
     std::cout << "MouseControls: LeftClickMove(" << (mouseControls.leftClickMove ? "ON" : "OFF") << "), RightClickInteract(" << (mouseControls.rightClickInteract ? "ON" : "OFF") << ")" << std::endl;
+
+    // Demo: Controller mapping
+    engine.SetControllerMapping("moveUp", 0);
+    engine.SetControllerMapping("moveDown", 1);
+    engine.SetControllerMapping("moveLeft", 2);
+    engine.SetControllerMapping("moveRight", 3);
+    engine.SetControllerMapping("interact", 4);
+    engine.SetControllerMapping("openMenu", 5);
+    auto controllerMapping = engine.GetControllerMapping();
+    std::cout << "ControllerMapping: Up(" << controllerMapping.moveUp << "), Down(" << controllerMapping.moveDown << "), Left(" << controllerMapping.moveLeft << "), Right(" << controllerMapping.moveRight << "), Interact(" << controllerMapping.interact << "), Menu(" << controllerMapping.openMenu << ")" << std::endl;
+    std::cout << "PS5: Cross(" << controllerMapping.ps5Cross << "), Circle(" << controllerMapping.ps5Circle << "), Square(" << controllerMapping.ps5Square << "), Triangle(" << controllerMapping.ps5Triangle << "), Options(" << controllerMapping.ps5Options << ")" << std::endl;
+    std::cout << "Xbox: A(" << controllerMapping.xboxA << "), B(" << controllerMapping.xboxB << "), X(" << controllerMapping.xboxX << "), Y(" << controllerMapping.xboxY << "), Menu(" << controllerMapping.xboxMenu << ")" << std::endl;
 
     StartGame();
     std::cout << "Game Engine Exited." << std::endl;

@@ -1,63 +1,8 @@
-        // Controller controls
-        struct ControllerMapping {
-            // Common actions
-            int moveUp = 0;    // D-pad up
-            int moveDown = 1;  // D-pad down
-            int moveLeft = 2;  // D-pad left
-            int moveRight = 3; // D-pad right
-            int interact = 4;  // A/X (Xbox/PS5)
-            int openMenu = 5;  // Start/Options
-            int jump = 6;      // B/Circle
-            int attack = 7;    // X/Square
-            int special = 8;   // Y/Triangle
-            int pause = 9;     // Menu/Options
-
-            // PS5 specific
-            int ps5Cross = 4;     // Cross (X)
-            int ps5Circle = 6;    // Circle
-            int ps5Square = 7;    // Square
-            int ps5Triangle = 8;  // Triangle
-            int ps5Options = 5;   // Options
-
-            // Xbox specific
-            int xboxA = 4;        // A
-            int xboxB = 6;        // B
-            int xboxX = 7;        // X
-            int xboxY = 8;        // Y
-            int xboxMenu = 5;     // Menu
-        } controllerMapping;
-        // Controller functions
-        void SetControllerMapping(const std::string& action, int button);
-        ControllerMapping GetControllerMapping() const;
-    // Keybinds
-    struct Keybinds {
-        char moveUp = 'W';
-        char moveDown = 'S';
-        char moveLeft = 'A';
-        char moveRight = 'D';
-        char interact = 'E';
-        char openMenu = 'M';
-        // Add more as needed
-    } keybinds;
-
-    // Mouse controls
-    struct MouseControls {
-        bool leftClickMove = true;
-        bool rightClickInteract = true;
-        // Add more as needed
-    } mouseControls;
-    // Keybinds functions
-    void SetKeybind(const std::string& action, char key);
-    Keybinds GetKeybinds() const;
-
-    // Mouse controls functions
-    void SetMouseControl(const std::string& action, bool enabled);
-    MouseControls GetMouseControls() const;
 // Example header for C++ game engine
+#include <string>
 #ifndef GAME_ENGINE_H
 #define GAME_ENGINE_H
 
-#include <string>
 #include <vector>
 #include <memory>
 
@@ -70,8 +15,56 @@ class InputManager;
 class PhysicsManager;
 class AudioManager;
 
-// Game Engine class
 class GameEngine {
+public:
+    struct Keybinds {
+        char moveUp = 'W';
+        char moveDown = 'S';
+        char moveLeft = 'A';
+        char moveRight = 'D';
+        char interact = 'E';
+        char openMenu = 'M';
+        // Add more as needed
+    };
+    struct MouseControls {
+        bool leftClickMove = true;
+        bool rightClickInteract = true;
+        // Add more as needed
+    };
+    struct ControllerMapping {
+        // Common actions
+        int moveUp = 0;    // D-pad up
+        int moveDown = 1;  // D-pad down
+        int moveLeft = 2;  // D-pad left
+        int moveRight = 3; // D-pad right
+        int interact = 4;  // A/X (Xbox/PS5)
+        int openMenu = 5;  // Start/Options
+        int jump = 6;      // B/Circle
+        int attack = 7;    // X/Square
+        int special = 8;   // Y/Triangle
+        int pause = 9;     // Menu/Options
+
+        // PS5 specific
+        int ps5Cross = 4;     // Cross (X)
+        int ps5Circle = 6;    // Circle
+        int ps5Square = 7;    // Square
+        int ps5Triangle = 8;  // Triangle
+        int ps5Options = 5;   // Options
+
+        // Xbox specific
+        int xboxA = 4;        // A
+        int xboxB = 6;        // B
+        int xboxX = 7;        // X
+        int xboxY = 8;        // Y
+        int xboxMenu = 5;     // Menu
+    };
+    struct GameSettings {
+        int volume = 100;
+        int brightness = 100;
+        bool fullscreen = true;
+        // Add more settings as needed
+    };
+
 private:
     bool isRunning;
     std::unique_ptr<Renderer> renderer;
@@ -86,12 +79,10 @@ private:
     int currentSaveSlot = -1;
 
     // Options/settings
-    struct GameSettings {
-        int volume = 100;
-        int brightness = 100;
-        bool fullscreen = true;
-        // Add more settings as needed
-    } settings;
+    GameSettings settings;
+    Keybinds keybinds;
+    MouseControls mouseControls;
+    ControllerMapping controllerMapping;
 
 public:
     GameEngine();
@@ -117,6 +108,18 @@ public:
     void SetBrightness(int brightness);
     void SetFullscreen(bool fullscreen);
     GameSettings GetSettings() const;
+
+    // Keybinds functions
+    void SetKeybind(const std::string& action, char key);
+    Keybinds GetKeybinds() const;
+
+    // Mouse controls functions
+    void SetMouseControl(const std::string& action, bool enabled);
+    MouseControls GetMouseControls() const;
+
+    // Controller functions
+    void SetControllerMapping(const std::string& action, int button);
+    ControllerMapping GetControllerMapping() const;
 };
 
 // Scene class
