@@ -1,5 +1,5 @@
 using System;
-using GoonzuGame.Items;
+using Item = GoonzuGame.Items.Item;
 using GoonzuGame.Items;
 
 namespace GoonzuGame.Weapons

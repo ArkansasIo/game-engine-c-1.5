@@ -3,7 +3,7 @@ namespace GameEngine
     /// <summary>
     /// Manages world state, zones, and world events.
     /// </summary>
-    public class WorldManager
+    public class CoreWorldManager
     {
         public void LoadWorld(string worldName)
         {

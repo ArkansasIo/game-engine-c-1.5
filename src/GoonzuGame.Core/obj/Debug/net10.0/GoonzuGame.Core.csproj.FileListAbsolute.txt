@@ -1,0 +1,12 @@
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/bin/Debug/net10.0/GoonzuGame.Core.deps.json
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/bin/Debug/net10.0/GoonzuGame.Core.dll
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/bin/Debug/net10.0/GoonzuGame.Core.pdb
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.AssemblyInfoInputs.cache
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.AssemblyInfo.cs
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.csproj.CoreCompileInputs.cache
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.sourcelink.json
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.dll
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/refint/GoonzuGame.Core.dll
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/GoonzuGame.Core.pdb
+/workspaces/game-engine-c-1.5/src/GoonzuGame.Core/obj/Debug/net10.0/ref/GoonzuGame.Core.dll

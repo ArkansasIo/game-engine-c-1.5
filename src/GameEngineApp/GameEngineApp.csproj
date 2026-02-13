@@ -90,6 +90,7 @@
     <Compile Include="../../Assets/GoonzuGame/Armor/ArmorDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Collectibles/CollectibleDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Towns/TownDef.cs" />
+    <Compile Include="../../Assets/GoonzuGame/World/WorldManager.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,10 +1,10 @@
-﻿using GameEngine;
+﻿using GoonzuGame;
 
 class Program
 {
 	static void Main(string[] args)
 	{
-		var game = new GameLogic();
-		game.Run();
+		var engine = new GameEngine();
+		engine.Start();
 	}
 }

@@ -3,3 +3,4 @@
 /workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.AssemblyInfo.cs
 /workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.csproj.CoreCompileInputs.cache
 /workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.sourcelink.json
+/workspaces/game-engine-c-1.5/src/GameEngineApp/obj/Debug/net10.0/GameEngineApp.csproj.AssemblyReference.cache

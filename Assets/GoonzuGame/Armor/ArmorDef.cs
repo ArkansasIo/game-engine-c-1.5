@@ -1,6 +1,6 @@
 using System;
 using GoonzuGame.Core;
-using GoonzuGame.Items;
+using Item = GoonzuGame.Items.Item;
 
 namespace GoonzuGame.Armor
 {

@@ -10,6 +10,14 @@ namespace GoonzuGame.Core
         public int Value { get; set; }
         public bool IsConsumable { get; set; }
 
+        public Item() {}
+
+        public Item(string name, string type)
+        {
+            Name = name;
+            Type = type;
+        }
+
         public void Use(Character user)
         {
             if (IsConsumable)
