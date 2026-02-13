@@ -1,5 +1,12 @@
 namespace GameEngine.Network
 {
-    // Add networking/multiplayer logic here
-    public class NetworkPlaceholder { }
+    public class NetworkPlaceholder
+    {
+        public void SendData(string data) {
+            System.Console.WriteLine($"Data sent: {data} (stub).");
+        }
+        public void ReceiveData() {
+            System.Console.WriteLine("Data received (stub).");
+        }
+    }
 }

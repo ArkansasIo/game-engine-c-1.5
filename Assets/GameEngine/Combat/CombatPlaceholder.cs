@@ -1,5 +1,9 @@
 namespace GameEngine.Combat
 {
-    // Add combat logic here
-    public class CombatPlaceholder { }
+    public class CombatPlaceholder
+    {
+        public void DoCombat() {
+            System.Console.WriteLine("Combat logic executed (stub).");
+        }
+    }
 }

@@ -1,5 +1,9 @@
 namespace GameEngine.SaveLoad
 {
-    // Add save/load logic here
-    public class SaveLoadPlaceholder { }
+    public class SaveLoadPlaceholder
+    {
+        public void DoSaveLoad() {
+            System.Console.WriteLine("Save/load logic executed (stub).");
+        }
+    }
 }

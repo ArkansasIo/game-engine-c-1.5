@@ -8,14 +8,20 @@ namespace GameEngine.SaveLoad
         /// <summary>
         /// Saves the current game state to persistent storage.
         /// </summary>
-        public void SaveGame() { /* ... */ }
+        public void SaveGame() {
+            System.Console.WriteLine("Game state saved (stub).");
+        }
         /// <summary>
         /// Loads the game state from persistent storage.
         /// </summary>
-        public void LoadGame() { /* ... */ }
+        public void LoadGame() {
+            System.Console.WriteLine("Game state loaded (stub).");
+        }
         /// <summary>
         /// Deletes a saved game from storage.
         /// </summary>
-        public void DeleteSave() { /* ... */ }
+        public void DeleteSave() {
+            System.Console.WriteLine("Game save deleted (stub).");
+        }
     }
 }

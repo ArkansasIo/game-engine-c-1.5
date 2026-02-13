@@ -1,5 +1,9 @@
 namespace GameEngine.Events
 {
-    // Add global/game event logic here
-    public class EventsPlaceholder { }
+    public class EventsPlaceholder
+    {
+        public void HandleEvent(string eventType) {
+            System.Console.WriteLine($"Event handled: {eventType} (stub).");
+        }
+    }
 }
