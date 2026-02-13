@@ -1,80 +1,78 @@
+using System.Collections.Generic;
 using System;
 
 namespace GoonzuGame.Skills
 {
-    using System.Collections.Generic;
-
-    public class Skill
-    {
-        public string Name { get; set; }
-        public int Level { get; set; }
-        public bool IsUnlocked { get; set; }
-        public int Cooldown { get; set; }
-        public Skill(string name)
-        {
-            Name = name;
-            Level = 1;
-            IsUnlocked = false;
-            Cooldown = 0;
-        }
-    }
-
     public class SkillTreeManager
     {
-        public List<Skill> Skills { get; set; }
+        public static SkillTreeManager Instance { get; } = new SkillTreeManager();
 
-        public SkillTreeManager()
+        public List<Skill> Skills = new List<Skill>();
+        public GoonzuGame.Characters.Character? PlayerCharacter;
+
+        private SkillTreeManager()
         {
-            Skills = new List<Skill>();
+            InitializeSkills();
         }
 
-        public void UpgradeSkill(string skill) {
-            System.Console.WriteLine($"Upgrading skill: {skill}");
+        private void InitializeSkills()
+        {
+            // Add default skills
+            Skills.Add(new OffensiveSkill("Fireball", "Throws a fireball", 20, 10, 2f));
+            Skills.Add(new DefensiveSkill("Heal", "Heals the target", 30, 15, 5f));
+            Skills.Add(new UtilitySkill("Teleport", "Teleports short distance", 20, 10f));
+            Skills.Add(new PassiveSkill("Regeneration", "Slowly regenerates health"));
         }
-        public void ResetSkill(string skill) {
-            System.Console.WriteLine($"Resetting skill: {skill}");
+
+        public void UpgradeSkill(string skillName)
+        {
+            var skill = Skills.Find(s => s.Name == skillName);
+            if (skill != null)
+            {
+                skill.LevelUp();
+            }
+        }
+
+        public void ResetSkill(string skillName)
+        {
+            var skill = Skills.Find(s => s.Name == skillName);
+            if (skill != null)
+            {
+                skill.Level = 1;
+                Console.WriteLine($"Reset skill: {skillName}");
+            }
         }
 
         public void UnlockSkill(string skillName)
         {
             var skill = Skills.Find(s => s.Name == skillName);
-            if (skill != null && !skill.IsUnlocked)
+            if (skill != null && !skill.CanUse(PlayerCharacter)) // Assuming passive are always "usable"
             {
-                skill.IsUnlocked = true;
+                // For passive, just level up or something
                 Console.WriteLine($"Skill '{skillName}' unlocked.");
             }
         }
 
         public void LevelUpSkill(string skillName)
         {
-            var skill = Skills.Find(s => s.Name == skillName);
-            if (skill != null && skill.IsUnlocked)
-            {
-                skill.Level++;
-                Console.WriteLine($"Skill '{skillName}' leveled up to {skill.Level}.");
-            }
+            UpgradeSkill(skillName);
         }
 
-        public void UseAbility(string abilityName)
+        public void UseAbility(string abilityName, GoonzuGame.Characters.Character? target = null)
         {
             var skill = Skills.Find(s => s.Name == abilityName);
-            if (skill != null && skill.IsUnlocked && skill.Cooldown == 0)
+            if (skill != null)
             {
-                Console.WriteLine($"Ability '{abilityName}' used.");
-                skill.Cooldown = 3; // Example cooldown
-            }
-            else
-            {
-                Console.WriteLine($"Ability '{abilityName}' is not ready.");
+                skill.Use(PlayerCharacter, target);
             }
         }
 
-        public void TickCooldowns()
+        public void TickCooldowns(float deltaTime)
         {
+            // Update LastUsedTime
             foreach (var skill in Skills)
             {
-                if (skill.Cooldown > 0)
-                    skill.Cooldown--;
+                skill.UpdateCooldown(deltaTime);
             }
         }
     }

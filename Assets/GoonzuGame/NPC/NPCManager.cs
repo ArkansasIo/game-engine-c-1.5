@@ -1,22 +1,22 @@
-using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace GoonzuGame.NPC
 {
-    using System.Collections.Generic;
-    using GoonzuGame.Core;
-
-    public class NPC
+    [System.Serializable]
+    public class NPC : MonoBehaviour
     {
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string Dialogue { get; set; }
-        public int Reputation { get; set; }
-        public List<string> Schedule { get; set; }
+        public string Name;
+        public string Location;
+        public string Dialogue;
+        public int Reputation;
+        public List<string> Schedule = new List<string>();
+        public GoonzuGame.Quests.Quest QuestToGive;
 
-        public NPC(string name)
+        public void Initialize(string name, string location = "Town")
         {
             Name = name;
-            Location = "Town";
+            Location = location;
             Dialogue = "Hello, adventurer!";
             Reputation = 0;
             Schedule = new List<string> { "Morning: Market", "Afternoon: Town Square", "Evening: Home" };
@@ -25,40 +25,70 @@ namespace GoonzuGame.NPC
         public void Move(string newLocation)
         {
             Location = newLocation;
-            Console.WriteLine($"{Name} moves to {Location}.");
+            Debug.Log($"{Name} moves to {Location}.");
         }
 
         public void Speak()
         {
-            Console.WriteLine($"{Name} says: '{Dialogue}'");
+            Debug.Log($"{Name} says: '{Dialogue}'");
+            // Show dialogue UI
+            GoonzuGame.UI.UIManager.Instance.ShowMessage(Dialogue);
         }
 
         public void UpdateReputation(int value)
         {
             Reputation += value;
-            Console.WriteLine($"{Name}'s reputation changed by {value}. Current: {Reputation}");
+            Debug.Log($"{Name}'s reputation changed by {value}. Current: {Reputation}");
         }
 
         public void FollowSchedule(int hour)
         {
             string activity = Schedule[hour % Schedule.Count];
-            Console.WriteLine($"{Name} activity: {activity}");
+            Debug.Log($"{Name} activity: {activity}");
+        }
+
+        public void GiveQuest()
+        {
+            if (QuestToGive != null)
+            {
+                GoonzuGame.Quests.QuestManager.Instance.AddQuest(QuestToGive);
+                Debug.Log($"{Name} gave quest: {QuestToGive.Title}");
+            }
+        }
+
+        public void Interact()
+        {
+            Speak();
+            if (QuestToGive != null)
+            {
+                GiveQuest();
+            }
         }
     }
 
-    public class NPCManager
+    public class NPCManager : MonoBehaviour
     {
-        public List<NPC> NPCs { get; set; }
+        public static NPCManager Instance { get; private set; }
 
-        public NPCManager()
+        public List<NPC> NPCs = new List<NPC>();
+
+        private void Awake()
         {
-            NPCs = new List<NPC>();
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
-        public void AddNPC(string name)
+        public void AddNPC(NPC npc)
         {
-            NPCs.Add(new NPC(name));
-            Console.WriteLine($"NPC {name} added.");
+            NPCs.Add(npc);
+            Debug.Log($"NPC {npc.Name} added.");
         }
 
         public void MoveNPC(string npcName, string newLocation)
@@ -70,7 +100,7 @@ namespace GoonzuGame.NPC
         public void InteractNPC(string npcName)
         {
             var npc = NPCs.Find(n => n.Name == npcName);
-            npc?.Speak();
+            npc?.Interact();
         }
 
         public void ScheduleNPC(string npcName, int hour)
@@ -84,17 +114,10 @@ namespace GoonzuGame.NPC
             var npc = NPCs.Find(n => n.Name == npcName);
             npc?.UpdateReputation(value);
         }
-            private List<string> npcs = new List<string>();
-            public void AddNPCName(string npc)
-            {
-                npcs.Add(npc);
-            }
-            public void DisplayNPCs()
-            {
-                foreach (var n in npcs)
-                {
-                    Console.WriteLine($"NPC: {n}");
-                }
-            }
+
+        public List<NPC> GetNPCsInLocation(string location)
+        {
+            return NPCs.FindAll(n => n.Location == location);
+        }
     }
 }

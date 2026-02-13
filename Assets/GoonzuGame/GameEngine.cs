@@ -20,30 +20,31 @@ namespace GoonzuGame
             Player = new Character();
             GameWorld = new WorldManager();
             Network = new NetworkManager();
-            UI = new UIManager();
-            Audio = new AudioManager();
+            UI = UIManager.Instance;
+            Audio = AudioManager.Instance;
         }
 
         public void Start()
         {
             GameWorld.Load();
-            UI.ShowWindow("MainMenu");
+            UI.ShowWindow(WindowType.MainMenu);
             Audio.PlaySound("Theme");
 
             for (int tick = 0; tick < 5; tick++)
             {
                 Console.WriteLine($"Tick {tick}: Player {Player.Name} at level {Player.Level}");
-                Player.Move("north");
+                // Move north (Y+1)
+                Player.Move(new Vector3(0, 1, 0));
                 if (GameWorld.WorldItems.Count > 0)
                 {
                     Player.PickUpItem(GameWorld.WorldItems[0]);
                 }
                 Player.LevelUp();
-                UI.ShowWindow("Inventory");
+                UI.ShowWindow(WindowType.Inventory);
                 Audio.PlaySound("Battle");
                 Network.SendData($"Tick {tick} update");
             }
-            UI.HideWindow("MainMenu");
+            UI.HideWindow(WindowType.MainMenu);
             Audio.StopSound("Theme");
         }
     }

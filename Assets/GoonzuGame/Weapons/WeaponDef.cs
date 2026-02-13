@@ -1,23 +1,20 @@
-using System;
+using UnityEngine;
 using Item = GoonzuGame.Items.Item;
 using GoonzuGame.Items;
 
 namespace GoonzuGame.Weapons
 {
-    public class WeaponDef : Item
+    public class WeaponDef : Weapon
     {
-        public int Attack { get; set; }
-        public int Speed { get; set; }
-        public string PvPType { get; set; }
-        public string PvEType { get; set; }
-        public string Theme { get; set; }
-        public bool IsEquipped { get; set; }
-        public string Proficiency { get; set; }
-        public WeaponDef(string name, int attack, int speed, string rarity, string pvpType, string pveType, string theme, string proficiency = "")
-            : base(name, rarity)
+        public string PvPType;
+        public string PvEType;
+        public string Theme;
+        public bool IsEquipped;
+        public string Proficiency;
+
+        public WeaponDef(string name, int attack, int speed, ItemRarity rarity, string pvpType, string pveType, string theme, string proficiency = "")
+            : base(name, $"A powerful {theme} weapon", 100, rarity, attack, speed)
         {
-            Attack = attack;
-            Speed = speed;
             PvPType = pvpType;
             PvEType = pveType;
             Theme = theme;
@@ -28,13 +25,13 @@ namespace GoonzuGame.Weapons
         public void Equip()
         {
             IsEquipped = true;
-            Console.WriteLine($"Equipped weapon: {Name}");
+            Debug.Log($"Equipped weapon: {Name}");
         }
 
         public void Unequip()
         {
             IsEquipped = false;
-            Console.WriteLine($"Unequipped weapon: {Name}");
+            Debug.Log($"Unequipped weapon: {Name}");
         }
 
         public bool CheckProficiency(string characterProficiency)
@@ -58,12 +55,12 @@ namespace GoonzuGame.Weapons
         public int RollD20() => RollDice(20);
         public int RollDice(int sides)
         {
-            return new Random().Next(1, sides + 1);
+            return Random.Range(1, sides + 1);
         }
 
         public void Display()
         {
-            Console.WriteLine($"Weapon: {Name}, Attack: {Attack}, Speed: {Speed}, PvPType: {PvPType}, PvEType: {PvEType}, Theme: {Theme}, Proficiency: {Proficiency}, Equipped: {IsEquipped}");
+            Debug.Log($"Weapon: {Name}, Attack: {Damage}, Speed: {AttackSpeed}, PvPType: {PvPType}, PvEType: {PvEType}, Theme: {Theme}, Proficiency: {Proficiency}, Equipped: {IsEquipped}");
         }
     }
 }
