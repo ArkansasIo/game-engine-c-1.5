@@ -13,8 +13,8 @@ namespace GoonzuGame
     public class GameEngine
     {
         public Character Player { get; set; }
-        public World GameWorld { get; set; }
-        public CombatSystem Combat { get; set; }
+        public GoonzuGame.World.World GameWorld { get; set; }
+        public GoonzuGame.Combat.CombatSystem Combat { get; set; }
         public NetworkManager Network { get; set; }
         public UIManager UI { get; set; }
         public AudioManager Audio { get; set; }
@@ -22,8 +22,8 @@ namespace GoonzuGame
         public GameEngine()
         {
             Player = new Character();
-            GameWorld = new World();
-            Combat = new CombatSystem();
+            GameWorld = new GoonzuGame.World.World();
+            Combat = new GoonzuGame.Combat.CombatSystem();
             Network = new NetworkManager();
             UI = new UIManager();
             Audio = new AudioManager();

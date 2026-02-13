@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using GoonzuGame.Characters;
+using GoonzuGame.Items;
 
 namespace GoonzuGame.World
 {

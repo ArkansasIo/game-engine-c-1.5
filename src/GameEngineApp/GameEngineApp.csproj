@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -8,10 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="../../Assets/GoonzuGame/World/GoonzuWorld.cs" />
+    <Compile Include="../../Assets/GoonzuGame/Characters/Character.cs" />
+    <Compile Include="../../Assets/GoonzuGame/SaveLoad/SaveLoadManager.cs" />
+    <Compile Include="../../Assets/GoonzuGame/UI/UIManager.cs" />
+    <Compile Include="../../Assets/GoonzuGame/Multiplayer/MultiplayerManager.cs" />
+    <Compile Include="../../Assets/GoonzuGame/Network/NetworkManager.cs" />
+    <Compile Include="../../Assets/GameEngine/AI/AIManager.cs" />
+    <Compile Include="../../Assets/GameEngine/Dialogue/DialogueManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Professions/ProfessionDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Professions/SkillDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Items/ItemDef.cs" />
-    <Compile Include="../../Assets/GoonzuGame/Items/Item.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/DatabaseManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/DatabaseSeeder.cs" />
     <Compile Include="../../Assets/GoonzuGame/Database/ExpandedDatabaseSeeder.cs" />
@@ -27,13 +35,11 @@
     <Compile Include="../../Assets/GoonzuGame/Classes/SubTypeDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Classes/SubClassDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Skills/SkillTreeManager.cs" />
-    <Compile Include="../../Assets/GoonzuGame/Quests/Quest.cs" />
     <Compile Include="../../Assets/GoonzuGame/Achievements/AchievementManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Weapons/WeaponDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Bosses/BossDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Events/GroupFinder.cs" />
     <Compile Include="../../Assets/GoonzuGame/QuestScripting/QuestScriptingEngine.cs" />
-    <Compile Include="../../Assets/GoonzuGame/SaveLoad/SaveLoadManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Graphics/Engine2D.cs" />
     <Compile Include="../../Assets/GoonzuGame/Graphics/Engine3D.cs" />
     <Compile Include="../../Assets/GoonzuGame/Graphics/GraphicsManager.cs" />
@@ -45,7 +51,6 @@
     <Compile Include="../../Assets/GoonzuGame/Audio/Music/AudioMusicManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Pets/PetDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Localization/LocalizationManager.cs" />
-    <Compile Include="../../Assets/GoonzuGame/UI/UIManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/UI/UX/UIUXManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/Cities/CityDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Security/SecurityManager.cs" />
@@ -53,7 +58,6 @@
     <Compile Include="../../Assets/GoonzuGame/Biomes/BiomeDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/PvE/PvEArmorDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/PvE/PvEWeaponDef.cs" />
-    <Compile Include="../../Assets/GoonzuGame/Multiplayer/MultiplayerManager.cs" />
     <Compile Include="../../Assets/GoonzuGame/DnD5e/ClassDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/DnD5e/SkillDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/DnD5e/MonsterDef.cs" />
@@ -85,5 +89,6 @@
     <Compile Include="../../Assets/GoonzuGame/Collectibles/CollectibleDef.cs" />
     <Compile Include="../../Assets/GoonzuGame/Towns/TownDef.cs" />
   </ItemGroup>
+      <!-- Removed duplicate entries for Item.cs, Quest.cs, SaveLoadManager.cs, UIManager.cs, MultiplayerManager.cs -->
 
 </Project>
