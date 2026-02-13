@@ -1,7 +1,21 @@
 #include <iostream>
-#include "GameEngine.h"
+#include "src/GameEngine/MainMenu.h"
+#include "src/GameEngine/MainMenuAssets.h"
 
 int main() {
+    MainMenu menu;
+    menu.Render();
+    int input;
+    std::cout << "Select an option: ";
+    std::cin >> input;
+    menu.HandleInput(input);
+    // Example: Display asset path for selected option
+    auto options = menu.GetMenuOptions();
+    if (input >= 1 && input <= options.size()) {
+        MenuAsset asset = MainMenuAssets::GetAsset(options[input-1]);
+        std::cout << "Asset path: " << asset.imagePath << std::endl;
+    }
+
     std::cout << "Game Engine Starting..." << std::endl;
 
     GameEngine engine;

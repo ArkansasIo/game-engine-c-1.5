@@ -1,0 +1,5 @@
+/workspaces/game-engine-c-1.5/src/GameEngine/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/game-engine-c-1.5/src/GameEngine/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.AssemblyInfoInputs.cache
+/workspaces/game-engine-c-1.5/src/GameEngine/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.AssemblyInfo.cs
+/workspaces/game-engine-c-1.5/src/GameEngine/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.csproj.CoreCompileInputs.cache
+/workspaces/game-engine-c-1.5/src/GameEngine/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.sourcelink.json

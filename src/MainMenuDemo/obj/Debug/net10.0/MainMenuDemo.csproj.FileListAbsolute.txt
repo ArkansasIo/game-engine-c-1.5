@@ -1,0 +1,15 @@
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/bin/Debug/net10.0/MainMenuDemo
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/bin/Debug/net10.0/MainMenuDemo.deps.json
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/bin/Debug/net10.0/MainMenuDemo.runtimeconfig.json
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/bin/Debug/net10.0/MainMenuDemo.dll
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/bin/Debug/net10.0/MainMenuDemo.pdb
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.AssemblyInfoInputs.cache
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.AssemblyInfo.cs
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.csproj.CoreCompileInputs.cache
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.sourcelink.json
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.dll
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/refint/MainMenuDemo.dll
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.pdb
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/MainMenuDemo.genruntimeconfig.cache
+/workspaces/game-engine-c-1.5/src/MainMenuDemo/obj/Debug/net10.0/ref/MainMenuDemo.dll

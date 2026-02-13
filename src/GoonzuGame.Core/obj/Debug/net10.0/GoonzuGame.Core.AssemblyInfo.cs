@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoonzuGame.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+523174979451ca04679af48dfca880b549878c5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b2be0ca493ed120fd7bd9fc4a0c06699598f81a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoonzuGame.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoonzuGame.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
