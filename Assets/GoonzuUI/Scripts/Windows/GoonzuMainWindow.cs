@@ -5,23 +5,9 @@ using System.Collections.Generic;
 namespace GoonzuGame.GUI
 {
     public class GoonzuMainWindow : UIWindow
-        public void ShowAll()
-        {
-            Show();
-            System.Console.WriteLine("Main window shown.");
-        }
-        public void OpenInventory()
-        {
-            var inventory = new InventoryWindow();
-            inventory.Show();
-        }
-        public void OpenChat()
-        {
-            var chat = new ChatWindow();
-            chat.Show();
-        }
     {
         public List<UIWindow> ChildWindows { get; set; }
+
         public GoonzuMainWindow()
         {
             ChildWindows = new List<UIWindow>();
@@ -36,10 +22,23 @@ namespace GoonzuGame.GUI
             ChildWindows.Add(new GoonzuGame.GUI.InventoryWindow());
             ChildWindows.Add(new GoonzuGame.GUI.ChatWindow());
         }
+
         public void ShowAll()
         {
-            foreach (var window in ChildWindows)
-                window.Show();
+            Show();
+            System.Console.WriteLine("Main window shown.");
+        }
+
+        public void OpenInventory()
+        {
+            var inventory = new InventoryWindow();
+            inventory.Show();
+        }
+
+        public void OpenChat()
+        {
+            var chat = new ChatWindow();
+            chat.Show();
         }
     }
 }

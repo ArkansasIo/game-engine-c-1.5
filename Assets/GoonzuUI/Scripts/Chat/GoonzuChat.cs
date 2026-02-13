@@ -1,9 +1,7 @@
 using GoonzuGame.GUI;
-using System;
-
 namespace GoonzuGame.GUI
 {
-    public class GoonzuChat : GoonzuGame.GUI.ChatWindow
+    public class GoonzuChat : ChatWindow
     {
         public void ShowChat()
         {

@@ -1,5 +1,6 @@
+using GoonzuGame.GUI;
 namespace GoonzuGame.GUI {
-    public class MarketWindow : UIWindow {
-        public void ShowMarket() {}
+    public class MarketWindow : GoonzuGame.GUI.MarketWindow {
+        // Additional UI logic can be added here if needed
     }
 }

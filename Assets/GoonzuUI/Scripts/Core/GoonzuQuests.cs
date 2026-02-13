@@ -3,7 +3,7 @@ using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuQuests : GoonzuGame.GUI.QuestsWindow
+    public class GoonzuQuests : QuestsWindow
     {
         public void ShowQuests()
         {

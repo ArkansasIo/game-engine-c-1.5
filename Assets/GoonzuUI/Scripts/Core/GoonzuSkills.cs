@@ -3,7 +3,7 @@ using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuSkills : GoonzuGame.GUI.SkillsWindow
+    public class GoonzuSkills : SkillsWindow
     {
         public void ShowSkills()
         {

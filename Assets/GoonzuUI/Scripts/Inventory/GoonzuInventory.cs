@@ -1,9 +1,7 @@
 using GoonzuGame.GUI;
-using System;
-
 namespace GoonzuGame.GUI
 {
-    public class GoonzuInventory : GoonzuGame.GUI.InventoryWindow
+    public class GoonzuInventory : InventoryWindow
     {
         public void ShowInventory()
         {

@@ -3,7 +3,7 @@ using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuParty : GoonzuGame.GUI.PartyWindow
+    public class GoonzuParty : PartyWindow
     {
         public void ShowParty()
         {

@@ -3,7 +3,7 @@ using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuOptions : GoonzuGame.GUI.OptionsWindow
+    public class GoonzuOptions : OptionsWindow
     {
         public void ShowOptions()
         {

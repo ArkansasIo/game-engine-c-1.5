@@ -1,5 +1,6 @@
+using GoonzuGame.GUI;
 namespace GoonzuGame.GUI {
-    public class CharacterWindow : UIWindow {
-        public void ShowCharacter() {}
+    public class CharacterWindow : GoonzuGame.GUI.CharacterWindow {
+        // Additional UI logic can be added here if needed
     }
 }

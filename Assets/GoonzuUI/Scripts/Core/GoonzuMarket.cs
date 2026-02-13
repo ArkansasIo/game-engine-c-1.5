@@ -3,7 +3,7 @@ using System;
 
 namespace GoonzuGame.GUI
 {
-    public class GoonzuMarket : GoonzuGame.GUI.MarketWindow
+    public class GoonzuMarket : MarketWindow
     {
         public void ShowMarket()
         {
