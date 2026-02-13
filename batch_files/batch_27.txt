@@ -1,0 +1,23 @@
+Batch 27 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Buildings/bakery.png: medieval fantasy bakery, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/mine_entrance.png: medieval fantasy mine entrance, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/portal.png: medieval fantasy portal, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/temple.png: medieval fantasy temple, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/town_house.png: medieval fantasy town house, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Characters/NPCs/innkeeper_female.png: female medieval innkeeper NPC, detailed clothing and accessories, friendly pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/NPCs/mayor_male.png: male medieval mayor NPC, detailed clothing and accessories, friendly pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/NPCs/blacksmith_male.png: male medieval blacksmith NPC, detailed clothing and accessories, friendly pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/NPCs/hunter_female.png: female medieval hunter NPC, detailed clothing and accessories, friendly pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/NPCs/noble_male.png: male medieval noble NPC, detailed clothing and accessories, friendly pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

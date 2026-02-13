@@ -1,0 +1,23 @@
+Batch 35 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Items/Armor/shield.png: medieval fantasy shield, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/elixir.png: medieval fantasy elixir, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/herb_bundle.png: medieval fantasy herb bundle, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/scroll.png: medieval fantasy scroll, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/apple.png: medieval fantasy apple, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/cheese.png: medieval fantasy cheese, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/mana_potion.png: medieval fantasy mana potion, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/rune_stone.png: medieval fantasy rune stone, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/strength_potion.png: medieval fantasy strength potion, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/health_potion.png: medieval fantasy health potion, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

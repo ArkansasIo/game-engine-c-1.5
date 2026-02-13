@@ -1,0 +1,23 @@
+Batch 26 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Buildings/apothecary.png: medieval fantasy apothecary, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/chapel.png: medieval fantasy chapel, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/jeweler.png: medieval fantasy jeweler, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/gatehouse.png: medieval fantasy gatehouse, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/bridge.png: medieval fantasy bridge, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/market_stall.png: medieval fantasy market stall, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/guild_hall.png: medieval fantasy guild hall, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/tower.png: medieval fantasy tower, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/castle_tower.png: medieval castle tower, stone walls, battlements, flags, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/fountain.png: medieval fantasy fountain, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+

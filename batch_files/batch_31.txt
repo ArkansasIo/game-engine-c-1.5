@@ -1,0 +1,23 @@
+Batch 31 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Items/Weapons/throwing_knife.png: medieval fantasy throwing knife, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/battleaxe.png: medieval fantasy battleaxe, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/shortbow.png: medieval fantasy shortbow, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/scimitar.png: medieval fantasy scimitar, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/crossbow.png: medieval fantasy crossbow, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/flail.png: medieval fantasy flail, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/wand.png: medieval fantasy wand, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/staff.png: medieval fantasy staff, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/quarterstaff.png: medieval fantasy quarterstaff, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Weapons/claymore.png: medieval fantasy claymore, ornate design with gemstones, detailed metalwork, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

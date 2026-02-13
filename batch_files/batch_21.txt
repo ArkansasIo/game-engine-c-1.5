@@ -1,0 +1,23 @@
+Batch 21 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Effects/sparkle_effect.png: medieval fantasy sparkle effect, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/magic_circle.png: medieval fantasy magic circle, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/debuff_curse.png: medieval fantasy debuff curse, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/teleport_flash.png: medieval fantasy teleport flash, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/ice_spell.png: medieval fantasy ice spell, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/poison_cloud.png: medieval fantasy poison cloud, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/heal_spell.png: medieval fantasy heal spell, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/fire_spell.png: medieval fantasy fire spell, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/smoke_puff.png: medieval fantasy smoke puff, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/dire_wolf.png: medieval fantasy dire wolf, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

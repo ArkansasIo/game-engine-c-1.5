@@ -1,0 +1,23 @@
+Batch 20 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Tiles/crystal_floor.png: medieval fantasy crystal floor tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/dirt_road.png: medieval fantasy dirt road tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/cobblestone.png: medieval fantasy cobblestone tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/tile_floor.png: medieval fantasy tile floor tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Effects/lightning_spell.png: medieval fantasy lightning spell, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/dust_cloud.png: medieval fantasy dust cloud, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/explosion.png: medieval fantasy explosion, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/level_up_burst.png: medieval fantasy level up burst, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/shield_barrier.png: medieval fantasy shield barrier, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Effects/buff_aura.png: medieval fantasy buff aura, magical particle effect, glowing energy, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

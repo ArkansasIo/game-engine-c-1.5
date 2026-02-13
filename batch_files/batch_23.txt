@@ -1,0 +1,23 @@
+Batch 23 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Creatures/war_horse.png: medieval fantasy war horse, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/golem.png: medieval fantasy golem, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/beast.png: medieval fantasy beast, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/giant_spider.png: medieval fantasy giant spider, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/minotaur.png: medieval fantasy minotaur, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/skeleton_warrior.png: medieval fantasy skeleton warrior, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/mermaid.png: medieval fantasy mermaid, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/ogre.png: medieval fantasy ogre, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/werewolf.png: medieval fantasy werewolf, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/troll.png: medieval fantasy troll, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
