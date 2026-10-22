@@ -42,7 +42,10 @@ The prototype now has:
 - an isometric coordinate conversion with centered-tile inverse support;
 - a prototype `CharacterController` player movement component;
 - a transport-neutral economy gateway contract for future server integration;
-- Unity EditMode tests for world validation and JSON import.
+- data-driven item definitions with stable IDs, stack limits and validation;
+- a stack-aware inventory model with deterministic snapshots;
+- data-driven recipe definitions and a transactional crafting service;
+- Unity EditMode tests for world validation, JSON import, inventory stacking and crafting.
 
 These are **prototype client systems**, not MMO-authoritative implementations.
 
@@ -52,6 +55,7 @@ These are **prototype client systems**, not MMO-authoritative implementations.
 - Validate `goonzu_seed_world.json` before creating the ScriptableObject.
 - Add explicit grid coordinates to each town definition in the seed world.
 - Add a generated-object root and replace/clear spawned markers deterministically.
+- Add resource-node interaction and profession skill contracts.
 - Add stable IDs and tests for item/recipe definitions.
 - Remove UnityEngine-dependent scripts from the .NET app's compile list.
 - Implement the remote `IGoonzuEconomyGateway` adapter only after the server API contract is finalized.
