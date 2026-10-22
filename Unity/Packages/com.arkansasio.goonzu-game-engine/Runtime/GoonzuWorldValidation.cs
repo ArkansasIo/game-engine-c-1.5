@@ -3,10 +3,7 @@ using System.Collections.Generic;
 
 namespace ArkansasIo.GoonzuGameEngine;
 
-/// <summary>
-/// Validates imported world definitions and returns actionable errors instead of failing later
-/// when the bootstrap attempts to build scene objects.
-/// </summary>
+/// <summary>Validates imported world definitions and returns actionable diagnostics.</summary>
 public static class GoonzuWorldValidation
 {
     public static IReadOnlyList<string> Validate(GoonzuWorldDefinition world)
