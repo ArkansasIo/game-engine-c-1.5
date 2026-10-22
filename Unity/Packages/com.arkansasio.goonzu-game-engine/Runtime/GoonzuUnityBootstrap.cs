@@ -57,12 +57,18 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
 
     private void OnDestroy()
     {
+        ClearGeneratedObjects();
+    }
+
+    private void ClearGeneratedObjects()
+    {
         for (var i = 0; i < spawnedObjects.Count; i++)
         {
             if (spawnedObjects[i] != null)
                 Destroy(spawnedObjects[i]);
         }
         spawnedObjects.Clear();
+        PlayerObject = null;
     }
 
     private void BuildWorldMarkers()
@@ -70,12 +76,7 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
         if (worldRoot == null || World.towns == null)
             return;
 
-        for (var i = 0; i < spawnedObjects.Count; i++)
-        {
-            if (spawnedObjects[i] != null)
-                Destroy(spawnedObjects[i]);
-        }
-        spawnedObjects.Clear();
+        ClearGeneratedObjects();
 
         for (var i = 0; i < World.towns.Length; i++)
         {
@@ -87,9 +88,7 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
             marker.name = "Town_" + town.id;
             marker.transform.SetParent(worldRoot, false);
             marker.transform.rotation = Quaternion.Euler(90f, 0f, 0f);
-            marker.transform.position = grid != null
-                ? grid.TileToWorld(i * 4, i * 2, townMarkerHeight)
-                : new Vector3(i * 2f, townMarkerHeight, i * 2f);
+            marker.transform.position = GetTownWorldPosition(town, i, townMarkerHeight);
             marker.transform.localScale = new Vector3(1.5f, 1.5f, 1f);
             spawnedObjects.Add(marker);
         }
@@ -101,6 +100,25 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
             ? grid.TileToWorld(0, 0, playerElevation)
             : new Vector3(0f, playerElevation, 0f);
         spawnedObjects.Add(PlayerObject);
+
+        // CharacterController provides a safe starting point for the prototype player controller.
+        var controller = PlayerObject.AddComponent<CharacterController>();
+        controller.height = 1.8f;
+        controller.radius = 0.35f;
+        controller.center = new Vector3(0f, 0.9f, 0f);
+        PlayerObject.AddComponent<GoonzuPlayerController>();
+    }
+
+    private Vector3 GetTownWorldPosition(GoonzuTown town, int fallbackIndex, float elevation)
+    {
+        if (grid == null)
+            return town.hasGridPosition
+                ? new Vector3(town.gridX, elevation, town.gridY)
+                : new Vector3(fallbackIndex * 2f, elevation, fallbackIndex * 2f);
+
+        var x = town.hasGridPosition ? town.gridX : fallbackIndex * 4;
+        var y = town.hasGridPosition ? town.gridY : fallbackIndex * 2;
+        return grid.TileToWorld(x, y, elevation);
     }
 
     public void FocusCamera(Vector3 worldPosition)
