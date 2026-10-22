@@ -4,8 +4,8 @@ using System.Collections.Generic;
 namespace ArkansasIo.GoonzuGameEngine;
 
 /// <summary>
-/// Pure validation for imported world definitions. Kept independent of Unity APIs so rules can
-/// be tested and reused by editor tooling and future server-side import validation.
+/// Validates imported world definitions and returns actionable errors instead of failing later
+/// when the bootstrap attempts to build scene objects.
 /// </summary>
 public static class GoonzuWorldValidation
 {
