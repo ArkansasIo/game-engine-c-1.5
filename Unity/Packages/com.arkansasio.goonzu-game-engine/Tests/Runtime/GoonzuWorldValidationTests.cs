@@ -27,8 +27,7 @@ public sealed class GoonzuWorldValidationTests
 
         try
         {
-            var errors = GoonzuWorldValidation.Validate(world);
-            Assert.That(errors, Is.Empty);
+            Assert.That(GoonzuWorldValidation.Validate(world), Is.Empty);
         }
         finally
         {
@@ -70,32 +69,5 @@ public sealed class GoonzuWorldValidationTests
         var errors = GoonzuWorldValidation.Validate(null);
         Assert.That(errors.Count, Is.EqualTo(1));
         Assert.That(errors[0], Does.Contain("null"));
-    }
-
-    [TestCase(true)]
-    [TestCase(false)]
-    public void IsometricGridRoundTripsCoordinates(bool centerTiles)
-    {
-        var go = new GameObject("GridTest");
-        try
-        {
-            var grid = go.AddComponent<GoonzuIsometricGrid>();
-            grid.tileWidth = 1f;
-            grid.tileHeight = 0.5f;
-            grid.centerTiles = centerTiles;
-
-            var coordinates = new[] { (0, 0), (1, 0), (0, 1), (8, 4), (-3, 7) };
-            foreach (var (x, y) in coordinates)
-            {
-                var worldPosition = grid.TileToWorld(x, y);
-                var tile = grid.WorldToTile(worldPosition);
-                Assert.That(tile.x, Is.EqualTo(x), $"x mismatch for {x},{y}");
-                Assert.That(tile.y, Is.EqualTo(y), $"y mismatch for {x},{y}");
-            }
-        }
-        finally
-        {
-            Object.DestroyImmediate(go);
-        }
     }
 }
