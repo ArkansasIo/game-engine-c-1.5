@@ -23,7 +23,6 @@ public sealed class GoonzuIsometricGrid : MonoBehaviour
 
     public Vector2Int WorldToTile(Vector3 world)
     {
-        // Subtract the tile-centering offset before applying the inverse projection.
         var worldX = world.x - (centerTiles ? tileWidth * 0.5f : 0f);
         var worldZ = world.z - (centerTiles ? tileHeight * 0.5f : 0f);
         var x = worldX / tileWidth + worldZ / (2f * tileHeight);
