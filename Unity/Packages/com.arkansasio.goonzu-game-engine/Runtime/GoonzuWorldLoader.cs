@@ -2,12 +2,27 @@ using UnityEngine;
 
 namespace ArkansasIo.GoonzuGameEngine;
 
+/// <summary>Converts a seed-world JSON TextAsset into an in-memory ScriptableObject definition.</summary>
 public static class GoonzuWorldLoader
 {
     public static GoonzuWorldDefinition LoadJson(TextAsset json)
     {
-        if (json == null) throw new System.ArgumentNullException(nameof(json));
-        var data = JsonUtility.FromJson<GoonzuWorldDefinitionDto>(json.text);
+        if (json == null)
+            throw new System.ArgumentNullException(nameof(json));
+
+        GoonzuWorldDefinitionDto data;
+        try
+        {
+            data = JsonUtility.FromJson<GoonzuWorldDefinitionDto>(json.text);
+        }
+        catch (System.Exception exception)
+        {
+            throw new System.FormatException("Could not parse Goonzu world JSON: " + exception.Message, exception);
+        }
+
+        if (data == null)
+            throw new System.FormatException("Could not parse Goonzu world JSON: empty or invalid root object.");
+
         var definition = ScriptableObject.CreateInstance<GoonzuWorldDefinition>();
         definition.version = data.version;
         definition.style = data.style;
@@ -16,6 +31,14 @@ public static class GoonzuWorldLoader
         definition.resources = data.resources ?? System.Array.Empty<GoonzuResource>();
         definition.starterSkills = data.starterSkills ?? System.Array.Empty<string>();
         definition.starterAssets = data.starterAssets;
+
+        var errors = GoonzuWorldValidation.Validate(definition);
+        if (errors.Count > 0)
+        {
+            UnityEngine.Object.Destroy(definition);
+            throw new System.FormatException("Invalid Goonzu world definition:\n- " + string.Join("\n- ", errors));
+        }
+
         return definition;
     }
 
