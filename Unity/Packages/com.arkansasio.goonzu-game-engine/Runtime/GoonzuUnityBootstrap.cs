@@ -57,7 +57,6 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Explicitly remove generated objects if this component is reused by custom scene tooling.
         for (var i = 0; i < spawnedObjects.Count; i++)
         {
             if (spawnedObjects[i] != null)
@@ -70,6 +69,14 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
     {
         if (worldRoot == null || World.towns == null)
             return;
+
+        // Remove previously generated objects before rebuilding the prototype world.
+        for (var i = 0; i < spawnedObjects.Count; i++)
+        {
+            if (spawnedObjects[i] != null)
+                Destroy(spawnedObjects[i]);
+        }
+        spawnedObjects.Clear();
 
         for (var i = 0; i < World.towns.Length; i++)
         {
