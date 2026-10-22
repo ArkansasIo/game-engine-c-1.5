@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ArkansasIo.GoonzuGameEngine;
 
-/// <summary>Converts a seed-world JSON TextAsset into an in-memory ScriptableObject definition.</summary>
+/// <summary>Converts a seed-world JSON TextAsset into a validated in-memory world definition.</summary>
 public static class GoonzuWorldLoader
 {
     public static GoonzuWorldDefinition LoadJson(TextAsset json)
@@ -35,7 +35,8 @@ public static class GoonzuWorldLoader
         var errors = GoonzuWorldValidation.Validate(definition);
         if (errors.Count > 0)
         {
-            UnityEngine.Object.Destroy(definition);
+            // DestroyImmediate is required here because the failed object has not been added to a scene.
+            Object.DestroyImmediate(definition);
             throw new System.FormatException("Invalid Goonzu world definition:\n- " + string.Join("\n- ", errors));
         }
 
