@@ -70,7 +70,6 @@ public sealed class GoonzuUnityBootstrap : MonoBehaviour
         if (worldRoot == null || World.towns == null)
             return;
 
-        // Remove previously generated objects before rebuilding the prototype world.
         for (var i = 0; i < spawnedObjects.Count; i++)
         {
             if (spawnedObjects[i] != null)
