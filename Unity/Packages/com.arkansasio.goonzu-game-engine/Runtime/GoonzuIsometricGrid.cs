@@ -23,8 +23,11 @@ public sealed class GoonzuIsometricGrid : MonoBehaviour
 
     public Vector2Int WorldToTile(Vector3 world)
     {
-        var x = world.x / tileWidth + world.z / (2f * tileHeight);
-        var y = world.z / (2f * tileHeight) - world.x / tileWidth;
+        // Subtract the tile-centering offset before applying the inverse projection.
+        var worldX = world.x - (centerTiles ? tileWidth * 0.5f : 0f);
+        var worldZ = world.z - (centerTiles ? tileHeight * 0.5f : 0f);
+        var x = worldX / tileWidth + worldZ / (2f * tileHeight);
+        var y = worldZ / (2f * tileHeight) - worldX / tileWidth;
         return new Vector2Int(Mathf.RoundToInt(x), Mathf.RoundToInt(y));
     }
 }
