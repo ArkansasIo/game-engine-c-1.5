@@ -25,10 +25,15 @@ public sealed class GoonzuWorldValidationTests
             new GoonzuResource { id = "iron-ore", tier = 1, gathering = "mining" }
         };
 
-        var errors = GoonzuWorldValidation.Validate(world);
-        Object.DestroyImmediate(world);
-
-        Assert.That(errors, Is.Empty);
+        try
+        {
+            var errors = GoonzuWorldValidation.Validate(world);
+            Assert.That(errors, Is.Empty);
+        }
+        finally
+        {
+            Object.DestroyImmediate(world);
+        }
     }
 
     [Test]
@@ -46,12 +51,17 @@ public sealed class GoonzuWorldValidationTests
             new GoonzuRegion { id = "region-a", name = "Region A", towns = new[] { "unknown" } }
         };
 
-        var errors = GoonzuWorldValidation.Validate(world);
-        Object.DestroyImmediate(world);
-
-        Assert.That(errors.Any(e => e.Contains("Duplicate town ID")), Is.True);
-        Assert.That(errors.Any(e => e.Contains("Tax rate")), Is.True);
-        Assert.That(errors.Any(e => e.Contains("unknown town")), Is.True);
+        try
+        {
+            var errors = GoonzuWorldValidation.Validate(world);
+            Assert.That(errors.Any(e => e.Contains("Duplicate town ID")), Is.True);
+            Assert.That(errors.Any(e => e.Contains("Tax rate")), Is.True);
+            Assert.That(errors.Any(e => e.Contains("unknown town")), Is.True);
+        }
+        finally
+        {
+            Object.DestroyImmediate(world);
+        }
     }
 
     [Test]
@@ -62,24 +72,30 @@ public sealed class GoonzuWorldValidationTests
         Assert.That(errors[0], Does.Contain("null"));
     }
 
-    [Test]
-    public void IsometricGridRoundTripsCoordinatesWithoutCentering()
+    [TestCase(true)]
+    [TestCase(false)]
+    public void IsometricGridRoundTripsCoordinates(bool centerTiles)
     {
         var go = new GameObject("GridTest");
-        var grid = go.AddComponent<GoonzuIsometricGrid>();
-        grid.tileWidth = 1f;
-        grid.tileHeight = 0.5f;
-        grid.centerTiles = false;
-
-        var coordinates = new[] { (0, 0), (1, 0), (0, 1), (8, 4), (-3, 7) };
-        foreach (var (x, y) in coordinates)
+        try
         {
-            var worldPosition = grid.TileToWorld(x, y);
-            var tile = grid.WorldToTile(worldPosition);
-            Assert.That(tile.x, Is.EqualTo(x), $"x mismatch for {x},{y}");
-            Assert.That(tile.y, Is.EqualTo(y), $"y mismatch for {x},{y}");
-        }
+            var grid = go.AddComponent<GoonzuIsometricGrid>();
+            grid.tileWidth = 1f;
+            grid.tileHeight = 0.5f;
+            grid.centerTiles = centerTiles;
 
-        Object.DestroyImmediate(go);
+            var coordinates = new[] { (0, 0), (1, 0), (0, 1), (8, 4), (-3, 7) };
+            foreach (var (x, y) in coordinates)
+            {
+                var worldPosition = grid.TileToWorld(x, y);
+                var tile = grid.WorldToTile(worldPosition);
+                Assert.That(tile.x, Is.EqualTo(x), $"x mismatch for {x},{y}");
+                Assert.That(tile.y, Is.EqualTo(y), $"y mismatch for {x},{y}");
+            }
+        }
+        finally
+        {
+            Object.DestroyImmediate(go);
+        }
     }
 }
