@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "style": "goonzu-fantasy-mmorpg",
+  "generator": "recraft",
+  "categories": [
+    {"name":"Characters","path":"Assets/GoonzuGame/Characters","variants":["warrior","mage","archer","rogue","cleric","paladin","merchant","blacksmith","farmer"]},
+    {"name":"NPC","path":"Assets/GoonzuGame/NPC","variants":["shopkeeper","questgiver","trainer","guard","guildmaster","craftsman"]},
+    {"name":"Creatures","path":"Assets/GoonzuGame/Creatures","variants":["horse","wolf","boar","deer","dragon","griffin","mount"]},
+    {"name":"Monsters","path":"Assets/GoonzuGame/Monsters","variants":["slime","goblin","orc","skeleton","zombie","spider","demon","undead"]},
+    {"name":"Bosses","path":"Assets/GoonzuGame/Bosses","variants":["world-boss","dungeon-boss","raid-boss","dragon-lord"]},
+    {"name":"Weapons","path":"Assets/GoonzuGame/Weapons","variants":["sword","greatsword","spear","bow","staff","wand","dagger","axe","hammer","shield"]},
+    {"name":"Armor","path":"Assets/GoonzuGame/Armor","variants":["light","medium","heavy","robe","helmet","gloves","boots","shield"]},
+    {"name":"Items","path":"Assets/GoonzuGame/Items","variants":["potion","scroll","gem","material","food","quest-item","currency"]},
+    {"name":"Environment","path":"Assets/GoonzuGame/Environment","variants":["forest","village","city","castle","farm","road","mountain","desert","swamp","snow","ruins"]},
+    {"name":"Dungeons","path":"Assets/GoonzuGame/Dungeons","variants":["crypt","cave","castle","temple","mine","volcano","raid"]},
+    {"name":"Furniture","path":"Assets/GoonzuGame/Furniture","variants":["chair","table","bed","chest","bookshelf","forge","merchant-stall","lamp"]},
+    {"name":"UI","path":"Assets/GoonzuGame/UI","variants":["inventory","character","quest","map","guild","party","chat","shop","auction","buttons","panels"]},
+    {"name":"Icons","path":"Assets/GoonzuGame/Icons","variants":["item","skill","spell","buff","debuff","quest","currency","equipment"]},
+    {"name":"VFX","path":"Assets/GoonzuGame/VFX","variants":["fire","ice","lightning","holy","shadow","poison","arcane","heal","hit","death"]}
+  ],
+  "commonPrompt": "original fantasy MMORPG game asset, GoonZu-inspired East Asian medieval fantasy atmosphere without copying copyrighted characters or artwork, polished colorful game art, clean silhouette, readable materials, production-ready, consistent proportions, consistent lighting, no text, no watermark",
+  "output": {"raster":"png","vector":"svg","transparentBackground":true,"defaultIconSize":128},
+  "licenseNote": "Generate original assets; do not reproduce copyrighted GoonZu artwork, characters, logos, maps, or textures."
+}
