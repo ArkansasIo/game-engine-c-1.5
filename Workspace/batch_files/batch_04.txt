@@ -1,0 +1,23 @@
+Batch 4 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Characters/elf_female_druid.png: female elf druid, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_male_rogue.png: male tiefling rogue, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/orc_male_warrior.png: male orc warrior, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_female_cleric.png: female tiefling cleric, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/dwarf_male_ranger.png: male dwarf ranger, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/half-elf_male_monk.png: male half-elf monk, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_male_bard.png: male tiefling bard, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/half-elf_female_bard.png: female half-elf bard, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_male_ranger.png: male tiefling ranger, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/halfling_male_mage.png: male halfling mage, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

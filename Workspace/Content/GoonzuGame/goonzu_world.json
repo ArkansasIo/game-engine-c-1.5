@@ -1,0 +1,41 @@
+{
+  "world": {"id":"luminara_original","displayName":"Luminara","projection":"2D_ISOMETRIC"},
+  "attributes":["strength","agility","vitality","wisdom","dexterity","luck"],
+  "skills": [
+    {"id":"sword","name":"Swordsmanship","category":"combat","basicCap":30,"experienceCap":70},
+    {"id":"bow","name":"Archery","category":"combat","basicCap":30,"experienceCap":70},
+    {"id":"mining","name":"Mining","category":"gathering","basicCap":30,"experienceCap":70},
+    {"id":"fishing","name":"Fishing","category":"gathering","basicCap":30,"experienceCap":70},
+    {"id":"farming","name":"Farming","category":"gathering","basicCap":30,"experienceCap":70},
+    {"id":"blacksmithing","name":"Blacksmithing","category":"production","basicCap":30,"experienceCap":70},
+    {"id":"alchemy","name":"Alchemy","category":"production","basicCap":30,"experienceCap":70},
+    {"id":"cooking","name":"Cooking","category":"production","basicCap":30,"experienceCap":70},
+    {"id":"trading","name":"Trading","category":"social","basicCap":30,"experienceCap":70}
+  ],
+  "towns": [
+    {"id":1,"name":"Frostmere","biome":"snow","salesTax":0.05,"treasury":100000},
+    {"id":2,"name":"Emberfall","biome":"temperate","salesTax":0.07,"treasury":100000},
+    {"id":3,"name":"Greenhollow","biome":"forest","salesTax":0.04,"treasury":100000}
+  ],
+  "recipes": [
+    {"id":"iron_sword","output":"iron_sword","skill":"blacksmithing","difficulty":5,"materials":{"iron_ingot":3,"leather_strip":1,"wood_handle":1}},
+    {"id":"steel_sword","output":"steel_sword","skill":"blacksmithing","difficulty":15,"materials":{"steel_ingot":4,"leather_strip":2,"oak_handle":1}},
+    {"id":"healing_tonic","output":"healing_tonic","skill":"alchemy","difficulty":4,"materials":{"red_herb":2,"clear_water":1}},
+    {"id":"traveler_bread","output":"traveler_bread","skill":"cooking","difficulty":3,"materials":{"grain":2,"salt":1}}
+  ],
+  "resourceChains": [
+    {"raw":"iron_ore","processed":"iron_ingot","skill":"mining"},
+    {"raw":"oak_log","processed":"wood_handle","skill":"woodworking"},
+    {"raw":"red_herb","processed":"herbal_extract","skill":"alchemy"}
+  ],
+  "offices": [
+    {"id":"town_head","scope":"town","termDays":30},
+    {"id":"goonzu","scope":"server","termDays":60}
+  ],
+  "economy": {
+    "currency":"Luma",
+    "priceFormula":"BasePrice * DemandMultiplier * SupplyMultiplier * RegionMultiplier * TaxMultiplier",
+    "marketAuthority":"server",
+    "finishedEquipmentSource":"player_crafting"
+  }
+}

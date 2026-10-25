@@ -1,0 +1,7 @@
+# Game Engine 1.5 maintenance jobs
+# Run database backup every day at 03:15
+15 3 * * * /opt/game-engine/scripts/backup-db.sh >> /var/log/game-engine-backup.log 2>&1
+# Cleanup temporary logs weekly
+30 4 * * 0 /opt/game-engine/scripts/cleanup-logs.sh >> /var/log/game-engine-maintenance.log 2>&1
+# Refresh world maintenance state every 30 minutes
+*/30 * * * * /opt/game-engine/scripts/world-maintenance.sh >> /var/log/game-engine-world.log 2>&1

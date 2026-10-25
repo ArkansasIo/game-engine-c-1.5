@@ -1,0 +1,23 @@
+Batch 36 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Items/Consumables/wine.png: medieval fantasy wine, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/agility_potion.png: medieval fantasy agility potion, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/intelligence_potion.png: medieval fantasy intelligence potion, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/ale.png: medieval fantasy ale, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/bread.png: medieval fantasy bread, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Consumables/magic_crystal.png: medieval fantasy magic crystal, detailed bottle or item design, glowing magical effects, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Bars/experience_bar.png: medieval fantasy experience bar, ornate frame with liquid fill, detailed design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Bars/health_bar.png: medieval fantasy health bar, ornate frame with liquid fill, detailed design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Bars/mana_bar.png: medieval fantasy mana bar, ornate frame with liquid fill, detailed design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Bars/stamina_bar.png: medieval fantasy stamina bar, ornate frame with liquid fill, detailed design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

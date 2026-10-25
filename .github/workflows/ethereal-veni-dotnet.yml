@@ -1,0 +1,20 @@
+name: Ethereal Veni .NET
+
+on:
+  push:
+    branches: [ main, ethereal-veni-next ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore
+        run: dotnet restore EtherealVeni/EtherealVeni.sln
+      - name: Build
+        run: dotnet build EtherealVeni/EtherealVeni.sln --configuration Release --no-restore

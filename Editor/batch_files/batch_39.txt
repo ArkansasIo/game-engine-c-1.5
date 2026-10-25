@@ -1,0 +1,19 @@
+Batch 39 - 8 assets
+==================================================
+
+Assets/GoonzuGame/UI/Panels/inventory_panel.png: medieval fantasy inventory panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/crafting_panel.png: medieval fantasy crafting panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/character_panel.png: medieval fantasy character panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/skill_panel.png: medieval fantasy skill panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/settings_panel.png: medieval fantasy settings panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/Monsters/orc_warrior.png: medieval orc warrior, muscular build, crude armor, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/Monsters/goblin.png: medieval goblin creature, green skin, sneaky expression, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/Mounts/war_horse.png: medieval war horse, armored barding, powerful build, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

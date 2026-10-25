@@ -1,0 +1,23 @@
+Batch 1 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Furniture/stone_throne.png: medieval fantasy stone throne, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/wardrobe.png: medieval fantasy wardrobe, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/wooden_chair.png: medieval fantasy wooden chair, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/chest.png: medieval fantasy chest, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/cauldron.png: medieval fantasy cauldron, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/wooden_table.png: medieval fantasy wooden table, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/bed.png: medieval fantasy bed, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/forge.png: medieval fantasy forge, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/bookshelf.png: medieval fantasy bookshelf, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Furniture/anvil.png: medieval fantasy anvil, detailed wood and metal construction, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

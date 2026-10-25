@@ -1,0 +1,23 @@
+Batch 34 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Items/Armor/cuirass.png: medieval fantasy cuirass, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/leather_helmet.png: medieval fantasy leather helmet, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/plate_helmet.png: medieval fantasy plate helmet, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/knight_armor.png: medieval fantasy knight armor, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/leather_armor.png: medieval fantasy leather armor, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/knight_helmet.png: medieval knight helmet, visor down, ornate design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/surcoat.png: medieval fantasy surcoat, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/tower_shield.png: medieval fantasy tower shield, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/buckler.png: medieval fantasy buckler, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Items/Armor/chainmail_armor.png: medieval fantasy chainmail armor, ornate design with engravings, detailed metal and leather work, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

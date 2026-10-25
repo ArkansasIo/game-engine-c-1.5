@@ -1,0 +1,2 @@
+# Placeholder for fire spell effect asset
+# Replace with .uasset, Unity VFX, or Niagara reference

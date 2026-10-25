@@ -1,0 +1,23 @@
+Batch 24 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Creatures/goblin.png: medieval fantasy goblin, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/angel.png: medieval fantasy angel, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/fairy.png: medieval fantasy fairy, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Creatures/centaur.png: medieval fantasy centaur, detailed creature design, magical aura, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Buildings/tailor_shop.png: medieval fantasy tailor shop, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/mill.png: medieval fantasy mill, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/library.png: medieval fantasy library, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/keep.png: medieval fantasy keep, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/stable.png: medieval fantasy stable, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Buildings/dungeon_entrance.png: medieval fantasy dungeon entrance, detailed stone and wood architecture, ornate details, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+

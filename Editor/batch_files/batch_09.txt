@@ -1,0 +1,23 @@
+Batch 9 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Characters/halfling_male_rogue.png: male halfling rogue, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_male_druid.png: male tiefling druid, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/gnome_male_necromancer.png: male gnome necromancer, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_female_necromancer.png: female tiefling necromancer, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/halfling_male_cleric.png: male halfling cleric, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/half-elf_female_warrior.png: female half-elf warrior, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/elf_female_necromancer.png: female elf necromancer, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/orc_female_bard.png: female orc bard, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/elf_female_rogue.png: female elf rogue, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/dwarf_female_paladin.png: female dwarf paladin, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

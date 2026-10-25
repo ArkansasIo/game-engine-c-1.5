@@ -1,0 +1,23 @@
+Batch 38 - 10 assets
+==================================================
+
+Assets/GoonzuGame/UI/Icons/chest_icon.png: medieval fantasy chest icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/chat_bubble.png: medieval fantasy chat bubble, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/key_icon.png: medieval fantasy key icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/lock_icon.png: medieval fantasy lock icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/health_heart.png: medieval fantasy health heart, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/shield_icon.png: medieval fantasy shield icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/quest_panel.png: medieval fantasy quest panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/trade_panel.png: medieval fantasy trade panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/map_panel.png: medieval fantasy map panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Panels/guild_panel.png: medieval fantasy guild panel, ornate parchment border, detailed frame design, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

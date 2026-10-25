@@ -1,0 +1,40 @@
+%% Mermaid UML diagram for GoonZu-style UI system
+classDiagram
+    class UIEventBus
+    class UIWindow
+    class UIWindowManager
+    class DragHandle
+    class ResizeHandle
+    class PlayerStatusHUD
+    class MinimapHUD
+    class HotbarHUD
+    class SystemButtonsHUD
+    class ChatController
+    class ChatModel
+    class ChatView
+    class InventoryModel
+    class InventoryWindow
+    class InventorySlotView
+    class ItemDef
+    class ItemStack
+    class PlayerStats
+
+    UIWindowManager --> UIWindow
+    UIWindow <|-- InventoryWindow
+    UIWindow <|-- SkillsWindow
+    UIWindow <|-- QuestsWindow
+    UIWindow <|-- CharacterWindow
+    UIWindow <|-- CraftingWindow
+    UIWindow <|-- MarketWindow
+    UIWindow <|-- PartyWindow
+    UIWindow <|-- OptionsWindow
+    UIWindow o-- DragHandle
+    UIWindow o-- ResizeHandle
+    PlayerStatusHUD o-- PlayerStats
+    InventoryWindow o-- InventoryModel
+    InventoryWindow o-- InventorySlotView
+    InventorySlotView o-- ItemStack
+    ItemStack o-- ItemDef
+    ChatController o-- ChatModel
+    ChatController o-- ChatView
+    SystemButtonsHUD o-- UIWindowManager

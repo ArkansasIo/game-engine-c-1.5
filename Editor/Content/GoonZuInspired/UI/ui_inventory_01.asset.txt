@@ -1,0 +1,2 @@
+# Placeholder for inventory UI asset
+# Replace with .uasset or Unity prefab reference
