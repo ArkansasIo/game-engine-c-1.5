@@ -3,10 +3,7 @@ using System.Collections.Generic;
 
 namespace ArkansasIo.GoonzuGameEngine;
 
-/// <summary>
-/// Pure validation for imported world definitions. Kept independent of Unity APIs so rules can
-/// be tested and reused by editor tooling and future server-side import validation.
-/// </summary>
+/// <summary>Validates imported world definitions and returns actionable diagnostics.</summary>
 public static class GoonzuWorldValidation
 {
     public static IReadOnlyList<string> Validate(GoonzuWorldDefinition world)

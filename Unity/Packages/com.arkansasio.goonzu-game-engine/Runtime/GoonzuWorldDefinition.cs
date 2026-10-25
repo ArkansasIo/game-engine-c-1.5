@@ -6,7 +6,7 @@ namespace ArkansasIo.GoonzuGameEngine;
 [CreateAssetMenu(menuName = "Goonzu/C 1.5 World Definition", fileName = "GoonzuWorldDefinition")]
 public sealed class GoonzuWorldDefinition : ScriptableObject
 {
-    public string version = "0.3.0";
+    public string version = "0.3.1";
     public string style = "original_2d_isometric_fantasy";
     public GoonzuRegion[] regions = Array.Empty<GoonzuRegion>();
     public GoonzuTown[] towns = Array.Empty<GoonzuTown>();
@@ -31,6 +31,11 @@ public sealed class GoonzuTown
     public string name = "";
     [Range(0f, 1f)] public float taxRate;
     public string[] services = Array.Empty<string>();
+
+    // Optional authored world position. Legacy manifests can omit this and use fallback placement.
+    public bool hasGridPosition;
+    public int gridX;
+    public int gridY;
 }
 
 [Serializable]

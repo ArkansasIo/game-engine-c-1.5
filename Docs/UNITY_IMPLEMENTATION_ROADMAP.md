@@ -18,13 +18,13 @@ Build a Goonzu-inspired, original-content isometric MMORPG vertical slice in Uni
 Deliver: clean Unity import, JSON schema checks, EditMode tests, validated manifests, deterministic bootstrap lifecycle.
 
 ### 2. Isometric world slice
-Deliver: tilemap terrain; 5 data-driven towns; camera follow; click-to-move or keyboard movement; colliders; interaction prompts; town services.
+Deliver: tilemap terrain; authored town coordinates; 5 data-driven towns; camera follow; keyboard movement; colliders; interaction prompts; town services.
 
 ### 3. MMORPG core loop
 Deliver: character stats, inventory/stack rules, resource gathering, profession skills, crafting recipes, equipment, quests, NPC dialogue and monster encounters.
 
 ### 4. Economic loop
-Deliver: listings, quantity/price validation, order locking, transaction ledger, taxes and town treasury. Keep only a local mock adapter in the Unity client; real mutation moves to the server.
+Deliver: listings, quantity/price validation, order locking, transaction ledger, taxes and town treasury. Keep only a local mock adapter in the Unity client; real mutation moves to the server through `IGoonzuEconomyGateway` and idempotent purchase requests.
 
 ### 5. Online services
 Deliver: authentication, character persistence, chat, party/guild, world-zone instances, authoritative inventory/economy, rate limits, logs and metrics.
@@ -32,12 +32,31 @@ Deliver: authentication, character persistence, chat, party/guild, world-zone in
 ### 6. Production and content pipeline
 Deliver: reproducible asset imports, Addressables or equivalent content loading, localization, accessibility, graphics settings, build automation, crash/log collection, platform test matrix.
 
+## Current implementation checkpoint
+
+The prototype now has:
+
+- validated JSON world loading;
+- optional authored grid coordinates for towns;
+- deterministic fallback town placement for legacy manifests;
+- an isometric coordinate conversion with centered-tile inverse support;
+- a prototype `CharacterController` player movement component;
+- a transport-neutral economy gateway contract for future server integration;
+- data-driven item definitions with stable IDs, stack limits and validation;
+- a stack-aware inventory model with deterministic snapshots;
+- data-driven recipe definitions and a transactional crafting service;
+- Unity EditMode tests for world validation, JSON import, inventory stacking and crafting.
+
+These are **prototype client systems**, not MMO-authoritative implementations.
+
 ## First sprint task list
 
-- Add a Unity validation test suite and capture a real Editor compile result.
+- Run the package in a clean Unity 2022.3 LTS or Unity 6 project and capture the first compile/test result.
 - Validate `goonzu_seed_world.json` before creating the ScriptableObject.
-- Put explicit grid coordinates on each town definition.
+- Add explicit grid coordinates to each town definition in the seed world.
 - Add a generated-object root and replace/clear spawned markers deterministically.
+- Add resource-node interaction and profession skill contracts.
 - Add stable IDs and tests for item/recipe definitions.
 - Remove UnityEngine-dependent scripts from the .NET app's compile list.
+- Implement the remote `IGoonzuEconomyGateway` adapter only after the server API contract is finalized.
 - Label native C++ managers as skeleton until real backends are connected.
