@@ -1,0 +1,9 @@
+{
+  "name": "evai",
+  "version": "0.1.0-pre-alpha.1",
+  "provider": "ollama",
+  "endpoint": "http://localhost:11434",
+  "defaultModel": "llama3.1",
+  "permissions": ["read-only", "game", "engine"],
+  "applyMode": "plan-first"
+}
