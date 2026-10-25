@@ -5,6 +5,10 @@ on:
     branches: [ main, ethereal-veni-next ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -14,7 +18,9 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
-      - name: Restore
+      - name: Restore solution
         run: dotnet restore EtherealVeni/EtherealVeni.sln
-      - name: Build
+      - name: Build solution
         run: dotnet build EtherealVeni/EtherealVeni.sln --configuration Release --no-restore
+      - name: Smoke-test game entry point
+        run: dotnet run --project EtherealVeni/Game/EthereoPandora.Game.csproj --configuration Release --no-build
