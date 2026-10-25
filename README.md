@@ -11,6 +11,10 @@ Ethereal Veni is the standalone C#/.NET game-engine platform for **Ethereo Pando
 - **Integration:** Unity and Unreal 5 are optional adapters, not core dependencies
 - **Database:** MySQL-backed authoritative server persistence
 
+## Game direction
+
+**Ethereo Pandora is designed as a fully 3D open-world MMORPG and action RPG that combines the depth of modern action combat with the build variety and loot-driven progression of a Diablo-style ARPG.** Its default presentation can use an isometric camera for fast, readable combat while supporting zoom, rotation, free camera movement, third-person exploration, over-the-shoulder combat, and cinematic story cameras. The design takes high-level inspiration from the combat depth and animation quality associated with games such as Elden Ring, the skill/build/loot and dungeon-driven ARPG structure associated with Diablo IV, the persistent-world readability and social systems associated with Warcraft, and the economic/MMORPG foundations represented by GoonZu, while maintaining an original world, lore, mechanics, art direction, and technology stack. Ethereal Veni therefore treats camera, combat, abilities, stats, equipment, loot, animation, procedural generation, world streaming, networking, and persistence as first-class engine systems rather than features added after the core architecture is complete.
+
 ## Architecture
 
 ```text
