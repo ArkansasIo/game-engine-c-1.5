@@ -1,0 +1,7 @@
+{
+  "engineVersion": "1.5",
+  "server": { "tickRate": 20, "maxPlayers": 5000, "region": "auto" },
+  "gameplay": { "levelCap": 20, "autosaveSeconds": 60, "seed": 15001 },
+  "database": { "provider": "mysql", "hostEnv": "GAME_DB_HOST", "userEnv": "GAME_DB_USER", "passwordEnv": "GAME_DB_PASSWORD", "database": "game_engine" },
+  "security": { "requireTls": true, "sessionMinutes": 60 }
+}
