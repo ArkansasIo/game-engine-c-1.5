@@ -18,9 +18,40 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
-      - name: Restore solution
-        run: dotnet restore EtherealVeni/EtherealVeni.sln
-      - name: Build solution
-        run: dotnet build EtherealVeni/EtherealVeni.sln --configuration Release --no-restore
+      - name: Restore engine
+        run: dotnet restore EtherealVeni/Engine/EtherealVeni.Engine.csproj
+      - name: Build engine
+        run: dotnet build EtherealVeni/Engine/EtherealVeni.Engine.csproj --configuration Release --no-restore
+      - name: Restore game
+        run: dotnet restore EtherealVeni/Game/EthereoPandora.Game.csproj
+      - name: Build game
+        run: dotnet build EtherealVeni/Game/EthereoPandora.Game.csproj --configuration Release --no-restore
       - name: Smoke-test game entry point
         run: dotnet run --project EtherealVeni/Game/EthereoPandora.Game.csproj --configuration Release --no-build
+
+  windows-exe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Create output folder
+        shell: pwsh
+        run: New-Item -ItemType Directory -Force -Path output/win-x64 | Out-Null
+      - name: Restore game
+        run: dotnet restore EtherealVeni/Game/EthereoPandora.Game.csproj
+      - name: Publish Windows x64 EXE
+        run: dotnet publish EtherealVeni/Game/EthereoPandora.Game.csproj --configuration Release --runtime win-x64 --self-contained true --output output/win-x64 /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+      - name: Verify EXE
+        shell: pwsh
+        run: |
+          if (-not (Test-Path output/win-x64/EthereoPandora.Game.exe)) { throw 'EthereoPandora.Game.exe was not produced.' }
+          Get-ChildItem output/win-x64
+      - name: Upload Windows EXE artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EthereoPandora-Windows-x64
+          path: output/win-x64/
+          if-no-files-found: error
+          retention-days: 30
