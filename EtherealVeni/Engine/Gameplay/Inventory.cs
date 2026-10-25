@@ -53,21 +53,20 @@ public sealed class Inventory
         if (TotalWeight + incomingWeight > WeightCapacity + 1e-9)
             return InventoryOperationResult.Fail("Weight capacity exceeded.");
 
+        var availableStackSpace = _stacks
+            .Where(x => x.Definition.Id == itemId)
+            .Sum(x => definition.MaxStack - x.Quantity);
+        var spaceAfterStacking = Math.Max(0, remaining - availableStackSpace);
+        var slotsNeeded = (spaceAfterStacking + definition.MaxStack - 1) / definition.MaxStack;
+        if (slotsNeeded > SlotCapacity - _stacks.Count)
+            return InventoryOperationResult.Fail("Inventory slot capacity exceeded.");
+
         foreach (var stack in _stacks.Where(x => x.Definition.Id == itemId && x.Quantity < definition.MaxStack))
         {
             var moved = Math.Min(remaining, definition.MaxStack - stack.Quantity);
             stack.Quantity += moved;
             remaining -= moved;
             if (remaining == 0) return InventoryOperationResult.Ok();
-        }
-
-        var freeSlots = SlotCapacity - _stacks.Count;
-        var slotsNeeded = (remaining + definition.MaxStack - 1) / definition.MaxStack;
-        if (slotsNeeded > freeSlots)
-        {
-            // Roll back stack mutations so the operation is atomic.
-            Remove(itemId, quantity - remaining);
-            return InventoryOperationResult.Fail("Inventory slot capacity exceeded.");
         }
 
         while (remaining > 0)
