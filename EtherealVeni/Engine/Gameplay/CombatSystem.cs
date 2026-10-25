@@ -1,4 +1,3 @@
-using EtherealVeni.Engine.Runtime;
 
 namespace EtherealVeni.Engine.Gameplay;
 
@@ -6,8 +5,8 @@ namespace EtherealVeni.Engine.Gameplay;
 public enum DamageKind { Physical, Fire, Ice, Lightning, Poison, Arcane, Shadow, Holy }
 
 public sealed record DamageRequest(
-    EntityId Source,
-    EntityId Target,
+    Guid Source,
+    Guid Target,
     double BaseDamage,
     DamageKind Kind = DamageKind.Physical,
     bool CanCrit = true,
@@ -15,8 +14,8 @@ public sealed record DamageRequest(
     double CriticalMultiplier = 1.5);
 
 public sealed record DamageResult(
-    EntityId Source,
-    EntityId Target,
+    Guid Source,
+    Guid Target,
     double RawDamage,
     double AppliedDamage,
     bool Critical,
@@ -24,7 +23,7 @@ public sealed record DamageResult(
 
 public sealed class Combatant
 {
-    public EntityId Id { get; init; }
+    public Guid Id { get; init; } = Guid.NewGuid();
     public string Name { get; init; } = "Combatant";
     public double Health { get; set; } = 100;
     public double MaxHealth { get; set; } = 100;
