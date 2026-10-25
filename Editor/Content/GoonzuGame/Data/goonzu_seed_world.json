@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "style": "original_2d_isometric_fantasy",
+  "regions": [
+    {"id":"frostvale","name":"Frostvale March","biome":"snow","towns":["auricrest","pinewatch"]},
+    {"id":"greenreach","name":"Greenreach","biome":"temperate","towns":["willowmere","stoneford"]},
+    {"id":"emberwild","name":"Emberwild","biome":"volcanic","towns":["cinderport"]}
+  ],
+  "towns": [
+    {"id":"auricrest","name":"Auricrest","taxRate":0.05,"services":["market","forge","stable","guild_hall","bank"]},
+    {"id":"pinewatch","name":"Pinewatch","taxRate":0.04,"services":["market","lumberyard","inn","stable"]},
+    {"id":"willowmere","name":"Willowmere","taxRate":0.03,"services":["market","farm","apothecary","fishing"]},
+    {"id":"stoneford","name":"Stoneford","taxRate":0.06,"services":["market","mine","forge","warehouse"]},
+    {"id":"cinderport","name":"Cinderport","taxRate":0.08,"services":["market","forge","armory","guild_hall"]}
+  ],
+  "resources": [
+    {"id":"iron_ore","tier":1,"gathering":"mining"},
+    {"id":"coal","tier":1,"gathering":"mining"},
+    {"id":"pine_log","tier":1,"gathering":"logging"},
+    {"id":"herb","tier":1,"gathering":"herbalism"},
+    {"id":"raw_fish","tier":1,"gathering":"fishing"},
+    {"id":"iron_ingot","tier":2,"recipe":"smelt_iron"},
+    {"id":"steel_ingot","tier":3,"recipe":"forge_steel"}
+  ],
+  "starterSkills": [
+    "swordsmanship","archery","staffcraft","mining","logging","fishing","farming","herbalism","blacksmithing","cooking","alchemy","trading"
+  ],
+  "starterAssets": {
+    "character": "player_adventurer_01",
+    "town": "auricrest_market_square",
+    "tileset": "frostvale_isometric_v01",
+    "ui": "command_panel_v01"
+  }
+}

@@ -1,0 +1,2 @@
+# Placeholder for grass_tile.png
+# Generate using: seamless grass tile texture, top-down, hand-painted fantasy style, RPG map tileset, anime-inspired fantasy MMORPG style

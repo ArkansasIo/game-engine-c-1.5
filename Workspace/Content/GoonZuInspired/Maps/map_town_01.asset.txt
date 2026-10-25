@@ -1,0 +1,2 @@
+# Placeholder for town map asset
+# Replace with .uasset or Unity scene reference

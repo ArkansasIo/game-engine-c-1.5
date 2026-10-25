@@ -1,0 +1,23 @@
+Batch 18 - 10 assets
+==================================================
+
+Assets/GoonzuGame/Characters/tiefling_male_paladin.png: male tiefling paladin, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/tiefling_female_ranger.png: female tiefling ranger, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/gnome_male_cleric.png: male gnome cleric, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Characters/half-elf_female_monk.png: female half-elf monk, medieval fantasy character, detailed armor and clothing, heroic pose, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/Tiles/mosaic_floor.png: medieval fantasy mosaic floor tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/snow_ground.png: medieval fantasy snow ground tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/wood_floor.png: medieval fantasy wood floor tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/marble_floor.png: medieval fantasy marble floor tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/dirt_path.png: medieval fantasy dirt path tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+
+Assets/GoonzuGame/Tiles/grass_field.png: medieval fantasy grass field tile, seamless texture pattern, detailed surface, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset
+

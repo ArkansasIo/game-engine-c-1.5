@@ -1,0 +1,5 @@
+/workspaces/game-engine-c-1.5/Assets/GoonzuGame/obj/Debug/net8.0/GoonzuGame.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/game-engine-c-1.5/Assets/GoonzuGame/obj/Debug/net8.0/GoonzuGame.AssemblyInfoInputs.cache
+/workspaces/game-engine-c-1.5/Assets/GoonzuGame/obj/Debug/net8.0/GoonzuGame.AssemblyInfo.cs
+/workspaces/game-engine-c-1.5/Assets/GoonzuGame/obj/Debug/net8.0/GoonzuGame.csproj.CoreCompileInputs.cache
+/workspaces/game-engine-c-1.5/Assets/GoonzuGame/obj/Debug/net8.0/GoonzuGame.sourcelink.json

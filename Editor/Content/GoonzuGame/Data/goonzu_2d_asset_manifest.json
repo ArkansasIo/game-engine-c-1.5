@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "render": {"projection":"isometric","camera":"orthographic","tileWidth":64,"tileHeight":32,"characterTargetHeight":96,"textureFormat":"PNG"},
+  "animationSets": ["idle_4","walk_8","run_8","attack_6","cast_8","hit_4","death_8","gather_8","craft_8"],
+  "characters": [
+    {"id":"player_adventurer_01","roles":["warrior","ranger","artisan"],"directions":8},
+    {"id":"merchant_01","roles":["merchant","mayor"],"directions":8},
+    {"id":"blacksmith_01","roles":["blacksmith"],"directions":8},
+    {"id":"guard_01","roles":["guard"],"directions":8},
+    {"id":"ice_mage_01","roles":["mage"],"directions":8}
+  ],
+  "towns": [
+    "auricrest_market_square","pinewatch_lumberyard","willowmere_farm","stoneford_mine","cinderport_forge"
+  ],
+  "buildings": ["market","blacksmith","armory","apothecary","guild_hall","inn","stable","bank","warehouse","town_hall","watchtower","mine_entrance"],
+  "terrain": ["grass","snow","ice","dirt","cobblestone","water","forest","rock","lava","bridge"],
+  "resources": ["iron_ore","coal","pine_log","herb","raw_fish","iron_ingot","steel_ingot","crystal","leather_hide"],
+  "equipment": {"weapons":["sword","axe","spear","bow","staff","dagger"],"armor":["leather","chain","plate","mage_robe"],"accessories":["ring","amulet","belt"]},
+  "creatures": ["frost_wolf","forest_goblin","stone_golem","ember_lizard","ice_wraith","merchant_guard","world_boss_frost_titan"],
+  "effects": ["ice_burst","heal","spark","enchant_glow","craft_success","level_up","teleport","critical_hit"],
+  "ui": ["character_panel","inventory","equipment","skills","crafting","market","town","guild","election","quest_log","world_map","chat","hotbar"],
+  "sourcePolicy": "All new art must be original. Use GoonZu only as high-level genre/mechanics reference."
+}

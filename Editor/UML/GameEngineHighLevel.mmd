@@ -1,0 +1,26 @@
+%% Mermaid UML diagram for Game Engine High-Level Architecture
+classDiagram
+    class GameEngine
+    class SceneManager
+    class Entity
+    class Component
+    class System
+    class InputManager
+    class ResourceManager
+    class Renderer
+    class AudioManager
+    class PhysicsManager
+    class UIManager
+
+    GameEngine o-- SceneManager
+    GameEngine o-- ResourceManager
+    GameEngine o-- AudioManager
+    GameEngine o-- PhysicsManager
+    GameEngine o-- UIManager
+    SceneManager o-- Entity
+    Entity o-- Component
+    System <|-- Renderer
+    System <|-- AudioManager
+    System <|-- PhysicsManager
+    System <|-- UIManager
+    InputManager ..> GameEngine

@@ -1,0 +1,2 @@
+# Placeholder for item data table
+# Replace with .csv, .json, or ScriptableObject reference

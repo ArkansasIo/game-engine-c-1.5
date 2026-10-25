@@ -1,0 +1,23 @@
+Batch 37 - 10 assets
+==================================================
+
+Assets/GoonzuGame/UI/Icons/arrow_icon.png: medieval fantasy arrow icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/mana_crystal.png: medieval fantasy mana crystal, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/potion_icon.png: medieval fantasy potion icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/gold_coin.png: medieval fantasy gold coin, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/friend_icon.png: medieval fantasy friend icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/map_marker.png: medieval fantasy map marker, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/experience_star.png: medieval fantasy experience star, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/sword_icon.png: medieval fantasy sword icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/quest_scroll.png: medieval fantasy quest scroll, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+
+Assets/GoonzuGame/UI/Icons/enemy_icon.png: medieval fantasy enemy icon, detailed icon design, symbolic representation, anime-inspired fantasy MMORPG style, bright colors, clean outlines, soft shading, hand-painted look, game-ready asset, transparent background
+

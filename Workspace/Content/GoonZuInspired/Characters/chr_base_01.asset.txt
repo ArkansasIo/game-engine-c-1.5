@@ -1,0 +1,2 @@
+# Placeholder for base character model asset
+# Replace with .uasset or Unity prefab reference
