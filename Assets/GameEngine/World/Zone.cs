@@ -1,29 +1,16 @@
-using System.Collections.Generic;
+using System;
 
-namespace GameEngine.World
+namespace GameEngine.World;
+
+/// <summary>Represents a named world region used by the legacy-compatible world layer.</summary>
+public sealed class Zone
 {
-    /// <summary>
-    /// Represents a world zone or region, including its type, biome, and properties.
-    /// </summary>
-    public class Zone
+    public string Name { get; }
+    public Zone(string name)
     {
-        }
+        if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Zone name is required.", nameof(name));
+        Name = name;
     }
 
-namespace GoonzuGame.World
-{
-    public class Zone
-    {
-        public string Name { get; set; }
-        public Zone(string name)
-        {
-            Name = name;
-        }
-        public void Render()
-        {
-            Console.WriteLine($"Rendering Zone: {Name}");
-        }
-    }
-}
-    }
+    public void Render() => Console.WriteLine($"Rendering Zone: {Name}");
 }
