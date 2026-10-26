@@ -1,0 +1,2363 @@
+{
+  "count": 393,
+  "assets": [
+    {
+      "id": "asset_0000",
+      "file": "asset_0000.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0001",
+      "file": "asset_0001.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0002",
+      "file": "asset_0002.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0003",
+      "file": "asset_0003.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0004",
+      "file": "asset_0004.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0005",
+      "file": "asset_0005.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0006",
+      "file": "asset_0006.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0007",
+      "file": "asset_0007.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0008",
+      "file": "asset_0008.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0009",
+      "file": "asset_0009.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0010",
+      "file": "asset_0010.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0011",
+      "file": "asset_0011.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0012",
+      "file": "asset_0012.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0013",
+      "file": "asset_0013.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0014",
+      "file": "asset_0014.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0015",
+      "file": "asset_0015.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0016",
+      "file": "asset_0016.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0017",
+      "file": "asset_0017.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0018",
+      "file": "asset_0018.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0019",
+      "file": "asset_0019.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0020",
+      "file": "asset_0020.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0021",
+      "file": "asset_0021.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0022",
+      "file": "asset_0022.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0023",
+      "file": "asset_0023.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0024",
+      "file": "asset_0024.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0025",
+      "file": "asset_0025.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0026",
+      "file": "asset_0026.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0027",
+      "file": "asset_0027.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0028",
+      "file": "asset_0028.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0029",
+      "file": "asset_0029.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0030",
+      "file": "asset_0030.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0031",
+      "file": "asset_0031.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0032",
+      "file": "asset_0032.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0033",
+      "file": "asset_0033.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0034",
+      "file": "asset_0034.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0035",
+      "file": "asset_0035.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0036",
+      "file": "asset_0036.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0037",
+      "file": "asset_0037.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0038",
+      "file": "asset_0038.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0039",
+      "file": "asset_0039.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0040",
+      "file": "asset_0040.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0041",
+      "file": "asset_0041.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0042",
+      "file": "asset_0042.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0043",
+      "file": "asset_0043.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0044",
+      "file": "asset_0044.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0045",
+      "file": "asset_0045.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0046",
+      "file": "asset_0046.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0047",
+      "file": "asset_0047.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0048",
+      "file": "asset_0048.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0049",
+      "file": "asset_0049.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0050",
+      "file": "asset_0050.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0051",
+      "file": "asset_0051.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0052",
+      "file": "asset_0052.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0053",
+      "file": "asset_0053.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0054",
+      "file": "asset_0054.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0055",
+      "file": "asset_0055.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0056",
+      "file": "asset_0056.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0057",
+      "file": "asset_0057.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0058",
+      "file": "asset_0058.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0059",
+      "file": "asset_0059.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0060",
+      "file": "asset_0060.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0061",
+      "file": "asset_0061.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0062",
+      "file": "asset_0062.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0063",
+      "file": "asset_0063.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0064",
+      "file": "asset_0064.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0065",
+      "file": "asset_0065.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0066",
+      "file": "asset_0066.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0067",
+      "file": "asset_0067.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0068",
+      "file": "asset_0068.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0069",
+      "file": "asset_0069.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0070",
+      "file": "asset_0070.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0071",
+      "file": "asset_0071.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0072",
+      "file": "asset_0072.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0073",
+      "file": "asset_0073.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0074",
+      "file": "asset_0074.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0075",
+      "file": "asset_0075.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0076",
+      "file": "asset_0076.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0077",
+      "file": "asset_0077.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0078",
+      "file": "asset_0078.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0079",
+      "file": "asset_0079.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0080",
+      "file": "asset_0080.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0081",
+      "file": "asset_0081.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0082",
+      "file": "asset_0082.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0083",
+      "file": "asset_0083.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0084",
+      "file": "asset_0084.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0085",
+      "file": "asset_0085.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0086",
+      "file": "asset_0086.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0087",
+      "file": "asset_0087.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0088",
+      "file": "asset_0088.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0089",
+      "file": "asset_0089.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0090",
+      "file": "asset_0090.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0091",
+      "file": "asset_0091.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0092",
+      "file": "asset_0092.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0093",
+      "file": "asset_0093.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0094",
+      "file": "asset_0094.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0095",
+      "file": "asset_0095.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0096",
+      "file": "asset_0096.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0097",
+      "file": "asset_0097.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0098",
+      "file": "asset_0098.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0099",
+      "file": "asset_0099.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0100",
+      "file": "asset_0100.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0101",
+      "file": "asset_0101.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0102",
+      "file": "asset_0102.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0103",
+      "file": "asset_0103.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0104",
+      "file": "asset_0104.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0105",
+      "file": "asset_0105.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0106",
+      "file": "asset_0106.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0107",
+      "file": "asset_0107.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0108",
+      "file": "asset_0108.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0109",
+      "file": "asset_0109.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0110",
+      "file": "asset_0110.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0111",
+      "file": "asset_0111.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0112",
+      "file": "asset_0112.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0113",
+      "file": "asset_0113.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0114",
+      "file": "asset_0114.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0115",
+      "file": "asset_0115.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0116",
+      "file": "asset_0116.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0117",
+      "file": "asset_0117.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0118",
+      "file": "asset_0118.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0119",
+      "file": "asset_0119.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0120",
+      "file": "asset_0120.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0121",
+      "file": "asset_0121.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0122",
+      "file": "asset_0122.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0123",
+      "file": "asset_0123.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0124",
+      "file": "asset_0124.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0125",
+      "file": "asset_0125.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0126",
+      "file": "asset_0126.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0127",
+      "file": "asset_0127.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0128",
+      "file": "asset_0128.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0129",
+      "file": "asset_0129.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0130",
+      "file": "asset_0130.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0131",
+      "file": "asset_0131.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0132",
+      "file": "asset_0132.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0133",
+      "file": "asset_0133.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0134",
+      "file": "asset_0134.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0135",
+      "file": "asset_0135.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0136",
+      "file": "asset_0136.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0137",
+      "file": "asset_0137.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0138",
+      "file": "asset_0138.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0139",
+      "file": "asset_0139.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0140",
+      "file": "asset_0140.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0141",
+      "file": "asset_0141.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0142",
+      "file": "asset_0142.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0143",
+      "file": "asset_0143.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0144",
+      "file": "asset_0144.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0145",
+      "file": "asset_0145.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0146",
+      "file": "asset_0146.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0147",
+      "file": "asset_0147.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0148",
+      "file": "asset_0148.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0149",
+      "file": "asset_0149.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0150",
+      "file": "asset_0150.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0151",
+      "file": "asset_0151.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0152",
+      "file": "asset_0152.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0153",
+      "file": "asset_0153.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0154",
+      "file": "asset_0154.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0155",
+      "file": "asset_0155.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0156",
+      "file": "asset_0156.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0157",
+      "file": "asset_0157.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0158",
+      "file": "asset_0158.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0159",
+      "file": "asset_0159.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0160",
+      "file": "asset_0160.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0161",
+      "file": "asset_0161.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0162",
+      "file": "asset_0162.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0163",
+      "file": "asset_0163.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0164",
+      "file": "asset_0164.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0165",
+      "file": "asset_0165.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0166",
+      "file": "asset_0166.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0167",
+      "file": "asset_0167.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0168",
+      "file": "asset_0168.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0169",
+      "file": "asset_0169.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0170",
+      "file": "asset_0170.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0171",
+      "file": "asset_0171.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0172",
+      "file": "asset_0172.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0173",
+      "file": "asset_0173.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0174",
+      "file": "asset_0174.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0175",
+      "file": "asset_0175.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0176",
+      "file": "asset_0176.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0177",
+      "file": "asset_0177.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0178",
+      "file": "asset_0178.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0179",
+      "file": "asset_0179.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0180",
+      "file": "asset_0180.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0181",
+      "file": "asset_0181.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0182",
+      "file": "asset_0182.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0183",
+      "file": "asset_0183.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0184",
+      "file": "asset_0184.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0185",
+      "file": "asset_0185.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0186",
+      "file": "asset_0186.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0187",
+      "file": "asset_0187.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0188",
+      "file": "asset_0188.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0189",
+      "file": "asset_0189.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0190",
+      "file": "asset_0190.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0191",
+      "file": "asset_0191.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0192",
+      "file": "asset_0192.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0193",
+      "file": "asset_0193.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0194",
+      "file": "asset_0194.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0195",
+      "file": "asset_0195.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0196",
+      "file": "asset_0196.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0197",
+      "file": "asset_0197.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0198",
+      "file": "asset_0198.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0199",
+      "file": "asset_0199.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0200",
+      "file": "asset_0200.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0201",
+      "file": "asset_0201.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0202",
+      "file": "asset_0202.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0203",
+      "file": "asset_0203.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0204",
+      "file": "asset_0204.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0205",
+      "file": "asset_0205.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0206",
+      "file": "asset_0206.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0207",
+      "file": "asset_0207.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0208",
+      "file": "asset_0208.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0209",
+      "file": "asset_0209.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0210",
+      "file": "asset_0210.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0211",
+      "file": "asset_0211.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0212",
+      "file": "asset_0212.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0213",
+      "file": "asset_0213.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0214",
+      "file": "asset_0214.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0215",
+      "file": "asset_0215.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0216",
+      "file": "asset_0216.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0217",
+      "file": "asset_0217.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0218",
+      "file": "asset_0218.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0219",
+      "file": "asset_0219.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0220",
+      "file": "asset_0220.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0221",
+      "file": "asset_0221.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0222",
+      "file": "asset_0222.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0223",
+      "file": "asset_0223.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0224",
+      "file": "asset_0224.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0225",
+      "file": "asset_0225.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0226",
+      "file": "asset_0226.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0227",
+      "file": "asset_0227.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0228",
+      "file": "asset_0228.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0229",
+      "file": "asset_0229.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0230",
+      "file": "asset_0230.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0231",
+      "file": "asset_0231.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0232",
+      "file": "asset_0232.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0233",
+      "file": "asset_0233.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0234",
+      "file": "asset_0234.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0235",
+      "file": "asset_0235.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0236",
+      "file": "asset_0236.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0237",
+      "file": "asset_0237.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0238",
+      "file": "asset_0238.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0239",
+      "file": "asset_0239.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0240",
+      "file": "asset_0240.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0241",
+      "file": "asset_0241.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0242",
+      "file": "asset_0242.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0243",
+      "file": "asset_0243.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0244",
+      "file": "asset_0244.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0245",
+      "file": "asset_0245.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0246",
+      "file": "asset_0246.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0247",
+      "file": "asset_0247.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0248",
+      "file": "asset_0248.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0249",
+      "file": "asset_0249.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0250",
+      "file": "asset_0250.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0251",
+      "file": "asset_0251.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0252",
+      "file": "asset_0252.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0253",
+      "file": "asset_0253.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0254",
+      "file": "asset_0254.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0255",
+      "file": "asset_0255.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0256",
+      "file": "asset_0256.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0257",
+      "file": "asset_0257.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0258",
+      "file": "asset_0258.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0259",
+      "file": "asset_0259.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0260",
+      "file": "asset_0260.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0261",
+      "file": "asset_0261.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0262",
+      "file": "asset_0262.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0263",
+      "file": "asset_0263.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0264",
+      "file": "asset_0264.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0265",
+      "file": "asset_0265.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0266",
+      "file": "asset_0266.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0267",
+      "file": "asset_0267.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0268",
+      "file": "asset_0268.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0269",
+      "file": "asset_0269.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0270",
+      "file": "asset_0270.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0271",
+      "file": "asset_0271.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0272",
+      "file": "asset_0272.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0273",
+      "file": "asset_0273.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0274",
+      "file": "asset_0274.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0275",
+      "file": "asset_0275.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0276",
+      "file": "asset_0276.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0277",
+      "file": "asset_0277.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0278",
+      "file": "asset_0278.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0279",
+      "file": "asset_0279.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0280",
+      "file": "asset_0280.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0281",
+      "file": "asset_0281.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0282",
+      "file": "asset_0282.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0283",
+      "file": "asset_0283.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0284",
+      "file": "asset_0284.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0285",
+      "file": "asset_0285.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0286",
+      "file": "asset_0286.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0287",
+      "file": "asset_0287.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0288",
+      "file": "asset_0288.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0289",
+      "file": "asset_0289.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0290",
+      "file": "asset_0290.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0291",
+      "file": "asset_0291.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0292",
+      "file": "asset_0292.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0293",
+      "file": "asset_0293.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0294",
+      "file": "asset_0294.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0295",
+      "file": "asset_0295.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0296",
+      "file": "asset_0296.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0297",
+      "file": "asset_0297.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0298",
+      "file": "asset_0298.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0299",
+      "file": "asset_0299.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0300",
+      "file": "asset_0300.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0301",
+      "file": "asset_0301.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0302",
+      "file": "asset_0302.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0303",
+      "file": "asset_0303.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0304",
+      "file": "asset_0304.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0305",
+      "file": "asset_0305.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0306",
+      "file": "asset_0306.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0307",
+      "file": "asset_0307.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0308",
+      "file": "asset_0308.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0309",
+      "file": "asset_0309.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0310",
+      "file": "asset_0310.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0311",
+      "file": "asset_0311.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0312",
+      "file": "asset_0312.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0313",
+      "file": "asset_0313.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0314",
+      "file": "asset_0314.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0315",
+      "file": "asset_0315.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0316",
+      "file": "asset_0316.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0317",
+      "file": "asset_0317.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0318",
+      "file": "asset_0318.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0319",
+      "file": "asset_0319.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0320",
+      "file": "asset_0320.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0321",
+      "file": "asset_0321.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0322",
+      "file": "asset_0322.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0323",
+      "file": "asset_0323.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0324",
+      "file": "asset_0324.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0325",
+      "file": "asset_0325.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0326",
+      "file": "asset_0326.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0327",
+      "file": "asset_0327.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0328",
+      "file": "asset_0328.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0329",
+      "file": "asset_0329.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0330",
+      "file": "asset_0330.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0331",
+      "file": "asset_0331.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0332",
+      "file": "asset_0332.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0333",
+      "file": "asset_0333.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0334",
+      "file": "asset_0334.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0335",
+      "file": "asset_0335.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0336",
+      "file": "asset_0336.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0337",
+      "file": "asset_0337.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0338",
+      "file": "asset_0338.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0339",
+      "file": "asset_0339.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0340",
+      "file": "asset_0340.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0341",
+      "file": "asset_0341.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0342",
+      "file": "asset_0342.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0343",
+      "file": "asset_0343.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0344",
+      "file": "asset_0344.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0345",
+      "file": "asset_0345.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0346",
+      "file": "asset_0346.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0347",
+      "file": "asset_0347.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0348",
+      "file": "asset_0348.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0349",
+      "file": "asset_0349.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0350",
+      "file": "asset_0350.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0351",
+      "file": "asset_0351.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0352",
+      "file": "asset_0352.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0353",
+      "file": "asset_0353.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0354",
+      "file": "asset_0354.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0355",
+      "file": "asset_0355.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0356",
+      "file": "asset_0356.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0357",
+      "file": "asset_0357.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0358",
+      "file": "asset_0358.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0359",
+      "file": "asset_0359.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0360",
+      "file": "asset_0360.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0361",
+      "file": "asset_0361.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0362",
+      "file": "asset_0362.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0363",
+      "file": "asset_0363.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0364",
+      "file": "asset_0364.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0365",
+      "file": "asset_0365.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0366",
+      "file": "asset_0366.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0367",
+      "file": "asset_0367.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0368",
+      "file": "asset_0368.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0369",
+      "file": "asset_0369.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0370",
+      "file": "asset_0370.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0371",
+      "file": "asset_0371.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0372",
+      "file": "asset_0372.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0373",
+      "file": "asset_0373.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0374",
+      "file": "asset_0374.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0375",
+      "file": "asset_0375.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0376",
+      "file": "asset_0376.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0377",
+      "file": "asset_0377.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0378",
+      "file": "asset_0378.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0379",
+      "file": "asset_0379.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0380",
+      "file": "asset_0380.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0381",
+      "file": "asset_0381.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0382",
+      "file": "asset_0382.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0383",
+      "file": "asset_0383.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0384",
+      "file": "asset_0384.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0385",
+      "file": "asset_0385.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0386",
+      "file": "asset_0386.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0387",
+      "file": "asset_0387.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0388",
+      "file": "asset_0388.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0389",
+      "file": "asset_0389.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0390",
+      "file": "asset_0390.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0391",
+      "file": "asset_0391.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    },
+    {
+      "id": "asset_0392",
+      "file": "asset_0392.svg",
+      "kind": "default",
+      "prompt": "generic game asset"
+    }
+  ]
+}
