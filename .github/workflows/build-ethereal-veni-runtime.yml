@@ -1,0 +1,26 @@
+name: Build Ethereal Veni Runtime
+
+on:
+  push:
+    branches: [ main, feature/runtime-foundation ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore core
+        run: dotnet restore src/GoonzuGame.Core/GoonzuGame.Core.csproj
+      - name: Build core
+        run: dotnet build src/GoonzuGame.Core/GoonzuGame.Core.csproj --configuration Release --no-restore
+      - name: Restore application
+        run: dotnet restore src/GameEngineApp/GameEngineApp.csproj
+      - name: Build application
+        run: dotnet build src/GameEngineApp/GameEngineApp.csproj --configuration Release --no-restore
