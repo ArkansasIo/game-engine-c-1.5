@@ -8,17 +8,48 @@ on:
       - 'tools/generate_goonzu_assets.py'
       - '.github/workflows/generate-game-assets.yml'
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate SVG asset pack
         run: python3 tools/generate_goonzu_assets.py
 
-      - name: Package generated assets
+      - name: Validate generated pack
+        run: |
+          test -f Assets/GoonzuGame/Generated/manifest.json
+          test -f Assets/GoonzuGame/Generated/goonzu_asset_atlas.svg
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('Assets/GoonzuGame/Generated/manifest.json')
+          data=json.loads(p.read_text())
+          assert data['count'] == len(data['assets'])
+          assert data['count'] > 0
+          print(f"Validated {data['count']} generated assets")
+          PY
+
+      - name: Commit generated assets to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Assets/GoonzuGame/Generated
+          if git diff --cached --quiet; then
+            echo "No generated asset changes to commit."
+          else
+            git commit -m "Generate complete game image asset pack"
+            git push
+          fi
+
+      - name: Package generated asset pack
         run: tar -czf goonzu-assets-svg.tar.gz -C Assets/GoonzuGame/Generated .
 
       - name: Upload generated asset pack
