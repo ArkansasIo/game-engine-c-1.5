@@ -1,6 +1,13 @@
-using EtherealVeni.Engine.Runtime;
+using System.Windows.Forms;
 
-var engine = new EngineRuntime();
-engine.Start();
-Console.WriteLine($"{engine.EngineName} {engine.Version} — Ethereo Pandora");
-Console.WriteLine(engine.IsRunning ? "Runtime started." : "Runtime stopped.");
+namespace EthereoPandora.Game;
+
+internal static class Program
+{
+    [STAThread]
+    private static void Main()
+    {
+        ApplicationConfiguration.Initialize();
+        Application.Run(new GameForm());
+    }
+}
