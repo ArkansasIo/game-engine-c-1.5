@@ -1,0 +1,30 @@
+name: Generate Game Assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'goonzu_prompts.json'
+      - 'tools/generate_goonzu_assets.py'
+      - '.github/workflows/generate-game-assets.yml'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate SVG asset pack
+        run: python3 tools/generate_goonzu_assets.py
+
+      - name: Package generated assets
+        run: tar -czf goonzu-assets-svg.tar.gz -C Assets/GoonzuGame/Generated .
+
+      - name: Upload generated asset pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: goonzu-game-assets-svg
+          path: |
+            Assets/GoonzuGame/Generated/
+            goonzu-assets-svg.tar.gz
