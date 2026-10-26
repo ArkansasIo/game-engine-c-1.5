@@ -1,4 +1,13 @@
-using EtherealVeni.Engine.Runtime;
+using System.Windows.Forms;
 
-var engine = new EngineRuntime();
-Console.WriteLine($"Ethereal Veni Editor host — Engine {engine.Version}");
+namespace EtherealVeni.Editor;
+
+internal static class Program
+{
+    [STAThread]
+    private static void Main()
+    {
+        ApplicationConfiguration.Initialize();
+        Application.Run(new EditorForm());
+    }
+}
