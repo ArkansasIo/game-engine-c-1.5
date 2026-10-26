@@ -22,8 +22,11 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore
-        run: dotnet restore EtherealVeni/EtherealVeni.sln
+      - name: Restore Editor
+        run: dotnet restore EtherealVeni/Editor/EtherealVeni.Editor.csproj
+
+      - name: Restore Game
+        run: dotnet restore EtherealVeni/Game/EthereoPandora.Game.csproj
 
       - name: Build Editor
         run: dotnet build EtherealVeni/Editor/EtherealVeni.Editor.csproj -c Release --no-restore
@@ -32,10 +35,10 @@ jobs:
         run: dotnet build EtherealVeni/Game/EthereoPandora.Game.csproj -c Release --no-restore
 
       - name: Publish Editor
-        run: dotnet publish EtherealVeni/Editor/EtherealVeni.Editor.csproj -c Release -r win-x64 --self-contained false -o Output/Editor/win-x64
+        run: dotnet publish EtherealVeni/Editor/EtherealVeni.Editor.csproj -c Release -r win-x64 --self-contained false -o Output/Editor/win-x64 --no-restore
 
       - name: Publish Game
-        run: dotnet publish EtherealVeni/Game/EthereoPandora.Game.csproj -c Release -r win-x64 --self-contained false -o Output/Game/win-x64
+        run: dotnet publish EtherealVeni/Game/EthereoPandora.Game.csproj -c Release -r win-x64 --self-contained false -o Output/Game/win-x64 --no-restore
 
       - name: Upload Windows prototypes
         uses: actions/upload-artifact@v4
