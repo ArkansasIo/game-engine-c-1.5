@@ -11,5 +11,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../Engine/EtherealVeni.Engine.csproj" />
+    <PackageReference Include="OpenTK" Version="4.9.4" />
+    <PackageReference Include="OpenTK.WinForms" Version="4.9.4" />
   </ItemGroup>
 </Project>
