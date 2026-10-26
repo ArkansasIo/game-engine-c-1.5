@@ -1,70 +1,151 @@
-using System.Drawing.Drawing2D;
-using System.Numerics;
+using OpenTK.Graphics.OpenGL4;
+using OpenTK.Mathematics;
+using OpenTK.WinForms;
 using System.Windows.Forms;
 
 namespace EthereoPandora.Game;
 
 public sealed class GameForm : Form
 {
-    private readonly GameViewport _viewport = new();
+    private readonly Pandora3DViewport _viewport = new();
     private readonly Timer _timer = new() { Interval = 16 };
+    private readonly Label _stats = new();
+    private readonly ProgressBar _hp = new();
+    private readonly ProgressBar _mana = new();
+    private readonly Panel _inventory = new();
+    private readonly Panel _quest = new();
+    private readonly Panel _menu = new();
 
     public GameForm()
     {
         Text = "Ethereo Pandora — Ethereal Veni Runtime";
         ClientSize = new Size(1440, 900);
-        MinimumSize = new Size(1024, 700);
-        BackColor = Color.Black;
+        MinimumSize = new Size(1100, 720);
         KeyPreview = true;
+        BackColor = Color.FromArgb(5, 8, 13);
+        BuildHud();
         Controls.Add(_viewport);
         _viewport.Dock = DockStyle.Fill;
-        KeyDown += (_, e) => _viewport.SetKey(e.KeyCode, true);
-        KeyUp += (_, e) => _viewport.SetKey(e.KeyCode, false);
-        _timer.Tick += (_, _) => _viewport.UpdateFrame(1f / 60f);
+        _viewport.BringToFront();
+        BringHudToFront();
+        KeyDown += OnKeyDown;
+        _timer.Tick += (_, _) =>
+        {
+            _viewport.UpdateFrame(1f / 60f);
+            _stats.Text = $"ETHEREO PANDORA   |   LEVEL 12 VANGUARD   |   VERDANT MARCH   |   ENEMIES: {_viewport.EnemyCount}";
+            _hp.Value = Math.Clamp((int)_viewport.PlayerHp, 0, 100);
+            _mana.Value = Math.Clamp((int)_viewport.PlayerMana, 0, 100);
+        };
         Shown += (_, _) => { _viewport.Focus(); _timer.Start(); };
         FormClosed += (_, _) => _timer.Stop();
     }
+
+    private void BuildHud()
+    {
+        _stats.Dock = DockStyle.Top;
+        _stats.Height = 34;
+        _stats.Padding = new Padding(16, 7, 0, 0);
+        _stats.BackColor = Color.FromArgb(215, 8, 13, 22);
+        _stats.ForeColor = Color.WhiteSmoke;
+        _stats.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        _stats.Text = "ETHEREO PANDORA   |   LEVEL 12 VANGUARD   |   VERDANT MARCH";
+        Controls.Add(_stats);
+
+        _hp.Location = new Point(20, 48); _hp.Size = new Size(190, 18); _hp.Maximum = 100; _hp.Value = 100;
+        _hp.Style = ProgressBarStyle.Continuous;
+        _mana.Location = new Point(20, 70); _mana.Size = new Size(190, 18); _mana.Maximum = 100; _mana.Value = 100;
+        _mana.Style = ProgressBarStyle.Continuous;
+        Controls.Add(_hp); Controls.Add(_mana);
+
+        AddButton("INVENTORY [I]", 20, 105, (_, _) => Toggle(_inventory));
+        AddButton("QUESTS [Q]", 20, 140, (_, _) => Toggle(_quest));
+        AddButton("MENU [ESC]", 20, 175, (_, _) => Toggle(_menu));
+
+        BuildPanel(_inventory, "INVENTORY", "Astral Blade\nVerdant Mail\nHealing Flask x8\nMana Crystal x12\nAstral Sigil\nGold: 4,850", 360, 150, 470, 390);
+        BuildPanel(_quest, "QUEST LOG", "THE FALLEN TEMPLE\n\nExplore the ruins and recover the Astral Sigil.\n\nProgress: 0 / 1\n\nReward\n2,500 XP • 450 Gold • Rare Cache", 400, 170, 560, 350);
+        BuildPanel(_menu, "ETHEREO PANDORA", "RESUME\nSAVE GAME\nOPTIONS\nRETURN TO EDITOR\nEXIT", 500, 210, 440, 420);
+    }
+
+    private void AddButton(string text, int x, int y, EventHandler click)
+    {
+        var b = new Button { Text = text, Location = new Point(x, y), Size = new Size(160, 30), FlatStyle = FlatStyle.Flat, BackColor = Color.FromArgb(35, 45, 60), ForeColor = Color.WhiteSmoke };
+        b.Click += click; Controls.Add(b);
+    }
+
+    private static void BuildPanel(Panel panel, string title, string body, int x, int y, int w, int h)
+    {
+        panel.Visible = false; panel.Location = new Point(x, y); panel.Size = new Size(w, h); panel.BackColor = Color.FromArgb(240, 8, 13, 22); panel.BorderStyle = BorderStyle.FixedSingle;
+        var t = new Label { Text = title, Dock = DockStyle.Top, Height = 55, Padding = new Padding(20, 14, 0, 0), Font = new Font("Segoe UI", 20, FontStyle.Bold), ForeColor = Color.Gold };
+        var c = new Label { Text = body, Dock = DockStyle.Fill, Padding = new Padding(22, 8, 20, 20), Font = new Font("Segoe UI", 12), ForeColor = Color.WhiteSmoke };
+        panel.Controls.Add(c); panel.Controls.Add(t);
+    }
+
+    private void Toggle(Control panel) => panel.Visible = !panel.Visible;
+
+    private void OnKeyDown(object? sender, KeyEventArgs e)
+    {
+        _viewport.SetKey(e.KeyCode, true);
+        if (e.KeyCode == Keys.I) Toggle(_inventory);
+        if (e.KeyCode == Keys.Q) Toggle(_quest);
+        if (e.KeyCode == Keys.Escape) Toggle(_menu);
+        BringHudToFront();
+    }
+
+    private void BringHudToFront()
+    {
+        _stats.BringToFront(); _hp.BringToFront(); _mana.BringToFront(); _inventory.BringToFront(); _quest.BringToFront(); _menu.BringToFront();
+        foreach (Control c in Controls) if (c is Button) c.BringToFront();
+    }
 }
 
-public sealed class GameViewport : Control
+public sealed class Pandora3DViewport : GLControl
 {
     private readonly HashSet<Keys> _keys = new();
-    private readonly List<Actor> _enemies = new();
-    private readonly Random _random = new(7);
-    private Vector3 _player = new(0, 0, 1.1f);
-    private float _yaw = 0.15f;
-    private float _pitch = 0.58f;
+    private readonly List<EnemyActor> _enemies = new();
+    private readonly Random _random = new(17);
+    private int _shader;
+    private int _vao;
+    private int _vbo;
+    private int _terrainVao;
+    private int _terrainVbo;
+    private int _terrainVertexCount;
+    private int _modelLocation;
+    private int _viewLocation;
+    private int _projectionLocation;
+    private Vector3 _player = new(0, 0, 1.2f);
+    private float _yaw = 0.55f;
+    private float _pitch = 0.62f;
+    private float _distance = 16f;
     private float _hp = 100;
     private float _mana = 100;
-    private float _attackFlash;
-    private bool _inventory;
-    private bool _quest;
-    private bool _menu;
+    private float _attackCooldown;
     private Point _lastMouse;
-    private bool _dragging;
+    private bool _cameraDrag;
 
-    public GameViewport()
+    public float PlayerHp => _hp;
+    public float PlayerMana => _mana;
+    public int EnemyCount => _enemies.Count;
+
+    public Pandora3DViewport() : base(new GLControlSettings { API = ContextAPI.OpenGL, APIVersion = new Version(3, 3), Profile = ContextProfile.Core })
     {
-        DoubleBuffered = true;
-        BackColor = Color.FromArgb(8, 12, 20);
         TabStop = true;
-        for (var i = 0; i < 12; i++)
-            _enemies.Add(new Actor(new Vector3((i % 4 - 1.5f) * 7, (i / 4 + 1) * 7, 1.0f + (i % 3) * .2f), i % 3));
+        BackColor = Color.Black;
+        for (int i = 0; i < 14; i++)
+            _enemies.Add(new EnemyActor(new Vector3((i % 7 - 3) * 5f, 8 + (i / 7) * 7f, 1.0f), i % 3));
+        Load += (_, _) => InitializeRenderer();
+        Resize += (_, _) => Invalidate();
+        Paint += (_, _) => RenderFrame();
         MouseDown += OnMouseDown;
-        MouseUp += (_, _) => _dragging = false;
+        MouseUp += (_, _) => _cameraDrag = false;
         MouseMove += OnMouseMove;
-        MouseWheel += (_, e) => _pitch = Math.Clamp(_pitch - e.Delta * .0005f, .35f, .95f);
+        MouseWheel += (_, e) => _distance = Math.Clamp(_distance - e.Delta * 0.01f, 7f, 28f);
         MouseClick += (_, e) => { if (e.Button == MouseButtons.Left) Attack(); };
     }
 
     public void SetKey(Keys key, bool down)
     {
         if (down) _keys.Add(key); else _keys.Remove(key);
-        if (!down) return;
-        if (key == Keys.I) _inventory = !_inventory;
-        if (key == Keys.Q) _quest = !_quest;
-        if (key == Keys.Escape) _menu = !_menu;
-        if (key == Keys.Space) Attack();
+        if (down && key == Keys.Space) Attack();
     }
 
     public void UpdateFrame(float dt)
@@ -74,220 +155,130 @@ public sealed class GameViewport : Control
         if (_keys.Contains(Keys.S)) move.Y -= 1;
         if (_keys.Contains(Keys.A)) move.X -= 1;
         if (_keys.Contains(Keys.D)) move.X += 1;
-        if (move.LengthSquared() > 0)
+        if (move.LengthSquared > 0)
         {
             move = Vector2.Normalize(move);
             var forward = new Vector3(MathF.Sin(_yaw), MathF.Cos(_yaw), 0);
             var right = new Vector3(MathF.Cos(_yaw), -MathF.Sin(_yaw), 0);
-            _player += (forward * move.Y + right * move.X) * (dt * 8f);
-            _player.Z = 1.1f + Height(_player.X, _player.Y);
+            _player += (forward * move.Y + right * move.X) * (dt * 7f);
+            _player.X = Math.Clamp(_player.X, -38, 38); _player.Y = Math.Clamp(_player.Y, -8, 55);
+            _player.Z = TerrainHeight(_player.X, _player.Y) + 1.15f;
         }
-
-        foreach (var enemy in _enemies)
+        foreach (var e in _enemies)
         {
-            var delta = _player - enemy.Position;
-            delta.Z = 0;
-            if (delta.LengthSquared() > 5)
-                enemy.Position += Vector3.Normalize(delta) * dt * (1.1f + enemy.Type * .25f);
-            else if (_random.NextDouble() < .015)
-                _hp = Math.Max(0, _hp - 4);
+            var delta = _player - e.Position; delta.Z = 0;
+            if (delta.LengthSquared > 4.5f * 4.5f)
+                e.Position += Vector3.Normalize(delta) * dt * (1.15f + e.Type * .25f);
+            else if (_random.NextDouble() < .02)
+                _hp = Math.Max(0, _hp - (3 + e.Type));
+            e.Position.Z = TerrainHeight(e.Position.X, e.Position.Y) + .9f;
         }
-        _attackFlash = Math.Max(0, _attackFlash - dt * 4);
-        _mana = Math.Min(100, _mana + dt * 3);
+        _mana = Math.Min(100, _mana + dt * 4);
+        _attackCooldown = Math.Max(0, _attackCooldown - dt);
         Invalidate();
     }
 
     private void Attack()
     {
-        if (_mana < 12) return;
-        _mana -= 12;
-        _attackFlash = 1;
-        foreach (var enemy in _enemies.ToList())
+        if (_attackCooldown > 0 || _mana < 12) return;
+        _attackCooldown = .35f; _mana -= 12;
+        var forward = new Vector3(MathF.Sin(_yaw), MathF.Cos(_yaw), 0);
+        foreach (var enemy in _enemies)
         {
-            var d = Vector3.Distance(new Vector3(_player.X, _player.Y, 0), new Vector3(enemy.Position.X, enemy.Position.Y, 0));
-            if (d < 8) enemy.Hp -= 35;
+            var delta = enemy.Position - _player; delta.Z = 0;
+            var d = delta.Length;
+            if (d < 8 && d > .01f && Vector3.Dot(Vector3.Normalize(delta), forward) > -.15f)
+                enemy.Hp -= 35;
         }
-        _enemies.RemoveAll(e => e.Hp <= 0);
-        while (_enemies.Count < 8)
-            _enemies.Add(new Actor(new Vector3(_random.Next(-30, 31), _random.Next(8, 40), 1), _random.Next(3)));
+        _enemies.RemoveAll(x => x.Hp <= 0);
+        while (_enemies.Count < 10)
+            _enemies.Add(new EnemyActor(new Vector3(_random.Next(-35, 36), _random.Next(8, 50), 1), _random.Next(3)));
     }
 
-    private void OnMouseDown(object? sender, MouseEventArgs e)
+    private void InitializeRenderer()
     {
-        Focus();
-        if (e.Button == MouseButtons.Right) { _dragging = true; _lastMouse = e.Location; }
+        MakeShader(); MakeCube(); MakeTerrain();
+        GL.Enable(EnableCap.DepthTest); GL.Enable(EnableCap.CullFace); GL.CullFace(TriangleFace.Back);
+        GL.ClearColor(0.025f, 0.045f, 0.075f, 1f);
     }
 
-    private void OnMouseMove(object? sender, MouseEventArgs e)
+    private void MakeShader()
     {
-        if (!_dragging) return;
-        _yaw += (e.X - _lastMouse.X) * .008f;
-        _pitch = Math.Clamp(_pitch + (e.Y - _lastMouse.Y) * .004f, .35f, .95f);
-        _lastMouse = e.Location;
+        const string vertex = "#version 330 core\nlayout(location=0) in vec3 aPosition; layout(location=1) in vec3 aColor; uniform mat4 uModel; uniform mat4 uView; uniform mat4 uProjection; out vec3 vColor; void main(){ vColor=aColor; gl_Position=uProjection*uView*uModel*vec4(aPosition,1.0); }";
+        const string fragment = "#version 330 core\nin vec3 vColor; out vec4 FragColor; void main(){ FragColor=vec4(vColor,1.0); }";
+        int vs = GL.CreateShader(ShaderType.VertexShader); GL.ShaderSource(vs, vertex); GL.CompileShader(vs); CheckShader(vs);
+        int fs = GL.CreateShader(ShaderType.FragmentShader); GL.ShaderSource(fs, fragment); GL.CompileShader(fs); CheckShader(fs);
+        _shader = GL.CreateProgram(); GL.AttachShader(_shader, vs); GL.AttachShader(_shader, fs); GL.LinkProgram(_shader);
+        GL.DeleteShader(vs); GL.DeleteShader(fs);
+        _modelLocation = GL.GetUniformLocation(_shader, "uModel"); _viewLocation = GL.GetUniformLocation(_shader, "uView"); _projectionLocation = GL.GetUniformLocation(_shader, "uProjection");
     }
 
-    protected override void OnPaint(PaintEventArgs e)
+    private static void CheckShader(int shader)
     {
-        base.OnPaint(e);
-        var g = e.Graphics;
-        g.SmoothingMode = SmoothingMode.AntiAlias;
-        DrawSky(g);
-        DrawTerrain(g);
-        foreach (var enemy in _enemies.OrderByDescending(x => Depth(x.Position))) DrawEnemy(g, enemy);
-        DrawPlayer(g);
-        DrawHud(g);
-        if (_inventory) DrawInventory(g);
-        if (_quest) DrawQuest(g);
-        if (_menu) DrawMenu(g);
+        GL.GetShader(shader, ShaderParameter.CompileStatus, out int ok);
+        if (ok == 0) throw new InvalidOperationException(GL.GetShaderInfoLog(shader));
     }
 
-    private void DrawSky(Graphics g)
+    private void MakeCube()
     {
-        using var b = new LinearGradientBrush(ClientRectangle, Color.FromArgb(16, 31, 55), Color.FromArgb(3, 5, 10), LinearGradientMode.Vertical);
-        g.FillRectangle(b, ClientRectangle);
-        using var sun = new SolidBrush(Color.FromArgb(190, 220, 180));
-        g.FillEllipse(sun, Width - 190, 90, 80, 80);
-    }
-
-    private void DrawTerrain(Graphics g)
-    {
-        var grid = new List<(float depth, PointF[] p)>();
-        for (int y = -6; y < 65; y += 4)
-        for (int x = -50; x <= 50; x += 4)
+        float[] v =
         {
-            var a = new Vector3(x, y, Height(x, y));
-            var b = new Vector3(x + 4, y, Height(x + 4, y));
-            var c = new Vector3(x + 4, y + 4, Height(x + 4, y + 4));
-            var d = new Vector3(x, y + 4, Height(x, y + 4));
-            var pa = Project(a); var pb = Project(b); var pc = Project(c); var pd = Project(d);
-            grid.Add((y, new[] { pa, pb, pc, pd }));
-        }
-        foreach (var cell in grid.OrderByDescending(x => x.depth))
+            -1,-1,-1, .18f,.25f,.30f, 1,-1,-1, .18f,.25f,.30f, 1,1,-1,.18f,.25f,.30f, -1,1,-1,.18f,.25f,.30f,
+            -1,-1,1, .35f,.45f,.48f, 1,-1,1,.35f,.45f,.48f, 1,1,1,.35f,.45f,.48f, -1,1,1,.35f,.45f,.48f
+        };
+        uint[] i = {0,1,2,2,3,0, 4,6,5,6,4,7, 0,4,5,5,1,0, 2,6,7,7,3,2, 0,3,7,7,4,0, 1,5,6,6,2,1};
+        var data = new float[i.Length * 6]; for(int n=0;n<i.Length;n++){ for(int k=0;k<6;k++) data[n*6+k]=v[i[n]*6+k]; }
+        _vao = GL.GenVertexArray(); _vbo = GL.GenBuffer(); GL.BindVertexArray(_vao); GL.BindBuffer(BufferTarget.ArrayBuffer,_vbo); GL.BufferData(BufferTarget.ArrayBuffer,data.Length*sizeof(float),data,BufferUsageHint.StaticDraw);
+        GL.VertexAttribPointer(0,3,VertexAttribPointerType.Float,false,6*sizeof(float),0); GL.EnableVertexAttribArray(0); GL.VertexAttribPointer(1,3,VertexAttribPointerType.Float,false,6*sizeof(float),3*sizeof(float)); GL.EnableVertexAttribArray(1); GL.BindVertexArray(0);
+    }
+
+    private void MakeTerrain()
+    {
+        var data = new List<float>();
+        for(int y=-10;y<60;y++) for(int x=-45;x<45;x++)
         {
-            var shade = Math.Clamp(24 + (int)(cell.depth * .55f), 24, 70);
-            using var brush = new SolidBrush(Color.FromArgb(shade, shade + 22, shade + 14));
-            g.FillPolygon(brush, cell.p);
-            using var pen = new Pen(Color.FromArgb(18, 70, 60, 50), 1);
-            g.DrawPolygon(pen, cell.p);
+            AddTerrainTri(data,x,y,x+1,y,x+1,y+1); AddTerrainTri(data,x,y,x+1,y+1,x,y+1);
         }
-        for (int i = -30; i < 45; i += 6)
-        {
-            DrawTree(g, new Vector3(i, 18 + (i % 5) * 3, Height(i, 18) + 1.5f));
-            DrawTree(g, new Vector3(i + 38, 38 + (i % 4) * 2, Height(i + 38, 38) + 1.5f));
-        }
+        _terrainVertexCount=data.Count/6; _terrainVao=GL.GenVertexArray(); _terrainVbo=GL.GenBuffer(); GL.BindVertexArray(_terrainVao); GL.BindBuffer(BufferTarget.ArrayBuffer,_terrainVbo); GL.BufferData(BufferTarget.ArrayBuffer,data.Count*sizeof(float),data.ToArray(),BufferUsageHint.StaticDraw);
+        GL.VertexAttribPointer(0,3,VertexAttribPointerType.Float,false,6*sizeof(float),0); GL.EnableVertexAttribArray(0); GL.VertexAttribPointer(1,3,VertexAttribPointerType.Float,false,6*sizeof(float),3*sizeof(float)); GL.EnableVertexAttribArray(1); GL.BindVertexArray(0);
     }
 
-    private void DrawTree(Graphics g, Vector3 p)
+    private static void AddTerrainTri(List<float> d,int ax,int ay,int bx,int by,int cx,int cy)
     {
-        var s = Project(p); var baseY = s.Y;
-        using var trunk = new SolidBrush(Color.FromArgb(74, 45, 30));
-        g.FillRectangle(trunk, s.X - 4, baseY - 35, 8, 35);
-        using var leaves = new SolidBrush(Color.FromArgb(30, 95, 68));
-        g.FillEllipse(leaves, s.X - 25, baseY - 75, 50, 48);
-        g.FillEllipse(leaves, s.X - 15, baseY - 95, 38, 45);
+        AddTerrainVertex(d,ax,ay); AddTerrainVertex(d,bx,by); AddTerrainVertex(d,cx,cy);
     }
+    private static void AddTerrainVertex(List<float> d,int x,int y){ float z=TerrainHeight(x,y); float shade=.18f+Math.Clamp(z*.025f,0,.12f); d.AddRange(new[]{(float)x,(float)y,z,shade,.34f+shade,.23f+shade*.5f}); }
+    private static float TerrainHeight(float x,float y)=> MathF.Sin(x*.17f)*.7f+MathF.Cos(y*.13f)*.55f+MathF.Sin((x+y)*.07f)*1.0f;
 
-    private void DrawPlayer(Graphics g)
+    private void RenderFrame()
     {
-        var p = Project(_player);
-        using var aura = new SolidBrush(Color.FromArgb(45, 80, 190, 255));
-        g.FillEllipse(aura, p.X - 25, p.Y - 14, 50, 28);
-        using var body = new SolidBrush(Color.FromArgb(55, 115, 180));
-        g.FillEllipse(body, p.X - 13, p.Y - 50, 26, 44);
-        using var head = new SolidBrush(Color.FromArgb(222, 180, 145));
-        g.FillEllipse(head, p.X - 10, p.Y - 70, 20, 20);
-        using var cloak = new Pen(Color.FromArgb(120, 190, 235), 4);
-        g.DrawLine(cloak, p.X - 12, p.Y - 48, p.X - 23, p.Y - 10);
-        g.DrawLine(cloak, p.X + 12, p.Y - 48, p.X + 23, p.Y - 10);
-        if (_attackFlash > 0)
-        {
-            using var arc = new Pen(Color.FromArgb((int)(255 * _attackFlash), 110, 220, 255), 6);
-            g.DrawArc(arc, p.X - 65, p.Y - 75, 130, 110, 205, 130);
-        }
+        if (_shader == 0) return;
+        GL.Clear(ClearBufferMask.ColorBufferBit|ClearBufferMask.DepthBufferBit); GL.UseProgram(_shader);
+        var aspect=Math.Max(1f,Width/(float)Math.Max(1,Height)); var projection=Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(58),aspect,.1f,180f);
+        var target=_player+new Vector3(0,0,1); var horizontal=MathF.Cos(_pitch); var camera=target+new Vector3(MathF.Sin(_yaw)*horizontal,MathF.Cos(_yaw)*horizontal,MathF.Sin(_pitch))*_distance;
+        var view=Matrix4.LookAt(camera,target,Vector3.UnitZ); GL.UniformMatrix4(_viewLocation,false,ref view); GL.UniformMatrix4(_projectionLocation,false,ref projection);
+        GL.BindVertexArray(_terrainVao); var identity=Matrix4.Identity; GL.UniformMatrix4(_modelLocation,false,ref identity); GL.DrawArrays(PrimitiveType.Triangles,0,_terrainVertexCount); GL.BindVertexArray(0);
+        DrawCube(new Vector3(0,18,3),new Vector3(9,6,6),new Vector3(.30f,.24f,.18f)); DrawCube(new Vector3(7,22,2.5f),new Vector3(3,3,5),new Vector3(.24f,.28f,.22f));
+        for(int i=-35;i<40;i+=7){ DrawCube(new Vector3(i,30+(i%4)*2,TerrainHeight(i,30)+2.2f),new Vector3(.7f,.7f,2.2f),new Vector3(.22f,.12f,.07f)); DrawCube(new Vector3(i,30+(i%4)*2,TerrainHeight(i,30)+5.2f),new Vector3(2.5f,2.5f,2.5f),new Vector3(.08f,.32f,.18f)); }
+        DrawCube(_player,new Vector3(1,1,1.15f),new Vector3(.12f,.35f,.70f)); DrawCube(_player+new Vector3(0,0,1.35f),new Vector3(.75f,.75f,.75f),new Vector3(.72f,.52f,.35f));
+        foreach(var e in _enemies) DrawCube(e.Position,new Vector3(1.15f,1.15f,1.4f),e.Type switch{0=>new Vector3(.55f,.12f,.18f),1=>new Vector3(.22f,.14f,.55f),_=>new Vector3(.08f,.42f,.32f)});
+        SwapBuffers();
     }
 
-    private void DrawEnemy(Graphics g, Actor a)
+    private void DrawCube(Vector3 pos,Vector3 scale,Vector3 color)
     {
-        var p = Project(a.Position);
-        var size = 24 + a.Type * 4;
-        using var shadow = new SolidBrush(Color.FromArgb(80, 0, 0, 0));
-        g.FillEllipse(shadow, p.X - size, p.Y - 8, size * 2, 16);
-        using var body = new SolidBrush(a.Type switch { 0 => Color.FromArgb(145, 60, 70), 1 => Color.FromArgb(95, 75, 135), _ => Color.FromArgb(45, 120, 95) });
-        g.FillEllipse(body, p.X - size / 2, p.Y - size, size, size + 20);
-        using var eye = new SolidBrush(Color.FromArgb(255, 190, 80));
-        g.FillEllipse(eye, p.X - 8, p.Y - size + 8, 5, 5); g.FillEllipse(eye, p.X + 3, p.Y - size + 8, 5, 5);
-        using var hp = new Pen(Color.FromArgb(210, 70, 70), 4);
-        g.DrawLine(hp, p.X - 22, p.Y - size - 8, p.X + 22, p.Y - size - 8);
-        using var hp2 = new Pen(Color.FromArgb(65, 200, 100), 3);
-        g.DrawLine(hp2, p.X - 22, p.Y - size - 8, p.X - 22 + 44 * Math.Clamp(a.Hp / 100f, 0, 1), p.Y - size - 8);
+        GL.BindVertexArray(_vao); var model=Matrix4.CreateScale(scale)*Matrix4.CreateTranslation(pos); GL.UniformMatrix4(_modelLocation,false,ref model);
+        GL.DrawArrays(PrimitiveType.Triangles,0,36); GL.BindVertexArray(0);
     }
 
-    private void DrawHud(Graphics g)
-    {
-        using var panel = new SolidBrush(Color.FromArgb(185, 7, 12, 20));
-        g.FillRectangle(panel, 18, 18, 430, 92);
-        using var title = new Font("Segoe UI", 14, FontStyle.Bold);
-        using var small = new Font("Segoe UI", 10);
-        using var text = new SolidBrush(Color.WhiteSmoke);
-        g.DrawString("ETHEREO PANDORA", title, text, 34, 28);
-        g.DrawString("Level 12  •  Vanguard  •  The Verdant March", small, Brushes.LightGray, 34, 55);
-        Bar(g, 34, 78, 180, 12, _hp / 100f, Color.Firebrick, "HP");
-        Bar(g, 230, 78, 180, 12, _mana / 100f, Color.DodgerBlue, "MP");
-        g.DrawString("WASD Move   •   Right Mouse Camera   •   Space/LMB Attack   •   I Inventory   •   Q Quest", small, Brushes.WhiteSmoke, 24, Height - 32);
-        using var mini = new SolidBrush(Color.FromArgb(190, 5, 9, 14));
-        g.FillRectangle(mini, Width - 220, 18, 200, 150);
-        g.DrawString("WORLD MAP", title, text, Width - 205, 28);
-        g.DrawRectangle(Pens.SlateGray, Width - 205, 60, 165, 90);
-        g.FillEllipse(Brushes.DeepSkyBlue, Width - 124, 99, 8, 8);
-    }
+    private void OnMouseDown(object? s,MouseEventArgs e){Focus();if(e.Button==MouseButtons.Right){_cameraDrag=true;_lastMouse=e.Location;}}
+    private void OnMouseMove(object? s,MouseEventArgs e){if(!_cameraDrag)return;_yaw+=(e.X-_lastMouse.X)*.008f;_pitch=Math.Clamp(_pitch-(e.Y-_lastMouse.Y)*.004f,.25f,1.15f);_lastMouse=e.Location;}
+}
 
-    private static void Bar(Graphics g, int x, int y, int w, int h, float value, Color color, string label)
-    {
-        using var bg = new SolidBrush(Color.FromArgb(80, 0, 0, 0)); g.FillRectangle(bg, x, y, w, h);
-        using var fg = new SolidBrush(color); g.FillRectangle(fg, x, y, (int)(w * Math.Clamp(value, 0, 1)), h);
-        g.DrawString(label, SystemFonts.DefaultFont, Brushes.White, x + 5, y - 1);
-    }
-
-    private void DrawInventory(Graphics g)
-    {
-        using var b = new SolidBrush(Color.FromArgb(235, 9, 14, 23)); g.FillRectangle(b, 390, 150, 660, 510);
-        using var f = new Font("Segoe UI", 20, FontStyle.Bold); g.DrawString("INVENTORY", f, Brushes.WhiteSmoke, 420, 175);
-        for (int i = 0; i < 24; i++) { int x = 430 + (i % 8) * 72, y = 235 + (i / 8) * 95; g.DrawRectangle(Pens.SlateGray, x, y, 58, 70); g.FillEllipse(new SolidBrush(Color.FromArgb(45 + i * 3, 90, 130)), x + 14, y + 12, 30, 30); }
-    }
-
-    private void DrawQuest(Graphics g)
-    {
-        using var b = new SolidBrush(Color.FromArgb(235, 12, 16, 24)); g.FillRectangle(b, 430, 170, 580, 360);
-        using var f = new Font("Segoe UI", 20, FontStyle.Bold); g.DrawString("QUEST LOG", f, Brushes.WhiteSmoke, 460, 200);
-        using var s = new Font("Segoe UI", 12); g.DrawString("The Fallen Temple", s, Brushes.Gold, 460, 255); g.DrawString("Explore the ruins and recover the Astral Sigil.", s, Brushes.WhiteSmoke, 460, 290); g.DrawString("Progress: 0 / 1", s, Brushes.LightGray, 460, 330); g.DrawString("Reward: 2,500 XP • 450 Gold • Rare Cache", s, Brushes.LightGreen, 460, 380);
-    }
-
-    private void DrawMenu(Graphics g)
-    {
-        using var b = new SolidBrush(Color.FromArgb(220, 2, 5, 9)); g.FillRectangle(b, 0, 0, Width, Height);
-        using var f = new Font("Segoe UI", 30, FontStyle.Bold); g.DrawString("ETHEREO PANDORA", f, Brushes.WhiteSmoke, 520, 230);
-        using var s = new Font("Segoe UI", 16); g.DrawString("ESC Resume", s, Brushes.Gold, 625, 310); g.DrawString("I Inventory", s, Brushes.WhiteSmoke, 625, 350); g.DrawString("Q Quest Log", s, Brushes.WhiteSmoke, 625, 390);
-    }
-
-    private PointF Project(Vector3 world)
-    {
-        var dx = world.X - _player.X; var dy = world.Y - _player.Y; var dz = world.Z;
-        var cy = MathF.Cos(-_yaw), sy = MathF.Sin(-_yaw);
-        var x = dx * cy - dy * sy; var z = dx * sy + dy * cy;
-        var cp = MathF.Cos(_pitch), sp = MathF.Sin(_pitch);
-        var y = dz * cp - z * sp; var depth = dz * sp + z * cp + 18;
-        var scale = 720f / Math.Max(3, depth);
-        return new PointF(Width / 2f + x * scale, Height * .52f - y * scale);
-    }
-
-    private float Depth(Vector3 p) => Vector3.DistanceSquared(new Vector3(_player.X, _player.Y, 0), new Vector3(p.X, p.Y, 0));
-    private static float Height(float x, float y) => MathF.Sin(x * .08f) * .35f + MathF.Cos(y * .07f) * .25f + MathF.Sin((x + y) * .035f) * .5f;
-
-    private sealed class Actor
-    {
-        public Vector3 Position;
-        public float Hp = 100;
-        public int Type;
-        public Actor(Vector3 position, int type) { Position = position; Type = type; }
-    }
+public sealed class EnemyActor
+{
+    public Vector3 Position;
+    public float Hp=100;
+    public int Type;
+    public EnemyActor(Vector3 position,int type){Position=position;Type=type;}
 }
