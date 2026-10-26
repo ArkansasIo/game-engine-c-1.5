@@ -10,7 +10,7 @@ public sealed class CharacterState
     {
         Id = id;
         Name = string.IsNullOrWhiteSpace(name) ? throw new ArgumentException("Character name is required.", nameof(name)) : name;
-        Stats = new CharacterStats { AbilityScores = abilityScores };
+        Stats = new CharacterStats { Abilities = abilityScores ?? throw new ArgumentNullException(nameof(abilityScores)) };
     }
 
     public CharacterId Id { get; }
@@ -18,6 +18,6 @@ public sealed class CharacterState
     public CharacterStats Stats { get; }
     public Inventory Inventory { get; } = new();
     public Equipment Equipment { get; } = new();
-    public Transform Transform { get; set; } = Transform.Identity;
+    public Transform Transform { get; set; } = new();
     public DateTimeOffset LastSavedUtc { get; set; } = DateTimeOffset.UtcNow;
 }
