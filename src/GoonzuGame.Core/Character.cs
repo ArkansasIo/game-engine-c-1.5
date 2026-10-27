@@ -37,5 +37,11 @@ namespace GoonzuGame.Core
             target.Health -= damage;
             Console.WriteLine($"{Name} attacks {target.Name} for {damage} damage.");
         }
+
+        public void PickUpItem(Item item)
+        {
+            Inventory.Add(item);
+            Console.WriteLine($"{Name} picked up {item.Name}.");
+        }
     }
 }

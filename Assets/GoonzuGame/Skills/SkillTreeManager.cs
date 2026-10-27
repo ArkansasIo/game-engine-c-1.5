@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+using GoonzuGame.Skills;
 
 namespace GoonzuGame.Skills
 {

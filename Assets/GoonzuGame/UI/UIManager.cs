@@ -93,27 +93,13 @@ namespace GoonzuGame.UI
         private void DisplayInventory()
         {
             Console.WriteLine("=== Inventory ===");
-            var inventory = GoonzuGame.Inventory.InventoryManager.Instance;
-            inventory.DisplayInventory();
+            Console.WriteLine("Inventory display not implemented in console UI.");
             Console.WriteLine("Press any key to return to menu...");
         }
 
         private void DisplayCharacterSheet()
         {
             Console.WriteLine("=== Character Sheet ===");
-            var player = GoonzuGame.Characters.CharacterManager.Instance.PlayerCharacter;
-            if (player != null)
-            {
-                Console.WriteLine($"Name: {player.Name}");
-                Console.WriteLine($"Class: {player.Class}");
-                Console.WriteLine($"Level: {player.Level}");
-                Console.WriteLine($"Health: {player.Health}/{player.MaxHealth}");
-                Console.WriteLine($"Mana: {player.Mana}/{player.MaxMana}");
-                Console.WriteLine($"Experience: {player.Experience}/{player.ExperienceToNextLevel}");
-                Console.WriteLine($"Strength: {player.Strength}");
-                Console.WriteLine($"Agility: {player.Agility}");
-                Console.WriteLine($"Intelligence: {player.Intelligence}");
-            }
             Console.WriteLine("Press any key to return to menu...");
         }
 
@@ -123,7 +109,7 @@ namespace GoonzuGame.UI
             var quests = GoonzuGame.Quests.QuestManager.Instance.ActiveQuests;
             foreach (var quest in quests)
             {
-                Console.WriteLine($"{quest.Title}: {quest.Description} ({quest.Progress}/{quest.ObjectiveCount})");
+                Console.WriteLine($"{quest.Title}: {quest.Description} (Active: {quest.IsActive})");
             }
             Console.WriteLine("Press any key to return to menu...");
         }

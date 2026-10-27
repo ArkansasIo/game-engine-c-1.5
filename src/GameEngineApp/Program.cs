@@ -2,9 +2,8 @@
 
 class Program
 {
-	static void Main(string[] args)
-	{
-		var engine = new GameEngine();
-		engine.Start();
-	}
+    static void Main(string[] args)
+    {
+        // Entry point delegates to MainEntry.Main via <StartupObject> in the csproj.
+    }
 }

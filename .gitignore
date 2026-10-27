@@ -1,0 +1,65 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+out/
+build/
+Output/
+!Output/README.md
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.pdb
+*.cache
+
+# .NET build artifacts
+*.dll
+*.exe
+*.binlog
+*.nupkg
+*.snupkg
+project.assets.json
+project.nuget.cache
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+*.AssemblyInfo.cs
+*.GlobalUsings.g.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.assets.cache
+*.FileListAbsolute.txt
+*.AssemblyReference.cache
+*.CoreCompileInputs.cache
+*.CoreCompileInputs.cache.meta
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+
+# NuGet
+packages/
+*.nugetprops
+
+# Runtime data
+*.db
+*.db-shm
+*.db-wal
+*.log
+Logs/
+Saved/
+DerivedDataCache/
+Intermediate/
+
+# Node (if any tooling)
+node_modules/
+
+# OS files
+Thumbs.db
+.DS_Store

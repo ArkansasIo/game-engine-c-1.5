@@ -1,10 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MainMenuDemo/**/*.cs" />
+    <None Remove="MainMenuDemo/**/*.csproj" />
+  </ItemGroup>
 
     <ItemGroup>
       <Compile Include="../../Assets/GoonzuGame/World/GoonzuWorld.cs" />
@@ -18,6 +25,8 @@
       <Compile Include="../../Assets/GoonzuGame/Items/Item.cs" />
       <Compile Include="../../Assets/GameEngine/Monsters/MonsterType.cs" />
       <Compile Include="../../Assets/GameEngine/Monsters/MonsterDef.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Quests/Quest.cs" />
+      <Compile Include="../../Assets/GoonzuGame/Skills/Skill.cs" />
     </ItemGroup>
 
     <ItemGroup>

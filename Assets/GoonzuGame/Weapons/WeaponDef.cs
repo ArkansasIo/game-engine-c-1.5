@@ -1,4 +1,4 @@
-using UnityEngine;
+using System;
 using Item = GoonzuGame.Items.Item;
 using GoonzuGame.Items;
 
@@ -25,13 +25,13 @@ namespace GoonzuGame.Weapons
         public void Equip()
         {
             IsEquipped = true;
-            Debug.Log($"Equipped weapon: {Name}");
+            System.Console.WriteLine($"Equipped weapon: {Name}");
         }
 
         public void Unequip()
         {
             IsEquipped = false;
-            Debug.Log($"Unequipped weapon: {Name}");
+            System.Console.WriteLine($"Unequipped weapon: {Name}");
         }
 
         public bool CheckProficiency(string characterProficiency)
@@ -53,14 +53,15 @@ namespace GoonzuGame.Weapons
         }
 
         public int RollD20() => RollDice(20);
+        private static readonly Random _rng = new Random();
         public int RollDice(int sides)
         {
-            return Random.Range(1, sides + 1);
+            return _rng.Next(1, sides + 1);
         }
 
         public void Display()
         {
-            Debug.Log($"Weapon: {Name}, Attack: {Damage}, Speed: {AttackSpeed}, PvPType: {PvPType}, PvEType: {PvEType}, Theme: {Theme}, Proficiency: {Proficiency}, Equipped: {IsEquipped}");
+            System.Console.WriteLine($"Weapon: {Name}, Attack: {Damage}, Speed: {AttackSpeed}, PvPType: {PvPType}, PvEType: {PvEType}, Theme: {Theme}, Proficiency: {Proficiency}, Equipped: {IsEquipped}");
         }
     }
 }

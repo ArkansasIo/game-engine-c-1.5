@@ -17,8 +17,7 @@ namespace GameEngine {
             world.RenderWorld();
 
             // Initialize player
-            var player = new Character("Hero");
-            Console.WriteLine($"Player {player.Name} initialized.");
+            var player = new Character("Hero", GoonzuGame.Characters.CharacterClass.Warrior);
 
             // Initialize AI
             var aiManager = new AIManager();
@@ -37,17 +36,16 @@ namespace GameEngine {
             multiplayer.Connect();
 
             // Initialize Quests
-            var quest = new Quest("First Steps");
-            quest.Start();
+            var quest = new Quest("First Steps", "Complete the initial training");
+            quest.StartQuest();
 
             // Save/Load
-            var saveLoad = new SaveLoadManager();
+            var saveLoad = SaveLoadManager.Instance;
             saveLoad.SaveGame(player);
-            saveLoad.LoadGame("save1");
+            saveLoad.LoadGame("save1", player);
 
             // UI
-            var uiManager = new UIManager();
-            uiManager.ShowMainMenu();
+            Console.WriteLine("GameLogic demo complete.");
         }
     }
 }

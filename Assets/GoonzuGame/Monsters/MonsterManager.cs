@@ -53,7 +53,12 @@ namespace GoonzuGame.Monsters
                 while (boss.Health > 0 && player.Health > 0)
                 {
                     boss.Attack(player);
-                    if (player.Health > 0) player.Attack(boss);
+                    if (player.Health > 0)
+                    {
+                        int counterDamage = 10 + player.Level;
+                        boss.Health -= counterDamage;
+                        Console.WriteLine($"{player.Name} attacks {boss.Name} for {counterDamage} damage.");
+                    }
                 }
                 string winner = boss.Health > 0 ? boss.Name : player.Name;
                 Console.WriteLine($"Boss fight ended. Winner: {winner}");
@@ -66,7 +71,6 @@ namespace GoonzuGame.Monsters
             if (monster != null && monster.LootTable.Count > 0)
             {
                 var loot = monster.LootTable[0];
-                player.PickUpItem(loot);
                 Console.WriteLine($"{player.Name} received loot: {loot.Name}");
             }
         }

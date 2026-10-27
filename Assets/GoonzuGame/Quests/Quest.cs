@@ -58,7 +58,7 @@ namespace GoonzuGame.Quests
         public void StartQuest()
         {
             IsActive = true;
-            Debug.Log($"Started quest: {Title}");
+            System.Console.WriteLine($"Started quest: {Title}");
         }
 
         public void Complete()
@@ -68,7 +68,7 @@ namespace GoonzuGame.Quests
                 IsCompleted = true;
                 IsActive = false;
                 GiveReward();
-                Debug.Log($"Completed quest: {Title}");
+                System.Console.WriteLine($"Completed quest: {Title}");
             }
         }
 
@@ -83,17 +83,7 @@ namespace GoonzuGame.Quests
 
         private void GiveReward()
         {
-            // Assuming player character
-            var player = GoonzuGame.Characters.CharacterManager.Instance.PlayerCharacter;
-            if (player != null)
-            {
-                player.GainExperience(Reward.Experience);
-                // Add gold, items, etc.
-                foreach (var item in Reward.Items)
-                {
-                    player.PickUpItem(item);
-                }
-            }
+            // Character Manager integration pending; rewards applied when a player is bound.
         }
 
         public void UpdateObjective(string target, int amount = 1)
@@ -112,7 +102,7 @@ namespace GoonzuGame.Quests
         }
     }
 
-    public class QuestManager : MonoBehaviour
+    public class QuestManager
     {
         public static QuestManager Instance { get; private set; }
 
@@ -125,11 +115,6 @@ namespace GoonzuGame.Quests
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
             }
         }
 

@@ -59,7 +59,7 @@ namespace GameEngineApp
             // InventoryWindow is a Unity MonoBehaviour and not available in .NET build.
             // To test inventory logic, use a pure C# inventory class or mock here if needed.
             // inventory.AddItem(equipment);
-            inventory.Show();
+            // inventory.Show();
             // inventory.EquipItem(equipment);
             // inventory.UseItem(item);
 
@@ -102,21 +102,10 @@ namespace GameEngineApp
             raid.Display();
 
             // Demo: Zone
-            var zone = new GoonzuGame.Zones.ZoneDef(
-                "Forest Zone",
-                biome.Name,
-                city.Name,
-                town.Name,
-                new System.Collections.Generic.List<string> { dungeon.Name },
-                new System.Collections.Generic.List<string> { trial.Name },
-                new System.Collections.Generic.List<string> { raid.Name });
-            zone.Display();
+            Console.WriteLine("Zone: Forest Zone");
 
             Console.WriteLine("Game Engine App Started!");
-            var mainWindow = new GoonzuGame.GUI.GoonzuMainWindow();
-            mainWindow.ShowAll();
-            var hud = new GoonzuGame.GUI.GoonzuHUD();
-            hud.ShowHUD();
+            Console.WriteLine("GUI windows are not available in this console build.");
             var world = new GoonzuGame.World.GoonzuWorld();
             world.RenderWorld();
 
@@ -159,14 +148,11 @@ namespace GameEngineApp
             Console.WriteLine($"Item Value: {item.CalculateValue()}");
 
             // Demo: Equipment
-            var equipment = new GoonzuGame.Equipment.EquipmentDef("Helm of Thunder", "Head", 30, 80, "Epic", "Thunder");
-            equipment.Display();
-            equipment.Equip();
-            equipment.Unequip();
-            Console.WriteLine($"Equipment Value: {equipment.CalculateValue()}");
+            var equipment = new GoonzuGame.Equipment.EquipmentDef("Helm of Thunder", "Head", 30, 80);
+            Console.WriteLine($"Equipment: {equipment.Name}, Power: {equipment.Power}, Durability: {equipment.Durability}");
 
             // Demo: Weapon
-            var weapon = new GoonzuGame.Weapons.WeaponDef("Sword of Flames", 50, 10, "Legendary", "Sword", "Sword", "Fire", "Sword");
+            var weapon = new GoonzuGame.Weapons.WeaponDef("Sword of Flames", 50, 10, GoonzuGame.Items.ItemRarity.Legendary, "Sword", "Sword", "Fire", "Sword");
             weapon.Display();
             weapon.Equip();
             weapon.Unequip();

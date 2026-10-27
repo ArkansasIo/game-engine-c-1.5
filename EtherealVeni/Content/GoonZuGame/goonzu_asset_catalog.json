@@ -1,0 +1,12 @@
+{
+  "style": {"projection":"2D_ISOMETRIC","originalContent":true,"palette":"bright-fantasy","spriteUnit":"32x32_or_64x64"},
+  "characters": ["warrior","swordsman","mage","ice_mage","fire_mage","archer","assassin","priest","monk","ranger","paladin","merchant"],
+  "npcs": ["merchant","blacksmith","alchemist","farmer","miner","fisher","guard","mayor","quest_giver","banker","guild_master","stable_master","pet_trainer"],
+  "buildings": ["town_hall","market","blacksmith","alchemy_shop","inn","warehouse","guild_hall","stable","farm","mine","temple","watchtower","house","bridge","gate"],
+  "terrain": ["grass","snow","dirt","cobblestone","forest","mountain","river","lake","ice","desert","swamp","farmland"],
+  "items": ["sword","axe","spear","bow","staff","dagger","shield","helmet","armor","boots","ring","amulet","potion","scroll","ore","wood","cloth","herb","gem","food"],
+  "creatures": ["slime","goblin","wolf","boar","orc","skeleton","spider","bandit","ice_elemental","fire_elemental","dragon","forest_guardian"],
+  "effects": ["hit","critical","heal","fire","ice","lightning","poison","buff","debuff","teleport","craft_success","craft_failure","level_up"],
+  "ui": ["character","inventory","equipment","skills","crafting","market","trade","guild","town","election","map","quest_log","chat","party","minimap","hotbar","status_bars"],
+  "animationSets": ["idle","walk","run","attack","skill","hit","death","gather","craft","mount"]
+}

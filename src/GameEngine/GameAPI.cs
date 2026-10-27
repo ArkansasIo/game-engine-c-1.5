@@ -48,16 +48,27 @@ namespace GameEngine.API
 
     public class GameAPI
     {
-        public PlayerAPI Player { get; } = new PlayerAPI();
-        public InventoryAPI Inventory { get; } = new InventoryAPI();
-        public QuestAPI Quest { get; } = new QuestAPI();
-        public CommunityAPI Community { get; } = new CommunityAPI();
-        public MarketAPI Market { get; } = new MarketAPI();
-        public SettingsAPI Settings { get; } = new SettingsAPI();
-        public MenuAPI Menu { get; } = new MenuAPI();
+        public PlayerAPI Player { get; }
+        public InventoryAPI Inventory { get; }
+        public QuestAPI Quest { get; }
+        public CommunityAPI Community { get; }
+        public MarketAPI Market { get; }
+        public SettingsAPI Settings { get; }
+        public MenuAPI Menu { get; }
+
+        public GameAPI()
+        {
+            Player = new PlayerAPI();
+            Inventory = new InventoryAPI();
+            Quest = new QuestAPI();
+            Community = new CommunityAPI();
+            Market = new MarketAPI();
+            Settings = new SettingsAPI();
+            Menu = new MenuAPI();
+        }
 
         // Supporting classes
-        public class Player
+        public class PlayerData
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -65,7 +76,7 @@ namespace GameEngine.API
             public int Gold { get; set; }
         }
 
-        public class Quest
+        public class QuestData
         {
             public string Name { get; set; }
             public bool IsCompleted { get; set; }

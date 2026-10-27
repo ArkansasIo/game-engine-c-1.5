@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        var menu = new MainMenu();
+        var menu = new GameEngine.MainMenu();
         menu.Render();
         Console.Write("Select an option: ");
         int input = int.Parse(Console.ReadLine());

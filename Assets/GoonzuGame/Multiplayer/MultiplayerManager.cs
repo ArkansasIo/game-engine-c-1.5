@@ -1,6 +1,5 @@
 
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace GoonzuGame.Multiplayer
 {
@@ -36,7 +35,7 @@ namespace GoonzuGame.Multiplayer
             if (Players.Count < MaxPlayers)
             {
                 Players.Add(player);
-                Debug.Log($"Player {player.Name} joined the lobby {Name}.");
+                System.Console.WriteLine($"Player {player.Name} joined the lobby {Name}.");
                 return true;
             }
             return false;
@@ -45,11 +44,11 @@ namespace GoonzuGame.Multiplayer
         public void RemovePlayer(Player player)
         {
             Players.Remove(player);
-            Debug.Log($"Player {player.Name} left the lobby {Name}.");
+            System.Console.WriteLine($"Player {player.Name} left the lobby {Name}.");
         }
     }
 
-    public class MultiplayerManager : MonoBehaviour
+    public class MultiplayerManager
     {
         public static MultiplayerManager Instance { get; private set; }
 
@@ -62,31 +61,26 @@ namespace GoonzuGame.Multiplayer
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
             }
         }
 
         public void Connect()
         {
             IsConnected = true;
-            Debug.Log("Multiplayer connected.");
+            System.Console.WriteLine("Multiplayer connected.");
             // In real implementation, connect to server
         }
 
         public void Disconnect()
         {
             IsConnected = false;
-            Debug.Log("Multiplayer disconnected.");
+            System.Console.WriteLine("Multiplayer disconnected.");
         }
 
         public void CreateLobby(string lobbyName)
         {
             CurrentLobby = new Lobby(lobbyName);
-            Debug.Log($"Lobby '{lobbyName}' created.");
+            System.Console.WriteLine($"Lobby '{lobbyName}' created.");
         }
 
         public void JoinLobby(string lobbyName)
@@ -96,7 +90,7 @@ namespace GoonzuGame.Multiplayer
             {
                 CurrentLobby = new Lobby(lobbyName);
             }
-            Debug.Log($"Joined lobby '{lobbyName}'.");
+            System.Console.WriteLine($"Joined lobby '{lobbyName}'.");
         }
 
         public void LeaveLobby()
@@ -104,7 +98,7 @@ namespace GoonzuGame.Multiplayer
             if (CurrentLobby != null)
             {
                 CurrentLobby = null;
-                Debug.Log("Left lobby.");
+                System.Console.WriteLine("Left lobby.");
             }
         }
 
@@ -122,7 +116,7 @@ namespace GoonzuGame.Multiplayer
 
             string chatMsg = $"{player.Name}: {message}";
             ChatLog.Add(chatMsg);
-            Debug.Log(chatMsg);
+            System.Console.WriteLine(chatMsg);
             // Broadcast to other players
         }
 
@@ -132,7 +126,7 @@ namespace GoonzuGame.Multiplayer
             {
                 foreach (var player in CurrentLobby.Players)
                 {
-                    Debug.Log($"Syncing player: {player.Name}");
+                    System.Console.WriteLine($"Syncing player: {player.Name}");
                     // Sync position, stats, etc.
                 }
             }
@@ -140,13 +134,13 @@ namespace GoonzuGame.Multiplayer
 
         public void CreateParty(string partyName)
         {
-            Debug.Log($"Party '{partyName}' created.");
+            System.Console.WriteLine($"Party '{partyName}' created.");
             // Similar to lobby but for smaller groups
         }
 
         public void JoinParty(string playerName, string partyName)
         {
-            Debug.Log($"{playerName} joined party '{partyName}'.");
+            System.Console.WriteLine($"{playerName} joined party '{partyName}'.");
         }
 
         public List<string> GetChatLog()

@@ -8,32 +8,42 @@ namespace GoonzuGame.PvP
         public string PvPMode { get; set; }
         public int UpgradeLevel { get; set; }
         public PvPWeaponDef(string name, int attack, int speed, string rarity, string pvpType, string pveType, string theme, string pvpMode)
-            : base(name, attack, speed, rarity, pvpType, pveType, theme)
+            : base(name, attack, speed, ParseRarity(rarity), pvpType, pveType, theme)
         {
             PvPMode = pvpMode;
             UpgradeLevel = 0;
         }
 
-        public void Attack()
+        private static GoonzuGame.Items.ItemRarity ParseRarity(string rarity) => rarity switch
         {
-            Console.WriteLine($"Attacking with {Name} (PvP Mode: {PvPMode}) for {Attack} damage.");
+            "Common" => GoonzuGame.Items.ItemRarity.Common,
+            "Uncommon" => GoonzuGame.Items.ItemRarity.Uncommon,
+            "Rare" => GoonzuGame.Items.ItemRarity.Rare,
+            "Epic" => GoonzuGame.Items.ItemRarity.Epic,
+            "Legendary" => GoonzuGame.Items.ItemRarity.Legendary,
+            _ => GoonzuGame.Items.ItemRarity.Common,
+        };
+
+        public void DoAttack()
+        {
+            Console.WriteLine($"Attacking with {Name} (PvP Mode: {PvPMode}) for {Damage} damage.");
         }
 
         public void Upgrade()
         {
             UpgradeLevel++;
-            Attack += 5;
-            Console.WriteLine($"Upgraded {Name} to level {UpgradeLevel}. Attack is now {Attack}.");
+            Damage += 5;
+            Console.WriteLine($"Upgraded {Name} to level {UpgradeLevel}. Attack is now {Damage}.");
         }
 
         public bool Compare(PvPWeaponDef other)
         {
-            return this.Attack > other.Attack;
+            return this.Damage > other.Damage;
         }
 
-        public void Display()
+        public new void Display()
         {
-            Console.WriteLine($"Weapon: {Name}, Attack: {Attack}, Speed: {Speed}, PvP Mode: {PvPMode}, Upgrade Level: {UpgradeLevel}, Rarity: {Rarity}, Theme: {Theme}");
+            Console.WriteLine($"Weapon: {Name}, Attack: {Damage}, Speed: {AttackSpeed}, PvP Mode: {PvPMode}, Upgrade Level: {UpgradeLevel}, Rarity: {Rarity}, Theme: {Theme}");
         }
     }
 }

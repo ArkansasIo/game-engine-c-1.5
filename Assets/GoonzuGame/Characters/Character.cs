@@ -131,8 +131,6 @@ namespace GoonzuGame.Characters
             MaxMana += 5;
             Mana = MaxMana;
             Console.WriteLine($"{Name} leveled up to {Level}!");
-            // Trigger achievement
-            GoonzuGame.Achievements.AchievementManager.Instance?.TrackProgress("Level Up", 1);
         }
 
         public void GainExperience(int exp)

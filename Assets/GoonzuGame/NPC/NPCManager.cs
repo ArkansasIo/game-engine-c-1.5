@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace GoonzuGame.NPC
 {
     [System.Serializable]
-    public class NPC : MonoBehaviour
+    public class NPC
     {
         public string Name;
         public string Location;
@@ -25,12 +24,12 @@ namespace GoonzuGame.NPC
         public void Move(string newLocation)
         {
             Location = newLocation;
-            Debug.Log($"{Name} moves to {Location}.");
+            System.Console.WriteLine($"{Name} moves to {Location}.");
         }
 
         public void Speak()
         {
-            Debug.Log($"{Name} says: '{Dialogue}'");
+            System.Console.WriteLine($"{Name} says: '{Dialogue}'");
             // Show dialogue UI
             GoonzuGame.UI.UIManager.Instance.ShowMessage(Dialogue);
         }
@@ -38,13 +37,13 @@ namespace GoonzuGame.NPC
         public void UpdateReputation(int value)
         {
             Reputation += value;
-            Debug.Log($"{Name}'s reputation changed by {value}. Current: {Reputation}");
+            System.Console.WriteLine($"{Name}'s reputation changed by {value}. Current: {Reputation}");
         }
 
         public void FollowSchedule(int hour)
         {
             string activity = Schedule[hour % Schedule.Count];
-            Debug.Log($"{Name} activity: {activity}");
+            System.Console.WriteLine($"{Name} activity: {activity}");
         }
 
         public void GiveQuest()
@@ -52,7 +51,7 @@ namespace GoonzuGame.NPC
             if (QuestToGive != null)
             {
                 GoonzuGame.Quests.QuestManager.Instance.AddQuest(QuestToGive);
-                Debug.Log($"{Name} gave quest: {QuestToGive.Title}");
+                System.Console.WriteLine($"{Name} gave quest: {QuestToGive.Title}");
             }
         }
 
@@ -66,7 +65,7 @@ namespace GoonzuGame.NPC
         }
     }
 
-    public class NPCManager : MonoBehaviour
+    public class NPCManager
     {
         public static NPCManager Instance { get; private set; }
 
@@ -77,18 +76,13 @@ namespace GoonzuGame.NPC
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
             }
         }
 
         public void AddNPC(NPC npc)
         {
             NPCs.Add(npc);
-            Debug.Log($"NPC {npc.Name} added.");
+            System.Console.WriteLine($"NPC {npc.Name} added.");
         }
 
         public void MoveNPC(string npcName, string newLocation)
