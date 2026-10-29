@@ -1,4 +1,3 @@
-using System.Numerics;
 using EtherealVeni.Server.Contracts;
 using EtherealVeni.Server.Runtime;
 
@@ -28,7 +27,7 @@ api.MapGet("/players/{playerId:guid}", (Guid playerId, WorldState world) =>
     world.TryGetPlayer(playerId, out var player) ? Results.Ok(player) : Results.NotFound(new ApiError("player_not_found", "Player was not found.")));
 api.MapPost("/world/move", (MoveRequest request, WorldState world) =>
 {
-    try { return Results.Ok(world.Move(request.PlayerId, new Vector3(request.Position.X, request.Position.Y, request.Position.Z))); }
+    try { return Results.Ok(world.Move(request.PlayerId, new PositionSnapshot(request.Position.X, request.Position.Y, request.Position.Z))); }
     catch (KeyNotFoundException ex) { return Results.NotFound(new ApiError("player_not_found", ex.Message)); }
     catch (ArgumentException ex) { return Results.BadRequest(new ApiError("invalid_movement", ex.Message)); }
     catch (InvalidOperationException ex) { return Results.BadRequest(new ApiError("movement_rejected", ex.Message)); }
