@@ -32,6 +32,8 @@ jobs:
         run: dotnet restore EtherealVeni/Server/EtherealVeni.Server.csproj
       - name: Build server
         run: dotnet build EtherealVeni/Server/EtherealVeni.Server.csproj -c Release --no-restore
+      - name: Test engine
+        run: dotnet test EtherealVeni/Tests/EtherealVeni.Engine.Tests/EtherealVeni.Engine.Tests.csproj -c Release
 
   windows-applications:
     runs-on: windows-latest
