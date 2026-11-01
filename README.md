@@ -49,6 +49,8 @@ Blueprint is an Ethereal Veni-owned visual scripting layer. It is not Unreal Blu
 
 Unity and Unreal 5 are peer integration targets. Their adapters translate Ethereal Veni entities, assets, scenes, materials, animation, input, and other supported engine data into the host environment. The core engine remains buildable without either SDK installed.
 
+The Unreal 5 prototype documents its in-game [menu API](EtherealVeni/Docs/UI_MENUS.md), [quest and instance catalog](EtherealVeni/Docs/RPG_CONTENT_CATALOG.md), and [original audio pack](EtherealVeni/Docs/AUDIO_SYSTEM.md). Its MySQL content migration and reproducible seed are under `Database/MySQL/DDL/`.
+
 ## Legacy reference material
 
 Historical GoonZu-oriented files are treated as reference/legacy material only. They must not define the active product identity. When migrated, such material belongs under `References/GoonZu/` and should be marked `[REFERENCE]` or `[LEGACY]`.

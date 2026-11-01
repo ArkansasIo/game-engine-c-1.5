@@ -3,15 +3,15 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>EthereoPandora.Game</RootNamespace>
     <AssemblyName>EthereoPandora.Game</AssemblyName>
-    <OutputType>WinExe</OutputType>
-    <UseWindowsForms>true</UseWindowsForms>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OutputType>Exe</OutputType>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../Engine/EtherealVeni.Engine.csproj" />
-    <PackageReference Include="OpenTK" Version="4.9.4" />
+    <PackageReference Include="OpenTK" Version="4.0.0-pre.8" />
     <PackageReference Include="OpenTK.WinForms" Version="4.0.0-pre.8" />
   </ItemGroup>
 </Project>

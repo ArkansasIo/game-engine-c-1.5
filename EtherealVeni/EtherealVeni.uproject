@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.8",
+	"EngineAssociation": "{2846CA77-45D2-A575-D9C4-F9A19724265C}",
 	"Category": "",
 	"Description": "Ethereal Veni / Ethereo Pandora - GoonZu game integration",
 	"Modules": [
@@ -8,12 +8,21 @@
 			"Name": "EtherealVeni",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-			"AdditionalDependencies": [ "Engine", "Json" ]
+			"AdditionalDependencies": [
+				"Engine",
+				"Json"
+			]
 		},
 		{
 			"Name": "EtherealVeniEditor",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AIAssistant",
+			"Enabled": true
 		}
 	]
 }

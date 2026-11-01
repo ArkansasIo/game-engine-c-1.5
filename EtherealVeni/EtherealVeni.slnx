@@ -10,14 +10,14 @@
     <Platform Name="Win64-arm64ec" />
   </Configurations>
   <Folder Name="/Engine/">
-    <Project Path="Intermediate/ProjectFiles/UE5.vcxproj" Id="d7581016-0349-3de9-865e-8161a8452803">
+    <Project Path="Intermediate/ProjectFiles/UE5.vcxproj" Id="4552c5c9-9ad7-3b1e-ba93-065a7dd10c78">
       <BuildType Project="BuiltWithUnrealBuildTool" />
       <Platform Project="Win64" />
       <Build Project="false" />
     </Project>
   </Folder>
   <Folder Name="/Games/">
-    <Project Path="Intermediate/ProjectFiles/EtherealVeni.vcxproj" Id="5f580cd1-5c95-308c-884a-a78a3b354603">
+    <Project Path="Intermediate/ProjectFiles/EtherealVeni.vcxproj" Id="5194569f-2301-323a-b52f-4f9828e0128d">
       <BuildType Solution="DebugGame Editor|Win64" Project="DebugGame_Editor" />
       <BuildType Solution="DebugGame Editor|Win64-arm64" Project="Win64_arm64_DebugGame_Editor" />
       <BuildType Solution="DebugGame Editor|Win64-arm64ec" Project="Win64_arm64ec_DebugGame_Editor" />

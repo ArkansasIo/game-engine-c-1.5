@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "music_tracks": [
+    {
+      "id": "frostmere_wilds",
+      "title": "Frostmere Wilds",
+      "category": "regional",
+      "tempo_bpm": 72,
+      "scale": "dorian",
+      "file": "Music/M_01_Frostmere_Wilds.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "frostmere_town",
+      "title": "Frostmere Town",
+      "category": "town",
+      "tempo_bpm": 84,
+      "scale": "major",
+      "file": "Music/M_02_Frostmere_Town.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "emberfall_fields",
+      "title": "Emberfall Fields",
+      "category": "regional",
+      "tempo_bpm": 78,
+      "scale": "minor",
+      "file": "Music/M_03_Emberfall_Fields.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "emberfall_market",
+      "title": "Emberfall Market",
+      "category": "town",
+      "tempo_bpm": 96,
+      "scale": "major",
+      "file": "Music/M_04_Emberfall_Market.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "greenhollow_canopy",
+      "title": "Greenhollow Canopy",
+      "category": "regional",
+      "tempo_bpm": 74,
+      "scale": "lydian",
+      "file": "Music/M_05_Greenhollow_Canopy.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "greenhollow_village",
+      "title": "Greenhollow Village",
+      "category": "town",
+      "tempo_bpm": 88,
+      "scale": "major",
+      "file": "Music/M_06_Greenhollow_Village.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "sunreach_dunes",
+      "title": "Sunreach Dunes",
+      "category": "regional",
+      "tempo_bpm": 76,
+      "scale": "phrygian",
+      "file": "Music/M_07_Sunreach_Dunes.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "stormwatch_coast",
+      "title": "Stormwatch Coast",
+      "category": "regional",
+      "tempo_bpm": 82,
+      "scale": "mixolydian",
+      "file": "Music/M_08_Stormwatch_Coast.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "moonfen_mist",
+      "title": "Moonfen Mist",
+      "category": "regional",
+      "tempo_bpm": 68,
+      "scale": "dorian",
+      "file": "Music/M_09_Moonfen_Mist.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "skyreach_heights",
+      "title": "Skyreach Heights",
+      "category": "regional",
+      "tempo_bpm": 80,
+      "scale": "lydian",
+      "file": "Music/M_10_Skyreach_Heights.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "deepdelve_echoes",
+      "title": "Deepdelve Echoes",
+      "category": "regional",
+      "tempo_bpm": 70,
+      "scale": "minor",
+      "file": "Music/M_11_Deepdelve_Echoes.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "thornvale_frontier",
+      "title": "Thornvale Frontier",
+      "category": "regional",
+      "tempo_bpm": 86,
+      "scale": "mixolydian",
+      "file": "Music/M_12_Thornvale_Frontier.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "starfall_shore",
+      "title": "Starfall Shore",
+      "category": "regional",
+      "tempo_bpm": 72,
+      "scale": "major",
+      "file": "Music/M_13_Starfall_Shore.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "capital_day",
+      "title": "Capital by Day",
+      "category": "town",
+      "tempo_bpm": 92,
+      "scale": "major",
+      "file": "Music/M_14_Capital_Day.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "capital_night",
+      "title": "Capital at Night",
+      "category": "town",
+      "tempo_bpm": 70,
+      "scale": "dorian",
+      "file": "Music/M_15_Capital_Night.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "traveler_inn",
+      "title": "Traveler's Inn",
+      "category": "town",
+      "tempo_bpm": 88,
+      "scale": "major",
+      "file": "Music/M_16_Traveler_Inn.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "harbor_lanterns",
+      "title": "Harbor Lanterns",
+      "category": "town",
+      "tempo_bpm": 78,
+      "scale": "mixolydian",
+      "file": "Music/M_17_Harbor_Lanterns.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "guild_hall",
+      "title": "Guild Hall",
+      "category": "town",
+      "tempo_bpm": 82,
+      "scale": "dorian",
+      "file": "Music/M_18_Guild_Hall.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "hollow_cistern",
+      "title": "Hollow Cistern",
+      "category": "dungeon",
+      "tempo_bpm": 66,
+      "scale": "minor",
+      "file": "Music/M_19_Hollow_Cistern.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "cinder_foundry",
+      "title": "Cinder Foundry",
+      "category": "dungeon",
+      "tempo_bpm": 78,
+      "scale": "phrygian",
+      "file": "Music/M_20_Cinder_Foundry.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "gloam_sanctum",
+      "title": "Gloam Sanctum",
+      "category": "dungeon",
+      "tempo_bpm": 68,
+      "scale": "dorian",
+      "file": "Music/M_21_Gloam_Sanctum.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "sunken_archive",
+      "title": "Sunken Archive",
+      "category": "dungeon",
+      "tempo_bpm": 72,
+      "scale": "minor",
+      "file": "Music/M_22_Sunken_Archive.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "thorn_bastion",
+      "title": "Thorn Bastion",
+      "category": "dungeon",
+      "tempo_bpm": 84,
+      "scale": "phrygian",
+      "file": "Music/M_23_Thorn_Bastion.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "frost_monastery",
+      "title": "Frost Monastery",
+      "category": "dungeon",
+      "tempo_bpm": 70,
+      "scale": "dorian",
+      "file": "Music/M_24_Frost_Monastery.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "star_vault",
+      "title": "Star Vault",
+      "category": "dungeon",
+      "tempo_bpm": 76,
+      "scale": "lydian",
+      "file": "Music/M_25_Star_Vault.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "ash_citadel",
+      "title": "Ash Citadel",
+      "category": "dungeon",
+      "tempo_bpm": 82,
+      "scale": "minor",
+      "file": "Music/M_26_Ash_Citadel.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "raid_approach",
+      "title": "Raid: The Long Approach",
+      "category": "raid",
+      "tempo_bpm": 88,
+      "scale": "dorian",
+      "file": "Music/M_27_Raid_Approach.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "raid_battle",
+      "title": "Raid: The Turning Battle",
+      "category": "raid",
+      "tempo_bpm": 104,
+      "scale": "minor",
+      "file": "Music/M_28_Raid_Battle.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "raid_victory",
+      "title": "Raid: A Shared Victory",
+      "category": "raid",
+      "tempo_bpm": 96,
+      "scale": "major",
+      "file": "Music/M_29_Raid_Victory.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "trial_focus",
+      "title": "Trial: Quiet Focus",
+      "category": "trial",
+      "tempo_bpm": 80,
+      "scale": "dorian",
+      "file": "Music/M_30_Trial_Focus.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "trial_triumph",
+      "title": "Trial: Earned Triumph",
+      "category": "trial",
+      "tempo_bpm": 108,
+      "scale": "major",
+      "file": "Music/M_31_Trial_Triumph.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    },
+    {
+      "id": "world_awakening",
+      "title": "World Awakening",
+      "category": "world",
+      "tempo_bpm": 76,
+      "scale": "lydian",
+      "file": "Music/M_32_World_Awakening.wav",
+      "loop": true,
+      "note": "Original synthesized cue; no third-party samples or borrowed melodies."
+    }
+  ],
+  "sound_effects": [
+    {
+      "id": "ui_menu_open",
+      "title": "UI Menu Open",
+      "file": "SFX/S_01_Ui_Menu_Open.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "ui_menu_close",
+      "title": "UI Menu Close",
+      "file": "SFX/S_02_Ui_Menu_Close.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "ui_select",
+      "title": "UI Select",
+      "file": "SFX/S_03_Ui_Select.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "ui_error",
+      "title": "UI Error",
+      "file": "SFX/S_04_Ui_Error.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "quest_accepted",
+      "title": "Quest Accepted",
+      "file": "SFX/S_05_Quest_Accepted.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "quest_progress",
+      "title": "Quest Progress",
+      "file": "SFX/S_06_Quest_Progress.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "quest_complete",
+      "title": "Quest Complete",
+      "file": "SFX/S_07_Quest_Complete.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "loot_common",
+      "title": "Loot Common",
+      "file": "SFX/S_08_Loot_Common.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "loot_rare",
+      "title": "Loot Rare",
+      "file": "SFX/S_09_Loot_Rare.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "loot_epic",
+      "title": "Loot Epic",
+      "file": "SFX/S_10_Loot_Epic.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "loot_legendary",
+      "title": "Loot Legendary",
+      "file": "SFX/S_11_Loot_Legendary.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "weapon_swing",
+      "title": "Weapon Swing",
+      "file": "SFX/S_12_Weapon_Swing.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "weapon_hit",
+      "title": "Weapon Hit",
+      "file": "SFX/S_13_Weapon_Hit.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "shield_block",
+      "title": "Shield Block",
+      "file": "SFX/S_14_Shield_Block.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "critical_hit",
+      "title": "Critical Hit",
+      "file": "SFX/S_15_Critical_Hit.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "bow_release",
+      "title": "Bow Release",
+      "file": "SFX/S_16_Bow_Release.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "spell_cast",
+      "title": "Spell Cast",
+      "file": "SFX/S_17_Spell_Cast.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "spell_impact",
+      "title": "Spell Impact",
+      "file": "SFX/S_18_Spell_Impact.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "gather_resource",
+      "title": "Gather Resource",
+      "file": "SFX/S_19_Gather_Resource.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "craft_item",
+      "title": "Craft Item",
+      "file": "SFX/S_20_Craft_Item.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "level_up",
+      "title": "Level Up",
+      "file": "SFX/S_21_Level_Up.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "dungeon_enter",
+      "title": "Dungeon Enter",
+      "file": "SFX/S_22_Dungeon_Enter.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "encounter_start",
+      "title": "Encounter Start",
+      "file": "SFX/S_23_Encounter_Start.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "boss_warning",
+      "title": "Boss Warning",
+      "file": "SFX/S_24_Boss_Warning.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "encounter_complete",
+      "title": "Encounter Complete",
+      "file": "SFX/S_25_Encounter_Complete.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "trial_rank",
+      "title": "Trial Rank",
+      "file": "SFX/S_26_Trial_Rank.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "footstep_stone",
+      "title": "Footstep Stone",
+      "file": "SFX/S_27_Footstep_Stone.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "footstep_grass",
+      "title": "Footstep Grass",
+      "file": "SFX/S_28_Footstep_Grass.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "door_stone",
+      "title": "Stone Door",
+      "file": "SFX/S_29_Door_Stone.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    },
+    {
+      "id": "coin_reward",
+      "title": "Coin Reward",
+      "file": "SFX/S_30_Coin_Reward.wav",
+      "note": "Original synthesized effect; no third-party samples."
+    }
+  ],
+  "license": "Original procedural prototype assets generated for Ethereal Veni."
+}
